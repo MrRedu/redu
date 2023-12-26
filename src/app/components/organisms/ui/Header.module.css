@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    padding: 0 1rem;
+
+    min-height: 86px;
+}
+
+.logo {
+    font-size: var(--f-s-xl);
+    font-weight: var(--f-bold);
+}
+
+.logo .link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    .header {    
+        padding: 0 3rem;
+    
+        min-height: 86px;
+    }
+}

@@ -23,7 +23,8 @@
 body {
   background-color: #1c1c1c;
   color: #f7f7f7;
-  font-family: sans-serif;
+
+  font-family: 'Instrument Sans', sans-serif;
 
   /*
   max-width: 1080px;
