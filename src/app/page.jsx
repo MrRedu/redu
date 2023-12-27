@@ -1,3 +1,7 @@
+import { ServicesSection } from '@/components/organisms/services-section/ServicesSection'
+import { CardConnect } from './components/molecules/card-connect/CardConnect'
+// import { AboutMe } from './components/molecules/about-me/AboutMe'
+
 export const metadata = {
   title: 'Portfolio',
 }
@@ -5,6 +9,8 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
+      {/* <AboutMe /> */}
+      <CardConnect />
       <div
         style={{
           height: '100vh',
@@ -21,6 +27,7 @@ export default function HomePage() {
           ipsa mollitia.
         </p>
       </div>
+      <ServicesSection />
     </>
   )
 }

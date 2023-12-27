@@ -1,7 +1,7 @@
 import { MoveUpRight } from 'lucide-react'
 
 export const NAV = [
-  { name: 'Projects', href: '/' },
+  { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/' },
   { name: 'Services', href: '/' },
   { name: 'Start project', href: '/' },
@@ -9,7 +9,7 @@ export const NAV = [
 
 export const SECTIONS = [
   { name: 'Home', href: '/' },
-  { name: 'Projects', href: '/' },
+  { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/' },
   { name: 'Contact', href: '/' },
 ]
