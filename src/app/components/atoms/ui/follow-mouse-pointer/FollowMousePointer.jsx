@@ -22,9 +22,11 @@ export const FollowMousePointer = () => {
         className={styles.circle}
         style={{
           position: 'absolute',
-          //   backgroundColor: '#111',
+          // backgroundColor: '#111',
+          // backdropFilter: 'invert(100%)',
           borderRadius: '50%',
           border: '2px solid #fff',
+          // opacity: 1,
           opacity: 0.8,
           pointerEvents: 'none',
           left: -28,
