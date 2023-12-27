@@ -1,7 +1,6 @@
 import propTypes from 'prop-types'
 
-// eslint-disable-next-line camelcase
-import { Instrument_Sans } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 import './globals.css'
 import '#/node_modules/minireset.css/minireset.min.css'
@@ -9,7 +8,7 @@ import '#/node_modules/minireset.css/minireset.min.css'
 import { Header, Footer } from './components/organisms/ui'
 import { FollowMousePointer } from '#/src/app/components/atoms/ui/FollowMousePointer/FollowMousePointer'
 
-const InstrumentSans = Instrument_Sans({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: {
@@ -23,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={InstrumentSans.className}>
+      <body className={inter.className}>
         <Header />
         <main>{children}</main>
         <Footer />

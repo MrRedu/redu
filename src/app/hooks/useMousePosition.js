@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react'
 
-const screen = document.querySelector('body')
-
 export function useMousePosition() {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null })
-
-  const bodyWidth = screen.offsetWidth
-  const bodyHeight = screen.offsetHeight
+  const [bodyWidth, setBodyWidth] = useState(null)
+  const [bodyHeight, setBodyHeight] = useState(null)
 
   useEffect(() => {
     const updateMousePosition = e => {
@@ -18,6 +15,13 @@ export function useMousePosition() {
     return () => {
       window.removeEventListener('mousemove', updateMousePosition)
     }
+  }, [])
+
+  useEffect(() => {
+    const screen = document.querySelector('body')
+
+    setBodyWidth(screen.offsetWidth)
+    setBodyHeight(screen.offsetHeight)
   }, [])
 
   return {
