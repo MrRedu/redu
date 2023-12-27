@@ -6,7 +6,7 @@ import './globals.css'
 import '#/node_modules/minireset.css/minireset.min.css'
 
 import { Header, Footer } from './components/organisms/ui'
-import { FollowMousePointer } from '#/src/app/components/atoms/ui/FollowMousePointer/FollowMousePointer'
+import { FollowMousePointer } from '#/src/app/components/atoms/ui/follow-mouse-pointer/FollowMousePointer'
 
 const inter = Inter({ subsets: ['latin'] })
 
