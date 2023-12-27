@@ -7,7 +7,7 @@ import './globals.css'
 import '#/node_modules/minireset.css/minireset.min.css'
 
 import { Header, Footer } from './components/organisms/ui'
-import { FollowMouse } from './components/atoms/ui/FollowMouse'
+import { FollowMousePointer } from '#/src/app/components/atoms/ui/FollowMousePointer/FollowMousePointer'
 
 const InstrumentSans = Instrument_Sans({ subsets: ['latin'] })
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
-        <FollowMouse />
+        <FollowMousePointer />
       </body>
     </html>
   )
