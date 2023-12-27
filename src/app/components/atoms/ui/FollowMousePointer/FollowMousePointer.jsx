@@ -2,7 +2,7 @@
 
 import styles from './FollowMousePointer.module.css'
 
-import { useMousePosition } from '#/src/app/hooks/useMousePosition'
+import { useMousePosition } from '@/hooks/useMousePosition'
 
 export const FollowMousePointer = () => {
   const { mousePosition, bodyWidth, bodyHeight } = useMousePosition()
