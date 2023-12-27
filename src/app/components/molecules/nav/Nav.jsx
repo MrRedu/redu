@@ -1,5 +1,8 @@
 import propTypes from 'prop-types'
 
+import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
+import { NAV } from '#/src/app/libs/constants'
+
 import { MenuButton } from '@/components/atoms/MenuButton'
 import styles from './Nav.module.css'
 
@@ -12,10 +15,15 @@ export const Nav = ({ handleClick, isOpened }) => {
 
       <div className={styles['nav-desktop']}>
         <ul className={styles['nav-list']}>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Start project</li>
+          {NAV.map(nav => (
+            <LinkItem
+              key={nav.name}
+              href={nav.href}
+              className={'nav-item-desktop'}
+            >
+              {nav.name}
+            </LinkItem>
+          ))}
         </ul>
       </div>
     </nav>

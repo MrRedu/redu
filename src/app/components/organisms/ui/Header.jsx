@@ -1,8 +1,9 @@
 'use client'
 
-import { Nav } from '@/components/molecules/nav/Nav'
-import styles from './Header.module.css'
 import { useState } from 'react'
+import styles from './Header.module.css'
+
+import { Nav } from '@/components/molecules/nav/Nav'
 import { NavFullScreen } from '@/components/molecules/nav-full-screen/NavFullScreen'
 
 export const Header = () => {

@@ -25,9 +25,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={InstrumentSans.className}>
         <Header />
-        <FollowMouse />
         <main>{children}</main>
         <Footer />
+        <FollowMouse />
       </body>
     </html>
   )

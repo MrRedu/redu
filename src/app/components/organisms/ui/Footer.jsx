@@ -13,10 +13,10 @@ export const Footer = () => {
             </a>
           </span>
 
-          <span className={styles.description}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            provident alias nulla repudiandae ad esse dolor.
-          </span>
+          <div className={styles.description}>
+            <span>Have a great idea in mind?</span>
+            <span>Let’s Connect</span>
+          </div>
         </div>
 
         <div className={styles.lists}>
@@ -28,7 +28,7 @@ export const Footer = () => {
             ))}
           </ul>
 
-          <ul>
+          <ul className={styles['contact-list']}>
             {CONTACT.map(contact => (
               <LinkItem
                 key={contact.name}

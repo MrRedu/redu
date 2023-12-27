@@ -6,3 +6,13 @@
     align-items: center;
     gap: 4px;
 }
+
+.nav-item-mobile {
+    margin-bottom: 2rem;
+    font-size: var(--f-s-xxxl);
+    font-weight: var(--f-bold);
+}
+
+.nav-item-desktop {
+    font-size: var(--f-s-base);
+}
