@@ -15,22 +15,48 @@ import {
 
 export const NAV = [
   { name: 'Projects', href: '/projects' },
-  { name: 'About', href: '/' },
+  { name: 'About', href: '/about' },
   { name: 'Services', href: '/' },
-  { name: 'Start project', href: '/' },
+  { name: 'Start project', href: '/contact' },
 ]
 
 export const SECTIONS = [
   { name: 'Home', href: '/' },
   { name: 'Projects', href: '/projects' },
-  { name: 'About', href: '/' },
+  { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]
 
 export const CONTACT = [
-  { name: 'LinkedIn', icon: <MoveUpRight />, href: '/' },
-  { name: 'Twitter', icon: <MoveUpRight />, href: '/' },
+  {
+    name: 'LinkedIn',
+    icon: <MoveUpRight />,
+    href: 'https://www.linkedin.com/in/mrredu/',
+  },
+  {
+    name: 'Twitter',
+    icon: <MoveUpRight />,
+    href: 'https://twitter.com/MrReduDev',
+  },
   { name: 'Github', icon: <MoveUpRight />, href: 'https://github.com/MrRedu' },
+]
+
+export const SERVICES = [
+  {
+    id: '01',
+    title: 'Web Development',
+    description: 'Crafting responsive websites for flawless user experiences.',
+  },
+  {
+    id: '02',
+    title: 'Web Development',
+    description: 'Crafting responsive websites for flawless user experiences.',
+  },
+  {
+    id: '03',
+    title: 'Collaboration',
+    description: 'Crafting responsive websites.',
+  },
 ]
 
 export const SCROLL_ITEMS = [
