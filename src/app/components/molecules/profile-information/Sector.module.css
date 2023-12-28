@@ -1,0 +1,23 @@
+.sector {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: var(--f-s-sm);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 24px;
+}
+
+.list.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 12px;
+}
+
+.list.flex {
+    display: flex;
+    flex-direction: column;
+}
