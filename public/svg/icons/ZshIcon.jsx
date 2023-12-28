@@ -1,5 +1,5 @@
 import propTypes from 'prop-types'
-export const ZshIcon = ({ color }) => {
+export const ZshIcon = ({ color = '#F15A24' }) => {
   return (
     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <title>Zsh</title>
