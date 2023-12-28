@@ -18,4 +18,8 @@ export const Input = ({ type, placeholder, isRequired, name, id, value }) => {
 Input.propTypes = {
   type: propTypes.string,
   placeholder: propTypes.string,
+  isRequired: propTypes.bool,
+  name: propTypes.string,
+  id: propTypes.string,
+  value: propTypes.string,
 }

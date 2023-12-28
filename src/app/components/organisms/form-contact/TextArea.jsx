@@ -29,4 +29,11 @@ export const TextArea = ({
 TextArea.propTypes = {
   children: propTypes.node,
   placeholder: propTypes.string,
+  id: propTypes.string,
+  name: propTypes.string,
+  isRequired: propTypes.bool,
+  maxLength: propTypes.string,
+  cols: propTypes.string,
+  rows: propTypes.string,
+  value: propTypes.string,
 }

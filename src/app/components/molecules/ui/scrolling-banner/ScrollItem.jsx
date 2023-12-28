@@ -1,3 +1,4 @@
+import propTypes from 'prop-types'
 import styles from './ScrollItem.module.css'
 
 export const ScrollItem = ({ title, dividerIcon }) => {
@@ -7,4 +8,9 @@ export const ScrollItem = ({ title, dividerIcon }) => {
       <span className={styles.icon}>{dividerIcon}</span>
     </div>
   )
+}
+
+ScrollItem.propTypes = {
+  title: propTypes.string,
+  dividerIcon: propTypes.node,
 }
