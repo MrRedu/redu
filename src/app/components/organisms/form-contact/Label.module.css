@@ -6,7 +6,6 @@
 
     color: var(--c-whywhite-300);
     font-size: var(--f-s-sm);
-    font-weight: var(--f-bold);
 }
 
 .label-required {

@@ -4,18 +4,19 @@
     min-height: 48px;
     margin-bottom: 24px;
 
-
     background-color: var(--c-darkgray-800);
+    border: 1px solid var(--c-darkgray-300);
+    color: var(--c-whywhite-300);
 
     outline: none;
-
-    border: 1px solid var(--c-darkgray-200);
-
-    color: var(--c-whywhite-300);
 
     transition: all 0.2s ease-out;
 }
 
 .input:hover {
-    background-color: var(--c-darkgray-600);
+    background-color: var(--c-darkgray-700);
+}
+
+.input:focus {
+    border: 1px solid var(--c-darkgray-100);
 }
