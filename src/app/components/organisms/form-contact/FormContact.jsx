@@ -3,6 +3,7 @@ import { GroupForm } from './GroupForm'
 
 import { Input } from './Input'
 import { Label } from './Label'
+import { TextArea } from './TextArea'
 
 const SERVICES = ['Web Design', 'Landing Pages', 'Branding', 'Packaging']
 
@@ -10,19 +11,19 @@ export const FormContact = () => {
   return (
     <form action="" className={styles.form}>
       <GroupForm>
-        <Label htmlFor="" isRequired>{`What's your name?`}</Label>
-        <Input type="text" placeholder="Your name" />
+        <Label htmlFor="name" isRequired>{`What's your name?`}</Label>
+        <Input type="text" id="name" placeholder="Your name" isRequired />
       </GroupForm>
       <GroupForm>
-        <Label htmlFor="" isRequired>{`How can I contact you?`}</Label>
-        <Input type="email" placeholder="Your email" />
+        <Label htmlFor="email" isRequired>{`How can I contact you?`}</Label>
+        <Input type="email" id="email" placeholder="Your email" isRequired />
       </GroupForm>
       <GroupForm>
         <Label
-          htmlFor=""
+          htmlFor="company"
           isRequired
         >{`What is the name of you business?`}</Label>
-        <Input type="text" placeholder="Company name" />
+        <Input type="text" id="company" placeholder="Company name" isRequired />
       </GroupForm>
       <GroupForm>
         <Label htmlFor="" isRequired>{`What services do you need?`}</Label>
@@ -36,17 +37,25 @@ export const FormContact = () => {
       </GroupForm>
       <GroupForm>
         <Label
-          htmlFor=""
+          htmlFor="details"
           isRequired
         >{`Anything else you would like to share?`}</Label>
-        <textarea
-          className={styles['text-area']}
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your message"
-        ></textarea>
+        <TextArea
+          placeholder="Share projects details"
+          id="details"
+          isRequired
+        ></TextArea>
+      </GroupForm>
+      <GroupForm>
+        <button
+          style={{
+            minHeight: '44px',
+            borderRadius: 'var(--main-border-radius)',
+            cursor: 'pointer',
+          }}
+        >
+          Submit
+        </button>
       </GroupForm>
     </form>
   )

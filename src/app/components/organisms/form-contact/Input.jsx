@@ -1,9 +1,17 @@
 import propTypes from 'prop-types'
 import styles from './Input.module.css'
 
-export const Input = ({ type, placeholder }) => {
+export const Input = ({ type, placeholder, isRequired, name, id, value }) => {
   return (
-    <input type={type} placeholder={placeholder} className={styles.input} />
+    <input
+      type={type}
+      name={name}
+      value={value}
+      id={id}
+      placeholder={placeholder}
+      className={styles.input}
+      required={isRequired}
+    />
   )
 }
 
