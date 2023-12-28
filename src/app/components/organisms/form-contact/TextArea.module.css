@@ -10,13 +10,9 @@
     color: var(--c-whywhite-300);
 
     outline: none;
-
-    transition: all 0.2s ease-out;
-
-
     resize: none;
 
-
+    transition: all 0.2s ease-out;
 }
 
 .text-area:hover {

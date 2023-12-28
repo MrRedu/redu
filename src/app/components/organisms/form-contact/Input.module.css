@@ -2,7 +2,7 @@
     border-radius: 8px;
     padding: 16px;
     min-height: 48px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 
     background-color: var(--c-darkgray-800);
     border: 1px solid var(--c-darkgray-300);
@@ -19,4 +19,10 @@
 
 .input:focus {
     border: 1px solid var(--c-darkgray-100);
+}
+
+@media screen and (min-width: 768px) {
+    .input {
+        margin-bottom: 24px;
+    }
 }
