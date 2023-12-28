@@ -17,7 +17,7 @@ export const NAV = [
   { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/' },
-  { name: 'Start project', href: '/contact' },
+  { name: 'Start project', href: '/contact', type: 'primary' },
 ]
 
 export const SECTIONS = [
@@ -75,18 +75,18 @@ export const TOOLS_AND_TECHNOLOGIES = [
   // color={`var(--c-whywhite-300)`}
   {
     icon: <HtmlIcon />,
-    title: 'HTML',
+    title: 'HTML5',
   },
   {
     icon: <CssIcon />,
-    title: 'CSS',
+    title: 'CSS3',
   },
   {
     icon: <TailwindCssIcon />,
     title: 'Tailwind CSS',
   },
   {
-    icon: <JavaScriptIcon />,
+    icon: <JavaScriptIcon />, 
     title: 'JavaScript',
   },
   {

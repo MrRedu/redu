@@ -1,8 +1,14 @@
 import propTypes from 'prop-types'
 import styles from './Item.module.css'
-export const Item = ({ children }) => {
-  return <li className={styles.item}>{children}</li>
+export const Item = ({ icon, title }) => {
+  return (
+    <li className={styles.item}>
+      {icon}
+      <span className={styles.title}>{title}</span>
+    </li>
+  )
 }
 Item.propTypes = {
-  children: propTypes.node,
+  icon: propTypes.node,
+  title: propTypes.string,
 }

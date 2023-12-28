@@ -1,0 +1,29 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 1rem 2rem;
+    border-radius: var(--main-border-radius);
+}
+
+.item:hover svg [fill] {
+    fill: currentColor;
+}
+
+.title {
+    font-size: var(--f-s-sm);
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .item {
+        transition: box-shadow .4s ease;
+    }
+
+    .item:hover {
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .8);
+    }
+}

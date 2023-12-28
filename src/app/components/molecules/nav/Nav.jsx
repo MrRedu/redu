@@ -15,13 +15,14 @@ export const Nav = ({ handleClick, isOpened }) => {
 
       <div className={styles['nav-desktop']}>
         <ul className={styles['nav-list']}>
-          {NAV.map(nav => (
+          {NAV.map(({ name, href, type }) => (
             <LinkItem
-              key={nav.name}
-              href={nav.href}
+              key={name}
+              href={href}
               className={'nav-item-desktop'}
+              type={type}
             >
-              {nav.name}
+              {name}
             </LinkItem>
           ))}
         </ul>
