@@ -1,0 +1,24 @@
+.text-area {
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 150px;
+    margin-bottom: 24px;
+    line-height: 1.8;
+
+    background-color: var(--c-darkgray-800);
+    border: 1px solid var(--c-darkgray-300);
+    color: var(--c-whywhite-300);
+
+    outline: none;
+    resize: none;
+
+    transition: all 0.2s ease-out;
+}
+
+.text-area:hover {
+    background-color: var(--c-darkgray-700);
+}
+
+.text-area:focus {
+    border: 1px solid var(--c-darkgray-100);
+}

@@ -4,7 +4,7 @@
     padding: 1rem 0;
     gap: 1rem;
 
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--c-darkgray-400);
 }
 
 .count-desktop {
@@ -28,14 +28,16 @@
 
     .title,
     .description {
-        color: gray;
-        /* VARIABLES, PLEASE */
+        color: var(--c-gray-300);
     }
 
     .title,
     .content,
     .description {
-        transition: transform 0.2s ease-out, color 0.4s ease-out, opacity 0.3s ease-out;
+        transition:
+            transform 0.2s ease-out,
+            color 0.4s ease-out,
+            opacity 0.3s ease-out,
     }
 
     .description {
@@ -44,9 +46,13 @@
         max-width: 40ch;
     }
 
+    .item-list:hover {
+        border-bottom-color: var(--c-darkgray-100);
+    }
+
     .item-list:hover .title {
         transform: translateX(60px);
-        color: white;
+        color: var(--c-whywhite-300);
     }
 
     .item-list:hover .content {
@@ -54,7 +60,7 @@
     }
 
     .item-list:hover .description {
-        color: white;
+        color: var(--c-whywhite-300);
         opacity: 1;
     }
 
