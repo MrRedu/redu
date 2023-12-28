@@ -31,10 +31,15 @@
   --c-gray-300: #bdbdbd;
 
   --c-darkgray-800: #0e0e0e;
+
+  /* BorderRadius */
+  --main-border-radius: .875rem;
 }
 
 body {
+  /* background-image: url('https://grainy-gradients.vercel.app/noise.svg'); */
   background-color: var(--c-darkgray-800);
+
   color: var(--c-whywhite-300);
 
   font-family: var(--f-f-primary);

@@ -11,7 +11,7 @@ export const SECTIONS = [
   { name: 'Home', href: '/' },
   { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/' },
-  { name: 'Contact', href: '/' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 export const CONTACT = [

@@ -1,0 +1,59 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    max-width: 780px;
+    margin: 0 auto;
+
+    background-color: rgb(41, 41, 41);
+    padding: 30px;
+
+    border-radius: var(--main-border-radius);
+}
+
+.form> :nth-child(1),
+.form> :nth-child(2) {
+    grid-row: 1;
+}
+
+.form> :nth-child(n+3) {
+    grid-column: span 2;
+}
+
+.list-services {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.item-list {
+    padding: 1rem;
+    background-color: red;
+}
+
+.text-area {
+    max-width: 100%;
+    min-height: 150px;
+    line-height: 1.8;
+}
+
+.label {
+    margin-bottom: 12px;
+}
+
+.input {
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 48px;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .form {
+        padding: 60px 30px;
+    }
+
+}
