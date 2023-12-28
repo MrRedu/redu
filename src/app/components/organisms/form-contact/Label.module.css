@@ -1,0 +1,14 @@
+.label {
+    display: flex;
+    gap: 4px;
+
+    margin-bottom: 12px;
+
+    color: var(--c-whywhite-300);
+    font-size: var(--f-s-sm);
+    font-weight: var(--f-bold);
+}
+
+.label-required {
+    color: red;
+}

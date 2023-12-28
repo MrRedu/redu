@@ -6,7 +6,9 @@
     max-width: 780px;
     margin: 0 auto;
 
-    background-color: rgb(41, 41, 41);
+    background-color: var(--c-darkgray-600);
+
+    border: 1px solid var(--c-darkgray-400);
     padding: 30px;
 
     border-radius: var(--main-border-radius);
@@ -31,24 +33,18 @@
 
 .item-list {
     padding: 1rem;
-    background-color: red;
+
+    border: 1px solid var(--c-darkgray-400);
+}
+
+.item-list:hover {
+    border: 1px solid red;
 }
 
 .text-area {
     max-width: 100%;
     min-height: 150px;
     line-height: 1.8;
-}
-
-.label {
-    margin-bottom: 12px;
-}
-
-.input {
-    border-radius: 8px;
-    padding: 16px;
-    min-height: 48px;
-    margin-bottom: 24px;
 }
 
 @media screen and (min-width: 768px) {

@@ -1,5 +1,5 @@
 .card-connect {
-    border: 1px solid red;
+    border: 1px solid var(--c-darkgray-400);
 
     display: flex;
     flex-direction: column;

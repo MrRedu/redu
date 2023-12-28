@@ -6,19 +6,20 @@
     grid-template-columns: auto;
     gap: 2rem;
 
-    border-top: 2px solid red;
+    border-top: 2px solid var(--c-darkgray-400);
 }
 
 .principal {
     display: flex;
     flex-direction: column;
 }
+
 .principal .description {
     display: flex;
     flex-direction: column;
 }
 
-.principal .description span { 
+.principal .description span {
     font-size: var(--f-s-lg);
 }
 
@@ -46,7 +47,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .footer {    
+    .footer {
         padding: 4rem 3rem 2rem 3rem;
     }
 
@@ -63,9 +64,11 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
     .lists ul {
         flex-direction: row;
     }
+
     .lists .contact-list {
         width: 40vw;
     }
