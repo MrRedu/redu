@@ -45,12 +45,11 @@
 }
 
 body {
-  /* background-image: url('https://grainy-gradients.vercel.app/noise.svg'); */
   background-color: var(--c-darkgray-800);
-
   color: var(--c-whywhite-300);
-
   font-family: var(--f-f-primary);
+  line-height: 1.4;
+  font-size: var(--f-s-base);
 }
 
 ::selection {
