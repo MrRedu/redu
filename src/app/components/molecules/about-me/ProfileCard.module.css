@@ -10,6 +10,10 @@
     gap: 1rem;
 }
 
+.container ::selection {
+    background-color: red;
+}
+
 .title {
     display: flex;
     flex-direction: column;
@@ -33,6 +37,8 @@
 
 .image {
     width: 100%;
+    max-width: 320px;
+    align-self: center;
 }
 
 .image-caption {
@@ -40,7 +46,7 @@
     font-size: var(--f-s-sm);
 }
 
-.content {}
+/* .content {} */
 
 .content .subtitle {
     font-size: var(--f-s-base);

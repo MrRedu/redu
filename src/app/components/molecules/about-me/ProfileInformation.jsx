@@ -1,38 +1,55 @@
 import styles from './ProfileInformation.module.css'
+
+const Sector = ({ title, children }) => {
+  return (
+    <div className={styles.sector}>
+      <h4 className={styles.title}>{title}</h4>
+      <ul>{children}</ul>
+    </div>
+  )
+}
+
+const Item = ({ children }) => {
+  return <li className={styles.item}>{children}</li>
+}
+
+const TECHNOLOGIES_AND_TOOLS = [
+  'HTML5',
+  'CSS3',
+  'Tailwind CSS',
+  'JavaScript',
+  'React',
+  'Next.js',
+]
+
+// const LANGUAGES = ['English', 'Spanish', 'French']
+
+// const SOFTSKILLS = ['Teamwork', 'Leadership', 'Communication']
+
+// const HOBBIES = ['Cooking', 'Traveling', 'Reading', 'Photography']
+
+const SOFTWARE = ['Linux', 'Ubuntu', 'ZSH', 'BASH', 'GIT']
+
 export const ProfileInformation = () => {
   return (
     <div className={styles.container}>
-      <div>
-        <h4>Tools and technologies</h4>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Tailwind CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Next.js</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Software</h4>
-        <ul>
-          <li>Linux</li>
-          <li>Ubuntu</li>
-          <li>ZSH</li>
-          <li>BASH</li>
-          <li>GIT</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Title</h4>
-        <ul>
-          <li>avecesa</li>
-          <li>aveces</li>
-          <li>aveces</li>
-          <li>aveces</li>
-          <li>aveces</li>
-        </ul>
-      </div>
+      <Sector title="Technologies and tools">
+        {TECHNOLOGIES_AND_TOOLS.map(item => (
+          <Item key={item}>{item}</Item>
+        ))}
+      </Sector>
+      <Sector title="Software">
+        {SOFTWARE.map(item => (
+          <Item key={item}>{item}</Item>
+        ))}
+      </Sector>
+      <Sector title="Contact">
+        <li>Eduardo Rodríguez</li>
+        <li>
+          <a href="mailto:X">example@gmail.com</a>
+        </li>
+        <li>Maracay, Aragua - Venezuela</li>
+      </Sector>
     </div>
   )
 }
