@@ -1,4 +1,4 @@
-import { MoveUpRight } from 'lucide-react'
+import { MoveUpRight, Sparkle } from 'lucide-react'
 
 export const NAV = [
   { name: 'Projects', href: '/projects' },
@@ -18,4 +18,13 @@ export const CONTACT = [
   { name: 'LinkedIn', icon: <MoveUpRight />, href: '/' },
   { name: 'Twitter', icon: <MoveUpRight />, href: '/' },
   { name: 'Github', icon: <MoveUpRight />, href: 'https://github.com/MrRedu' },
+]
+
+export const SCROLL_ITEMS = [
+  { id: '1', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
+  { id: '2', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
+  { id: '3', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
+  { id: '4', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
+  { id: '5', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
+  { id: '6', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
 ]
