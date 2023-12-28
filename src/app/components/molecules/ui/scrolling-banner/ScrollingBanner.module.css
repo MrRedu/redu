@@ -12,7 +12,8 @@
     --move-initial: calc(-20% + var(--offset));
     --move-final: calc(-40% + var(--offset));
 
-    border: 1px solid var(--c-darkgray-400);
+    border-top: 1px solid var(--c-darkgray-400);
+    border-bottom: 1px solid var(--c-darkgray-400);
     margin-top: 2rem;
     margin-bottom: 2rem;
 }

@@ -7,7 +7,6 @@ export const ProfileCard = () => {
         <span className={styles.hi}>Hello</span>
         <span className={styles.name}> {`I'm Redu.`}</span>
       </h2>
-      {/* <picture></picture> */}
       <figure className={styles['image-container']}>
         <Image
           src={'https://avatars.githubusercontent.com/u/73679190?v=4'}
