@@ -1,30 +1,10 @@
 import styles from './ServicesSection.module.css'
 
-import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
+import { SERVICES } from '@/libs/constants'
 
 import { ServiceItem } from './ServiceItem'
-import { Section } from '../../atoms/ui/section/Section'
-
-const SERVICES = [
-  {
-    id: '01',
-    title: 'Webflow Development',
-    description:
-      'Crafting responsive websites in Webflow for flawless user experiences.',
-  },
-  {
-    id: '02',
-    title: 'Webflow Development',
-    description:
-      'Crafting responsive websites in Webflow for flawless user experiences.',
-  },
-  {
-    id: '03',
-    title: 'Webflow Development',
-    description:
-      'Crafting responsive websites in Webflow for flawless user experiences.',
-  },
-]
+import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
+import { Section } from '@/components/atoms/ui/section/Section'
 
 export const ServicesSection = () => {
   return (

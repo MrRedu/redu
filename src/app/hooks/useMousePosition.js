@@ -7,7 +7,7 @@ export function useMousePosition() {
 
   useEffect(() => {
     const updateMousePosition = e => {
-      setMousePosition({ x: e.pageX, y: e.pageY })
+      setMousePosition({ x: e.clientX, y: e.clientY })
     }
 
     window.addEventListener('mousemove', updateMousePosition)
