@@ -1,0 +1,12 @@
+export * from './HtmlIcon'
+export * from './CssIcon'
+export * from './TailwindCssIcon'
+export * from './JavaScriptIcon'
+export * from './ReactIcon'
+export * from './NextjsIcon'
+
+export * from './LinuxIcon'
+export * from './UbuntuIcon'
+export * from './ZshIcon'
+export * from './BashIcon'
+export * from './GitIcon'
