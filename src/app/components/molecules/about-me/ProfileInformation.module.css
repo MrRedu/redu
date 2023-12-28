@@ -1,0 +1,18 @@
+.container {
+    background-color: rgb(112, 54, 54);
+    color: var(--c-darkgray-800);
+    min-height: 60vh;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1120px) {
+    .container {
+        padding: 40px 120px;
+    }
+}

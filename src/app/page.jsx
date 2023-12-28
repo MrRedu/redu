@@ -1,7 +1,7 @@
 import { ServicesSection } from '@/components/organisms/services-section/ServicesSection'
 import { CardConnect } from './components/molecules/card-connect/CardConnect'
 import { ScrollingBanner } from './components/molecules/ui/scrolling-banner/ScrollingBanner'
-// import { AboutMe } from './components/molecules/about-me/AboutMe'
+import { AboutMe } from './components/molecules/about-me/AboutMe'
 
 export const metadata = {
   title: 'Portfolio',
@@ -10,7 +10,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
-      {/* <AboutMe /> */}
+      <AboutMe />
       <CardConnect />
       <ScrollingBanner />
       <ServicesSection />

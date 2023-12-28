@@ -27,4 +27,7 @@ export const SCROLL_ITEMS = [
   { id: '4', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
   { id: '5', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
   { id: '6', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
+  { id: '7', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
+  { id: '8', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
+  { id: '9', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
 ]
