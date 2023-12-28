@@ -27,9 +27,17 @@
   /* Colors */
   --c-whywhite-300: #F5FFFA;
 
-  --c-gray-500: #828282;
   --c-gray-300: #bdbdbd;
+  --c-gray-500: #828282;
 
+  --c-darkgray-50: #5e5e5e;
+  --c-darkgray-100: #4d4d4d;
+  --c-darkgray-200: #3e3e3e;
+  --c-darkgray-300: #333333;
+  --c-darkgray-400: #282828;
+  --c-darkgray-500: #1e1e1e;
+  --c-darkgray-600: #181818;
+  --c-darkgray-700: #111111;
   --c-darkgray-800: #0e0e0e;
 
   /* BorderRadius */
