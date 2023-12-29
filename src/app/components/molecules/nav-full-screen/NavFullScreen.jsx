@@ -7,13 +7,9 @@ export const NavFullScreen = () => {
   return (
     <nav className={styles['nav-full-screen']}>
       <ul className={styles['nav-list']}>
-        {NAV.map(nav => (
-          <LinkItem
-            key={nav.name}
-            href={nav.href}
-            className={'nav-item-mobile'}
-          >
-            {nav.name}
+        {NAV.map(({ name, href }) => (
+          <LinkItem key={name} href={href} className={'nav-item-mobile'}>
+            {name}
           </LinkItem>
         ))}
       </ul>

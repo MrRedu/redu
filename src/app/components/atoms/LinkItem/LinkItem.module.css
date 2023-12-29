@@ -1,4 +1,4 @@
-.nav-item-mobile {
+.nav-item-mobile a {
     margin-bottom: 2rem;
     font-size: var(--f-s-xxxl);
     font-weight: var(--f-bold);
