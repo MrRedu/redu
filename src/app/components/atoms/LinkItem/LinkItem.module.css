@@ -4,9 +4,7 @@
     font-weight: var(--f-bold);
 }
 
-.nav-item-desktop {
-    font-size: var(--f-s-base);
-}
+/* .nav-item-desktop a {} */
 
 .link {
     text-decoration: none;
