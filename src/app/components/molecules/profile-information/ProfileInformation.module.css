@@ -1,8 +1,9 @@
 .container {
     background-color: var(--c-darkgray-700);
     color: var(--c-whywhite-300);
-    min-height: 60vh;
 
+    min-height: 60vh;
+    height: 100%;
     padding: 40px;
 
     display: flex;

@@ -3,7 +3,7 @@ import styles from './Item.module.css'
 export const Item = ({ icon, title }) => {
   return (
     <li className={styles.item}>
-      {icon}
+      <span className={styles.icon}>{icon}</span>
       <span className={styles.title}>{title}</span>
     </li>
   )

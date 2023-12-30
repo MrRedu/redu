@@ -1,12 +1,21 @@
 import Image from 'next/image'
 import styles from './ProfileCard.module.css'
-export const ProfileCard = () => {
+
+const Header = () => {
   return (
-    <div className={styles.container}>
+    <header>
       <h2 className={styles.title}>
         <span className={styles.hi}>Hello</span>
         <span className={styles.name}> {`I'm Redu.`}</span>
       </h2>
+    </header>
+  )
+}
+
+export const ProfileCard = () => {
+  return (
+    <article className={styles.container}>
+      <Header />
       <figure className={styles['image-container']}>
         <Image
           src={'https://avatars.githubusercontent.com/u/73679190?v=4'}
@@ -27,6 +36,6 @@ export const ProfileCard = () => {
           possimus, accusantium dignissimos voluptate.
         </p>
       </div>
-    </div>
+    </article>
   )
 }

@@ -1,7 +1,7 @@
 .item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 0.5rem;
 
@@ -9,21 +9,29 @@
     border-radius: var(--main-border-radius);
 }
 
-.item:hover svg [fill] {
-    fill: currentColor;
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
 }
 
 .title {
     font-size: var(--f-s-sm);
     text-align: center;
+    text-wrap: nowrap;
+    user-select: none;
+    pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
     .item {
-        transition: box-shadow .4s ease;
+        flex-direction: row;
+        gap: 1rem;
     }
 
-    .item:hover {
-        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .8);
+    .item:hover svg [fill] {
+        fill: currentColor;
     }
 }
