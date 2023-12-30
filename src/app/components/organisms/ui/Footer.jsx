@@ -1,6 +1,7 @@
 import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
 import styles from './Footer.module.css'
 import { CONTACT, SECTIONS } from '@/libs/constants'
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
@@ -8,9 +9,9 @@ export const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.principal}>
           <span className={styles.logo}>
-            <a href="/" className={styles.link}>
+            <Link href="/" className={styles.link}>
               REDU
-            </a>
+            </Link>
           </span>
 
           <div className={styles.description}>

@@ -2,6 +2,7 @@ import { TOOLS_AND_TECHNOLOGIES, SOFTWARE } from '@/libs/constants'
 import styles from './ProfileInformation.module.css'
 import { Sector } from './Sector'
 import { Item } from './Item'
+import { ItemContact } from './ItemContact'
 
 export const ProfileInformation = () => {
   return (
@@ -17,11 +18,11 @@ export const ProfileInformation = () => {
         ))}
       </Sector>
       <Sector title="Contact" layout={'flex'}>
-        <li>Eduardo Rodríguez</li>
-        <li>
-          <a href="mailto:X">example@gmail.com</a>
-        </li>
-        <li>Maracay, Aragua - Venezuela</li>
+        <ItemContact>Eduardo Rodríguez</ItemContact>
+        <ItemContact>
+          <ItemContact.IsALink>me@redu.com</ItemContact.IsALink>
+        </ItemContact>
+        <ItemContact>Maracay / Venezuela</ItemContact>
       </Sector>
     </div>
   )

@@ -1,14 +1,15 @@
 import propTypes from 'prop-types'
 
 import styles from './LinkItem.module.css'
+import Link from 'next/link'
 
 export const LinkItem = ({ href, children, icon, className, type }) => {
   return (
     <li className={`${styles[className]}`}>
-      <a href={href} className={`${styles.link} ${type && styles[type]}`}>
+      <Link href={href} className={`${styles.link} ${type && styles[type]}`}>
         {children}
         {icon && icon}
-      </a>
+      </Link>
     </li>
   )
 }

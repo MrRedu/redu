@@ -1,5 +1,5 @@
 import propTypes from 'prop-types'
-export const BashIcon = ({ color = '#4EAA25' }) => {
+export const BashIcon = ({ color = '#3E474A' }) => {
   return (
     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <title>GNU Bash</title>

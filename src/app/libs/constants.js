@@ -11,12 +11,12 @@ import {
   ZshIcon,
   BashIcon,
   GitIcon,
-} from '#/public/svg/icons'
+  FigmaIcon,
+} from '@/components/atoms/icons'
 
 export const NAV = [
   { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/about' },
-  { name: 'Services', href: '/' },
   { name: 'Start project', href: '/contact', type: 'primary' },
 ]
 
@@ -86,7 +86,7 @@ export const TOOLS_AND_TECHNOLOGIES = [
     title: 'Tailwind CSS',
   },
   {
-    icon: <JavaScriptIcon />, 
+    icon: <JavaScriptIcon />,
     title: 'JavaScript',
   },
   {
@@ -119,5 +119,9 @@ export const SOFTWARE = [
   {
     title: 'GIT',
     icon: <GitIcon />,
+  },
+  {
+    title: 'Figma',
+    icon: <FigmaIcon />,
   },
 ]

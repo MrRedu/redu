@@ -5,6 +5,7 @@
     
     position: sticky;
     top: 0;
+    z-index: 50;
 
     width: 100%;
     padding: 0 1rem;
@@ -23,9 +24,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    .header {    
+    .header {
         padding: 0 3rem;
-    
+
         min-height: 86px;
     }
 }
