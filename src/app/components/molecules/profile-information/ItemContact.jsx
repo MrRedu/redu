@@ -15,3 +15,7 @@ ItemContact.IsALink = IsALink
 ItemContact.propTypes = {
   children: propTypes.node,
 }
+
+IsALink.propTypes = {
+  children: propTypes.node,
+}
