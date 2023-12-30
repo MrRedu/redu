@@ -1,10 +1,11 @@
 import propTypes from 'prop-types'
 import styles from './ItemContact.module.css'
+import Link from 'next/link'
 const IsALink = ({ children }) => {
   return (
-    <a href="mailto:x" className={styles.link}>
+    <Link href="mailto:x" className={styles.link}>
       {children}
-    </a>
+    </Link>
   )
 }
 export const ItemContact = ({ children }) => {
