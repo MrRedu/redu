@@ -36,6 +36,7 @@
     background-image: radial-gradient(circle closest-side at 50% 50%, rgba(255, 255, 255, 0), rgba(255, 255, 255, .04));
     border-radius: 50%;
     position: absolute;
+    pointer-events: none;
 }
 
 .bg-circle-1 {
