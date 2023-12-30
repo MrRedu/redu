@@ -12,11 +12,16 @@ export const FormContact = () => {
     <form action="" className={styles.form}>
       <GroupForm>
         <Label htmlFor="name" isRequired>{`What's your name?`}</Label>
-        <Input type="text" id="name" placeholder="Your name" isRequired />
+        <Input type="text" id="name" placeholder="Eduardo" isRequired />
       </GroupForm>
       <GroupForm>
         <Label htmlFor="email" isRequired>{`How can I contact you?`}</Label>
-        <Input type="email" id="email" placeholder="Your email" isRequired />
+        <Input
+          type="email"
+          id="email"
+          placeholder="your@email.com"
+          isRequired
+        />
       </GroupForm>
       <GroupForm>
         <Label
