@@ -1,0 +1,51 @@
+.button {
+    background-color: var(--c-whywhite-300);
+    color: var(--c-darkgray-800);
+
+    min-height: 32px;
+    font-size: var(--f-s-sm);
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button.primary {
+    border-radius: var(--border-radius-button);
+}
+
+.button.small {
+    min-height: 24px;
+}
+
+.button.medium {
+    min-height: 44px;
+}
+
+.button.large {
+    min-height: 52px;
+}
+
+.text {
+    font-weight: var(--f-bold);
+}
+
+.icon {
+    display: grid;
+    place-content: center;
+}
+
+.left-icon {
+    margin-left: 12px;
+}
+
+.right-icon {
+    margin-right: 12px;
+}
