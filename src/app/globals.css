@@ -42,6 +42,7 @@
 
   /* BorderRadius */
   --main-border-radius: .875rem;
+  --border-radius-button: 6.25rem;
 }
 
 body {
