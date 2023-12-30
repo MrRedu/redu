@@ -1,14 +1,21 @@
-.card-connect {
-    border: 1px solid var(--c-darkgray-400);
-
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
 
-    padding: 4rem 0;
+    padding: 100px;
 
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid var(--c-darkgray-100);
     border-radius: var(--main-border-radius);
+}
+
+.helper-text,
+.title {
+    text-align: center;
 }
 
 .helper-text {
@@ -16,5 +23,31 @@
 }
 
 .title {
-    font-size: var(--f-s-xl);
+    font-size: var(--f-s-xxl);
+    margin-top: 10px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+
+.bg-circle {
+    width: 1080px;
+    height: 1080px;
+    background-image: radial-gradient(circle closest-side at 50% 50%, rgba(255, 255, 255, 0), rgba(255, 255, 255, .04));
+    border-radius: 50%;
+    position: absolute;
+}
+
+.bg-circle-1 {
+    top: -37.5em;
+    bottom: auto;
+    left: auto;
+    right: -34em;
+}
+
+.bg-circle-2 {
+    bottom: -37.5em;
+    left: -34em;
+    top: auto;
+    right: auto;
 }

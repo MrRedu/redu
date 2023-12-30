@@ -19,6 +19,7 @@
 
 .button.primary {
     border-radius: var(--border-radius-button);
+    padding: 1rem 2rem;
 }
 
 .button.small {
@@ -35,6 +36,7 @@
 
 .text {
     font-weight: var(--f-bold);
+    text-transform: uppercase;
 }
 
 .icon {
