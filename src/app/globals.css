@@ -40,6 +40,8 @@
   --c-darkgray-700: #111111;
   --c-darkgray-800: #0e0e0e;
 
+  --c-red: #FF0000;
+
   /* BorderRadius */
   --main-border-radius: .875rem;
   --border-radius-button: 6.25rem;
