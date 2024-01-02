@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 const validateEmailFormat = email => {
+  //   eslint-disable-next-line no-useless-escape
   const EMAIL_REGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 
   const urlValidation = EMAIL_REGEX.test(email)
