@@ -33,20 +33,22 @@
     z-index: -1;
 }
 
-.input:hover+.div {
-    background-color: var(--c-darkgray-500);
-}
-
 .input:checked+.div {
     border-color: var(--c-darkgray-400);
     background-color: var(--c-darkgray-600);
 }
 
-.input:focus+.div {
-    border-color: var(--c-darkgray-500);
-}
-
 .text {
     position: relative;
     font-size: var(--f-s-sm);
+}
+
+@media screen and (min-width: 920px) {
+    .input:hover+.div {
+        background-color: var(--c-darkgray-500);
+    }
+
+    .input:focus+.div {
+        border-color: var(--c-darkgray-500);
+    }
 }
