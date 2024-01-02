@@ -72,7 +72,6 @@ export const SCROLL_ITEMS = [
 ]
 
 export const TOOLS_AND_TECHNOLOGIES = [
-  // color={`var(--c-whywhite-300)`}
   {
     icon: <HtmlIcon />,
     title: 'HTML5',

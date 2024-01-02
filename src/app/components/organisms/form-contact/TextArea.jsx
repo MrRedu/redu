@@ -2,6 +2,8 @@ import propTypes from 'prop-types'
 import styles from './TextArea.module.css'
 export const TextArea = ({
   children,
+  value,
+  handleChange,
   cols,
   rows,
   placeholder,
@@ -15,6 +17,8 @@ export const TextArea = ({
       className={styles['text-area']}
       name={name}
       id={id}
+      onChange={handleChange}
+      value={value}
       cols={cols}
       rows={rows}
       placeholder={placeholder}
@@ -36,4 +40,5 @@ TextArea.propTypes = {
   cols: propTypes.string,
   rows: propTypes.string,
   value: propTypes.string,
+  handleChange: propTypes.func,
 }

@@ -1,12 +1,21 @@
 import propTypes from 'prop-types'
 import styles from './Input.module.css'
 
-export const Input = ({ type, placeholder, isRequired, name, id, value }) => {
+export const Input = ({
+  handleChange,
+  type,
+  placeholder,
+  isRequired,
+  name,
+  id,
+  value,
+}) => {
   return (
     <input
+      value={value}
+      onChange={handleChange}
       type={type}
       name={name}
-      value={value}
       id={id}
       placeholder={placeholder}
       className={styles.input}
@@ -16,6 +25,7 @@ export const Input = ({ type, placeholder, isRequired, name, id, value }) => {
 }
 
 Input.propTypes = {
+  handleChange: propTypes.func,
   type: propTypes.string,
   placeholder: propTypes.string,
   isRequired: propTypes.bool,

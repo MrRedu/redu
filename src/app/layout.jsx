@@ -8,8 +8,6 @@ import '#/node_modules/minireset.css/minireset.min.css'
 import { Header, Footer } from './components/organisms/ui'
 import { FollowMousePointer } from '#/src/app/components/atoms/ui/follow-mouse-pointer/FollowMousePointer'
 
-// import { Grain } from '@/components/atoms/ui/grain/Grain'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -26,7 +24,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {/* <Grain /> */}
         <main>{children}</main>
         <Footer />
         <FollowMousePointer />
