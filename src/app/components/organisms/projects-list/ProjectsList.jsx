@@ -44,7 +44,7 @@ export const ProjectsList = () => {
   )
 }
 
-ProjectsList.propTypes = {
+ProjectItemList.propTypes = {
   id: propTypes.string,
   title: propTypes.string,
   description: propTypes.string,
