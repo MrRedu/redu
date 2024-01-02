@@ -1,4 +1,4 @@
-import styles from './AboutMe.module.css'
+import styles from './AboutMeCard.module.css'
 
 import { Section } from '@/components/atoms/ui/section/Section'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
@@ -6,7 +6,7 @@ import { CategoryTitle } from '@/components/molecules/category-title/CategoryTit
 import { ProfileCard } from '../../molecules/profile-card/ProfileCard'
 import { ProfileInformation } from '../../molecules/profile-information/ProfileInformation'
 
-export const AboutMe = () => {
+export const AboutMeCard = () => {
   return (
     <Section>
       <CategoryTitle>About Me</CategoryTitle>

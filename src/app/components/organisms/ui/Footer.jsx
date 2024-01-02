@@ -35,6 +35,7 @@ export const Footer = () => {
                 key={contact.name}
                 href={contact.href}
                 icon={contact.icon}
+                target="_blank"
               >
                 {contact.name}
               </LinkItem>

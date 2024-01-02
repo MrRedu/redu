@@ -15,8 +15,8 @@ import {
 } from '@/components/atoms/icons'
 
 export const NAV = [
-  { name: 'Projects', href: '/projects' },
   { name: 'About', href: '/about' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Start project', href: '/contact', type: 'primary' },
 ]
 
