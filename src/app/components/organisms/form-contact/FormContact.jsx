@@ -10,13 +10,6 @@ import { Input } from './Input'
 import { TextArea } from './TextArea'
 import { MultipleSelect } from '../../molecules/multiple-select/MultipleSelect'
 
-// const SERVICES_OFFERED = [
-//   'Web Design',
-//   'Landing Pages',
-//   'Branding',
-//   'Packaging',
-// ]
-
 export const FormContact = () => {
   const formDataInitialState = {
     name: '',
@@ -75,18 +68,6 @@ export const FormContact = () => {
       </GroupForm>
       <GroupForm>
         <Label htmlFor="" isRequired>{`What services do you need?`}</Label>
-        {/* <ul className={styles['list-services']}>
-          {formData.services.map(service => (
-            <li key={service} className={styles['item-list']}>
-              {service}
-            </li>
-          ))}
-        </ul> */}
-        {/* <select>
-          {SERVICES_OFFERED.map(service => (
-            <option key={service}>{service}</option>
-          ))}
-        </select> */}
         <MultipleSelect />
       </GroupForm>
       <GroupForm>
