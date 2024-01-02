@@ -31,7 +31,8 @@
         gap: 1rem;
     }
 
-    .item:hover svg [fill] {
+
+    .item:hover .icon [fill] {
         fill: currentColor;
     }
 }

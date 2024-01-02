@@ -3,6 +3,7 @@
     color: var(--c-darkgray-800);
 
     min-height: 32px;
+    width: fit-content;
     font-size: var(--f-s-sm);
     text-decoration: none;
 
