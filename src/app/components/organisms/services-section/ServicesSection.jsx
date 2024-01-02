@@ -1,6 +1,6 @@
 import styles from './ServicesSection.module.css'
 
-import { SERVICES } from '@/libs/constants'
+import { SERVICES } from '@/utils/constants'
 
 import { ServiceItem } from './ServiceItem'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'

@@ -1,6 +1,6 @@
 import propTypes from 'prop-types'
 
-const ProjectItemList = ({ id, title, description }) => {
+const ProjectItemList = ({ title, description }) => {
   return (
     <li>
       <a href="">
@@ -31,7 +31,7 @@ const PROJECTS = [
 
 export const ProjectsList = () => {
   return (
-    <ul>
+    <ul  id="projects">
       {PROJECTS.map(({ id, title, description }) => (
         <ProjectItemList
           key={id}

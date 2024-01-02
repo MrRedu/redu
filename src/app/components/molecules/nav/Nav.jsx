@@ -1,7 +1,7 @@
 import propTypes from 'prop-types'
 
 import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
-import { NAV } from '@/libs/constants'
+import { NAV } from '@/utils/constants'
 
 import { MenuButton } from '@/components/atoms/MenuButton'
 import styles from './Nav.module.css'

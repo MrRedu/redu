@@ -1,4 +1,4 @@
-import { SCROLL_ITEMS } from '@/libs/constants'
+import { SCROLL_ITEMS } from '@/utils/constants'
 import styles from './ScrollingBanner.module.css'
 
 import { ScrollItem } from './ScrollItem'
