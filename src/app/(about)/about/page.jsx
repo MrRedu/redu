@@ -1,3 +1,5 @@
+import { AboutMeCard } from '@/components/organisms/about-me-card/AboutMeCard'
+
 export const metadata = {
   title: 'About me',
 }
@@ -5,7 +7,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <h2>AboutPage</h2>
+      <AboutMeCard />
     </>
   )
 }
