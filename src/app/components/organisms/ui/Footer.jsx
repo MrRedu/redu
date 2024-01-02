@@ -1,6 +1,6 @@
 import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
 import styles from './Footer.module.css'
-import { CONTACT, SECTIONS } from '@/libs/constants'
+import { CONTACT, SECTIONS } from '@/utils/constants'
 import Link from 'next/link'
 
 export const Footer = () => {
