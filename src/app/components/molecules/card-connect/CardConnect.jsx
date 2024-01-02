@@ -1,5 +1,5 @@
-import { Section } from '@/components/atoms/ui/section/Section'
 import styles from './CardConnect.module.css'
+import { Section } from '@/components/atoms/ui/section/Section'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 import { ArrowRight } from 'lucide-react'
 export const CardConnect = () => {
@@ -12,7 +12,7 @@ export const CardConnect = () => {
           href="/contact"
           type="primary"
           size="large"
-          rightIcon={<ArrowRight size={18} />}
+          rightIcon={<ArrowRight size={18} strokeWidth={2.4} />}
         >
           Learn More
         </Button>
