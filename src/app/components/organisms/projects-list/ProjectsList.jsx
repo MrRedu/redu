@@ -6,13 +6,13 @@ import { ProjectItemList } from './ProjectItemList'
 export const ProjectsList = () => {
   return (
     <ul id="projects" className={styles.list}>
-      {PROJECTS.map(({ id, href, title, description, image }) => (
+      {PROJECTS.map(({ id, href, title, tags, image }) => (
         <ProjectItemList
           key={id}
           id={id}
           href={href}
           title={title}
-          description={description}
+          tags={tags}
           image={image}
         />
       ))}

@@ -5,7 +5,7 @@ import styles from './ProjectItemList.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const ProjectItemList = ({ href = '#', title, description, image }) => {
+export const ProjectItemList = ({ href = '#', title, tags, image }) => {
   return (
     <li className={styles.item}>
       <Link href={href} target="_blank" className={styles.link}>
@@ -19,8 +19,14 @@ export const ProjectItemList = ({ href = '#', title, description, image }) => {
           />
         </div>
         <div className={styles.content}>
+          <ul className={styles.tags}>
+            {tags.map(tag => (
+              <li key={tag} className={styles.tag}>
+                {tag}
+              </li>
+            ))}
+          </ul>
           <span className={styles.title}>{title}</span>
-          <span className={styles.description}>{description}</span>
         </div>
       </Link>
     </li>
@@ -30,6 +36,6 @@ export const ProjectItemList = ({ href = '#', title, description, image }) => {
 ProjectItemList.propTypes = {
   href: propTypes.string,
   title: propTypes.string,
-  description: propTypes.string,
+  tags: propTypes.array,
   image: propTypes.string,
 }
