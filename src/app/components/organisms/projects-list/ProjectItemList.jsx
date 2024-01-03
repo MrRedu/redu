@@ -12,7 +12,7 @@ export const ProjectItemList = ({ href = '#', title, description, image }) => {
         <div className={styles['image-container']}>
           <Image
             src={image}
-            alt="Cosmic gradients"
+            alt={`${title} image`}
             width={1200}
             height={736}
             className={styles.image}
