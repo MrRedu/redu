@@ -1,4 +1,4 @@
-import { TOOLS_AND_TECHNOLOGIES, SOFTWARE } from '@/libs/constants'
+import { TOOLS_AND_TECHNOLOGIES, SOFTWARE } from '@/utils/constants'
 import styles from './ProfileInformation.module.css'
 import { Sector } from './Sector'
 import { Item } from './Item'

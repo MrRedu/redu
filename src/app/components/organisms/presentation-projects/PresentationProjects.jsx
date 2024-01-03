@@ -1,4 +1,3 @@
-// import propTypes from 'prop-types'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
 import styles from './PresentationProjects.module.css'
@@ -14,7 +13,11 @@ export const PresentationProjects = () => {
             Unleashing Digital Brilliance: Discover a Portfolio Fueled by
             Passion, Craftsmanship, and Creative Ingenuity.
           </p>
-          <Button href="#projects" type="primary" size="large">
+          <Button
+            href="#projects"
+            type="primary"
+            size="large"
+          >
             Projects
           </Button>
         </div>

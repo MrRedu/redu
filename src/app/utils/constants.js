@@ -124,3 +124,27 @@ export const SOFTWARE = [
     icon: <FigmaIcon />,
   },
 ]
+
+export const PROJECTS = [
+  {
+    id: '1',
+    href: 'https://gyphi.vercel.app/',
+    title: 'Gyphi',
+    image: '/projects/gyphi-project-image.png',
+    tags: ['App Web', 'Design'],
+  },
+  {
+    id: '2',
+    href: 'https://gyphi.vercel.app/',
+    title: 'Title 2',
+    image: '/projects/gyphi-project-image.png',
+    tags: ['tag1', 'tag2', 'tag3'],
+  },
+  {
+    id: '3',
+    href: 'https://gyphi.vercel.app/',
+    title: 'Title 3',
+    image: '/projects/gyphi-project-image.png',
+    tags: ['Landing Page', 'Design', 'tag3'],
+  },
+]
