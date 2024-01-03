@@ -1,0 +1,42 @@
+.item {
+    display: flex;
+
+    border-bottom: 1px solid var(--c-darkgray-400);
+    margin-bottom: 12px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 8px;
+}
+
+.image {
+    width: 200px;
+    object-fit: cover;
+    border-radius: var(--main-border-radius);
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title {
+    font-weight: var(--f-bold);
+}
+
+.description {
+    font-size: var(--f-s-sm);
+}
+
+@media screen and (min-width: 992px) {
+    .item {
+        margin-bottom: 24px;
+    }
+}
