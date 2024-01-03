@@ -1,7 +1,9 @@
 import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
 import styles from './Footer.module.css'
-import { CONTACT, SECTIONS } from '@/libs/constants'
+import { CONTACT, SECTIONS } from '@/utils/constants'
 import Link from 'next/link'
+import { DevInfo } from './DevInfo'
+import { Divider } from '@/components/atoms/ui/divider/Divider'
 
 export const Footer = () => {
   return (
@@ -43,11 +45,9 @@ export const Footer = () => {
           </ul>
         </div>
 
-        <hr />
+        <Divider />
 
-        <div className={styles.legal}>
-          <span>Licenses</span>
-        </div>
+        <DevInfo />
       </footer>
     </>
   )

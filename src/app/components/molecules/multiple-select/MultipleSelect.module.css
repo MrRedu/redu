@@ -9,6 +9,7 @@
 .item {
     padding: 16px;
     position: relative;
+    cursor: pointer;
 }
 
 .div {

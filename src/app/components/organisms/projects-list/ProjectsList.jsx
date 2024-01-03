@@ -1,51 +1,21 @@
-import propTypes from 'prop-types'
+import styles from './ProjectList.module.css'
 
-const ProjectItemList = ({ id, title, description }) => {
-  return (
-    <li>
-      <a href="">
-        <span className={title}>{title}</span>
-        <span className={description}>{description}</span>
-      </a>
-    </li>
-  )
-}
-
-const PROJECTS = [
-  {
-    id: '1',
-    title: 'Project 1',
-    description: 'Description 1',
-  },
-  {
-    id: '2',
-    title: 'Project 2',
-    description: 'Description 2',
-  },
-  {
-    id: '3',
-    title: 'Project 3',
-    description: 'Description 3',
-  },
-]
+import { PROJECTS } from '@/utils/constants'
+import { ProjectItemList } from './ProjectItemList'
 
 export const ProjectsList = () => {
   return (
-    <ul>
-      {PROJECTS.map(({ id, title, description }) => (
+    <ul id="projects" className={styles.list}>
+      {PROJECTS.map(({ id, href, title, tags, image }) => (
         <ProjectItemList
           key={id}
           id={id}
+          href={href}
           title={title}
-          description={description}
+          tags={tags}
+          image={image}
         />
       ))}
     </ul>
   )
-}
-
-ProjectItemList.propTypes = {
-  id: propTypes.string,
-  title: propTypes.string,
-  description: propTypes.string,
 }

@@ -6,6 +6,7 @@
     grid-template-columns: auto;
     gap: 2rem;
 
+    background-color: var(--c-darkgray-700);
     border-top: 2px solid var(--c-darkgray-400);
 }
 
