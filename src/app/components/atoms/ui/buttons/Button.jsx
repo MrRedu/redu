@@ -1,6 +1,26 @@
 import propTypes from 'prop-types'
 import styles from './Button.module.css'
 import Link from 'next/link'
+
+const LinkWrapper = ({ href, size, type, children }) => {
+  return (
+    <Link
+      href={href}
+      className={`${styles.button} ${styles[size]} ${styles[type]}`}
+    >
+      {children}
+    </Link>
+  )
+}
+
+const ButtonWrapper = ({ onClick, children }) => {
+  return <button onClick={onClick}>{children}</button>
+}
+
+const Icon = ({ children }) => {
+  return <span className={styles.icon}>{children}</span>
+}
+
 export const Button = ({
   children,
   leftIcon,
