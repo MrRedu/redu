@@ -3,6 +3,7 @@
     color: var(--c-darkgray-800);
 
     min-height: 32px;
+    height: auto;
     width: fit-content;
     font-size: var(--f-s-sm);
     text-decoration: none;
@@ -24,15 +25,15 @@
 }
 
 .button.small {
-    min-height: 24px;
+    height: 24px;
 }
 
 .button.medium {
-    min-height: 44px;
+    height: 44px;
 }
 
 .button.large {
-    min-height: 52px;
+    height: 52px;
 }
 
 .text {

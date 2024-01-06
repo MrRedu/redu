@@ -24,10 +24,7 @@
 .content .description {
     font-size: var(--f-s-base);
     text-wrap: balance;
-}
-
-.content :last-child {
-    margin-top: auto;
+    margin-bottom: 0.7rem;
 }
 
 .container> :nth-child(2) {
