@@ -12,21 +12,26 @@
     gap: 1rem;
 }
 
-.container> :nth-child(2) {
-    display: none;
-}
-
-.title {
+.content .title {
     letter-spacing: -.03ch;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 4rem;
     line-height: 1;
+    font-weight: var(--f-bold);
 }
 
-.description {
+.content .description {
     font-size: var(--f-s-base);
     text-wrap: balance;
+}
+
+.content :last-child {
+    margin-top: auto;
+}
+
+.container> :nth-child(2) {
+    display: none;
 }
 
 @media (min-width: 992px) {

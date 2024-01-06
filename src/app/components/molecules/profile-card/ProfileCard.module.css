@@ -12,7 +12,7 @@
 }
 
 .container ::selection {
-    background-color: red;
+    background-color: var(--c-violet-500);
 }
 
 .title {

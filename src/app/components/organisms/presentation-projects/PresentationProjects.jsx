@@ -12,8 +12,7 @@ export const PresentationProjects = () => {
           <CategoryTitle>Projects</CategoryTitle>
           <h2 className={styles.title}>Where Vision Meets Digital Reality</h2>
           <p className={styles.description}>
-            Unleashing Digital Brilliance: Discover a Portfolio Fueled by
-            Passion, Craftsmanship, and Creative Ingenuity.
+            Creating innovative and customized solutions.
           </p>
           <Button>
             <Button.ButtonWrapper

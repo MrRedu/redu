@@ -10,7 +10,7 @@ export const MenuButton = ({ handleClick, isOpened = false }) => {
       <button
         className={`${styles.button}  ${isOpened ? styles.opened : ''}`}
         onClick={handleClick}
-        aria-label="Main Menu"
+        aria-label="Mobile menu button"
       >
         <svg viewBox="0 0 100 100">
           <path
