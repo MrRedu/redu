@@ -8,13 +8,13 @@ export const CardConnect = () => {
       <div className={styles.container}>
         <p className={styles['helper-text']}>Have a project in mind?</p>
         <p className={styles.title}>Let’s Connect</p>
-        <Button
-          href="/contact"
-          type="primary"
-          size="large"
-          rightIcon={<ArrowRight size={18} strokeWidth={2.4} />}
-        >
-          Learn More
+        <Button>
+          <Button.LinkWrapper href="/contact" size="large" type="primary">
+            <Button.Text>Learn More</Button.Text>
+            <Button.Icon rightIcon>
+              <ArrowRight size={18} strokeWidth={2.4} />
+            </Button.Icon>
+          </Button.LinkWrapper>
         </Button>
 
         <div className={`${styles['bg-circle']} ${styles['bg-circle-1']}`} />
