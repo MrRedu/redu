@@ -39,6 +39,7 @@
 .text {
     font-weight: var(--f-bold);
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 .icon {
