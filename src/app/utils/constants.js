@@ -47,15 +47,15 @@ export const SERVICES = [
     title: 'Web Development',
     description: 'Crafting responsive websites for flawless user experiences.',
   },
+  // {
+  //   id: '02',
+  //   title: 'Web Development',
+  //   description: 'Crafting responsive websites for flawless user experiences.',
+  // },
   {
     id: '02',
-    title: 'Web Development',
-    description: 'Crafting responsive websites for flawless user experiences.',
-  },
-  {
-    id: '03',
     title: 'Collaboration',
-    description: 'Crafting responsive websites.',
+    description: 'Willing to collaborate on open source projects.',
   },
 ]
 

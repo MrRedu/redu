@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import styles from './ProfileCard.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -25,15 +26,16 @@ export const ProfileCard = () => {
           className={styles.image}
         />
         <figcaption className={styles['image-caption']}>
-          Photo/Image: XXXXX X.
+          Image: Name L.
         </figcaption>
       </figure>
       <div className={styles.content}>
-        <h3 className={styles.subtitle}>{`Here's how I came here...`}</h3>
+        <Link href="/about">
+          <h3 className={styles.subtitle}>{`Here's how I came here...`}</h3>
+        </Link>
         <p className={styles.description}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
-          similique. Doloribus, eligendi. Alias quam distinctio officia
-          possimus, accusantium dignissimos voluptate.
+          {`I've always been interested in doing things that I don't understand,
+          so... I'm still here...`}
         </p>
       </div>
     </article>

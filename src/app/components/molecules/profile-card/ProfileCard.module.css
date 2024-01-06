@@ -50,10 +50,19 @@
 
 /* .content {} */
 
+.content a {
+    color: var(--c-darkgray-800);
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
 .content .subtitle {
     font-size: var(--f-s-base);
     font-weight: var(--f-bold);
-    margin-bottom: 12px;
+    margin-bottom: 0.5rem;
 }
 
 .content .description {

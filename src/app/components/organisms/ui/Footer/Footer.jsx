@@ -4,6 +4,7 @@ import { CONTACT, SECTIONS } from '@/utils/constants'
 import Link from 'next/link'
 import { DevInfo } from './DevInfo'
 import { Divider } from '@/components/atoms/ui/divider/Divider'
+import { LetsConnect } from '@/components/atoms/lets-connect/LetsConnect'
 
 export const Footer = () => {
   return (
@@ -18,7 +19,8 @@ export const Footer = () => {
 
           <div className={styles.description}>
             <span>Have a great idea in mind?</span>
-            <span>Let’s Connect</span>
+            {/* <span>Let’s Connect</span> */}
+            <LetsConnect fontSize="--f-s-lg" />
           </div>
         </div>
 
