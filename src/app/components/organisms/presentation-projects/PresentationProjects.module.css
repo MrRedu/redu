@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    min-height: 70vh;
+    min-height: auto;
 
     display: grid;
     grid-template-columns: 100%;
@@ -12,26 +12,33 @@
     gap: 1rem;
 }
 
-.container> :nth-child(2) {
-    display: none;
-}
-
-.title {
+.content .title {
     letter-spacing: -.03ch;
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 4rem;
     line-height: 1;
+    font-weight: var(--f-bold);
 }
 
-.description {
+.content .description {
     font-size: var(--f-s-base);
+    text-wrap: balance;
+}
+
+.content :last-child {
+    margin-top: auto;
+}
+
+.container> :nth-child(2) {
+    display: none;
 }
 
 @media (min-width: 992px) {
     .container {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        min-height: 70vh;
     }
 
     .container> :nth-child(2) {
@@ -50,6 +57,6 @@
     }
 
     .description {
-        font-size: 18px
+        font-size: 18px;
     }
 }
