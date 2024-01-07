@@ -2,11 +2,12 @@ import propTypes from 'prop-types'
 import styles from './Button.module.css'
 import Link from 'next/link'
 
-const LinkWrapper = ({ children, href, size, type }) => {
+const LinkWrapper = ({ children, href, size, type, target }) => {
   return (
     <Link
       href={href}
       className={`${styles.button} ${styles[size]} ${styles[type]}`}
+      target={target}
     >
       {children}
     </Link>
@@ -70,6 +71,7 @@ LinkWrapper.propTypes = {
   href: propTypes.string,
   size: propTypes.string,
   type: propTypes.string,
+  target: propTypes.string,
 }
 
 Icon.propTypes = {

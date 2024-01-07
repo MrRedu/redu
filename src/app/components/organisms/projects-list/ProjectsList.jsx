@@ -2,12 +2,12 @@ import styles from './ProjectList.module.css'
 
 import { PROJECTS } from '@/utils/constants'
 import { ProjectItemList } from './ProjectItemList'
-import { CategoryTitle } from '../../molecules/category-title/CategoryTitle'
+import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
 
 export const ProjectsList = () => {
   return (
     <>
-      <CategoryTitle>Last Projects</CategoryTitle>
+      <CategoryTitle>Last projects</CategoryTitle>
       <ul id="projects" className={styles.list}>
         {PROJECTS.map(({ id, href, title, tags, image }) => (
           <ProjectItemList

@@ -8,7 +8,7 @@ import Link from 'next/link'
 export const ProjectItemList = ({ href = '#', title, tags, image }) => {
   return (
     <li className={styles.item}>
-      <Link href={href} target="_blank" className={styles.link}>
+      <Link href={href} className={styles.link}>
         <div className={styles['image-container']}>
           <Image
             src={image}

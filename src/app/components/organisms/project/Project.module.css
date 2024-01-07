@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.5rem;
+
+    align-items: start;
+    flex-direction: column;
+}
+
+.title {
+    font-size: var(--f-s-xxxl);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .header {
+        align-items: end;
+        flex-direction: row;
+    }
+
+}

@@ -1,8 +1,6 @@
 .button {
-    background-color: var(--c-whywhite-300);
-    color: var(--c-darkgray-800);
-
     min-height: 32px;
+    height: auto;
     width: fit-content;
     font-size: var(--f-s-sm);
     text-decoration: none;
@@ -16,41 +14,43 @@
     border: none;
     outline: none;
     cursor: pointer;
-}
 
-.button.primary {
     border-radius: var(--border-radius-button);
     padding: 1rem 2rem;
 }
 
+.button.primary {
+    background-color: var(--c-whywhite-300);
+    color: var(--c-darkgray-800);
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: var(--c-whywhite-300);
+    border: 1px solid var(--c-whywhite-300);
+}
+
 .button.small {
-    min-height: 24px;
+    height: 24px;
 }
 
 .button.medium {
-    min-height: 44px;
+    height: 44px;
 }
 
 .button.large {
-    min-height: 52px;
+    height: 52px;
 }
 
 .text {
     font-weight: var(--f-bold);
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 .icon {
     display: grid;
     place-content: center;
-}
-
-.left-icon {
-    margin-left: 12px;
-}
-
-.right-icon {
-    margin-right: 12px;
 }
 
 @media screen and (min-width: 920px) {

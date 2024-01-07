@@ -6,6 +6,7 @@ export const LetsConnect = ({
   margin,
   lineHeight = '1.2',
   color = '--c-whywhite-300',
+  textAlign = 'left',
 }) => {
   return (
     <Link
@@ -16,6 +17,7 @@ export const LetsConnect = ({
         lineHeight: `${lineHeight}`,
         textDecoration: 'none',
         color: `var(${color})`,
+        textAlign: `${textAlign}`,
       }}
     >
       <span>{`Let's Connect`}</span>
@@ -28,4 +30,5 @@ LetsConnect.propTypes = {
   margin: propTypes.string,
   lineHeight: propTypes.string,
   color: propTypes.string,
+  textAlign: propTypes.string,
 }

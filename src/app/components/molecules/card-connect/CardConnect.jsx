@@ -8,7 +8,11 @@ export const CardConnect = () => {
     <Section>
       <div className={styles.container}>
         <span className={styles['helper-text']}>Have a project in mind?</span>
-        <LetsConnect margin={'10px 0 24px 0'} lineHeight={'1.2'} />
+        <LetsConnect
+          margin={'10px 0 24px 0'}
+          lineHeight={'1.2'}
+          textAlign={'center'}
+        />
         <Button>
           <Button.LinkWrapper href="/contact" size="large" type="primary">
             <Button.Text>Learn More</Button.Text>
@@ -18,8 +22,20 @@ export const CardConnect = () => {
           </Button.LinkWrapper>
         </Button>
 
-        <div className={`${styles['bg-circle']} ${styles['bg-circle-1']}`} />
-        <div className={`${styles['bg-circle']} ${styles['bg-circle-2']}`} />
+        <div className={styles['cta-deco-wrapper']}>
+          <div className={styles['background-circle']} />
+          <div className={styles['circle-echo-wrapper']}>
+            <div
+              className={`${styles['background-circle']} ${styles['is-outer']}`}
+            />
+            <div
+              className={`${styles['background-circle']} ${styles['is-inner-2']}`}
+            />
+            <div
+              className={`${styles['background-circle']} ${styles['is-inner1']}`}
+            />
+          </div>
+        </div>
       </div>
     </Section>
   )
