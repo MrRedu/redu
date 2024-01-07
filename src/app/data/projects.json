@@ -2,14 +2,26 @@
   {
     "id": "gyphi",
     "title": "Gyphi",
+    "internUrl": "/projects/gyphi",
+    "tags": ["WebApp"],
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
     "url": "https://gyphi.vercel.app/",
-    "image": "/projects/gyphi.webp",
+    "images": [
+      "/projects/gyphi/gyphi-desktop-1.webp",
+      "/projects/gyphi/gyphi-desktop-2.webp",
+      "/projects/gyphi/gyphi-desktop-3.webp",
+      "/projects/gyphi/gyphi-mobile-1.webp"
+    ],
     "toolsAndTechnologies": ["Vite", "React", "CSS3", "React Router", "Auth0"]
   },
   {
-    "id": "2",
-    "title": "Título 2",
-    "description": "Información"
+    "id": "tidi-list",
+    "title": "TiDi List",
+    "internUrl": "/projects/gyphi",
+    "tags": ["WebApp"],
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
+    "url": "https://ti-di-list.vercel.app/",
+    "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
+    "toolsAndTechnologies": ["Vite", "React", "CSS3"]
   }
 ]

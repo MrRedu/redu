@@ -14,7 +14,7 @@ import { ScrollingBanner } from '@/components/molecules/ui/scrolling-banner/Scro
 
 export function Project({ projectId }) {
   const project = projectsData.find(project => project.id === projectId)
-  const { title, url, description, toolsAndTechnologies, image } = project
+  const { title, url, description, toolsAndTechnologies, images } = project
 
   if (!project) {
     return <h2>Project not found</h2>
@@ -49,14 +49,16 @@ export function Project({ projectId }) {
           />
         </article>
       </Section>
-      {image && (
+      {images && (
         <Section>
-          <div>
+          {/* <div> */}
+          {images.map((image, index) => (
             <Image
+              key={index}
               src={image}
               alt={`${title} image`}
-              width={1200}
-              height={736}
+              width={1920}
+              height={1080}
               style={{
                 width: '100%',
                 aspectRatio: '16 / 9',
@@ -65,7 +67,8 @@ export function Project({ projectId }) {
               }}
               //   className={styles.image}
             />
-          </div>
+          ))}
+          {/* </div> */}
         </Section>
       )}
       <ScrollingBanner />
