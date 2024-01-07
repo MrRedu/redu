@@ -128,21 +128,21 @@ export const SOFTWARE = [
 export const PROJECTS = [
   {
     id: '1',
-    href: 'https://gyphi.vercel.app/',
+    href: '/projects/gyphi',
     title: 'Gyphi',
     image: '/projects/gyphi.webp',
     tags: ['WebApp'],
   },
   {
     id: '2',
-    href: 'https://gyphi.vercel.app/',
+    href: '/projects/tidi-list',
     title: 'TiDi',
     image: '/projects/gyphi.webp',
     tags: ['tag1', 'tag2', 'tag3'],
   },
   {
     id: '3',
-    href: 'https://gyphi.vercel.app/',
+    href: '/projects/woothor',
     title: 'Woothor',
     image: '/projects/gyphi.webp',
     tags: ['Landing Page', 'Design', 'tag3', 'Design', 'tag3'],

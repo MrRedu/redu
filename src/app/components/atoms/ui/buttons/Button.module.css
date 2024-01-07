@@ -1,7 +1,4 @@
 .button {
-    background-color: var(--c-whywhite-300);
-    color: var(--c-darkgray-800);
-
     min-height: 32px;
     height: auto;
     width: fit-content;
@@ -17,11 +14,20 @@
     border: none;
     outline: none;
     cursor: pointer;
+
+    border-radius: var(--border-radius-button);
+    padding: 1rem 2rem;
 }
 
 .button.primary {
-    border-radius: var(--border-radius-button);
-    padding: 1rem 2rem;
+    background-color: var(--c-whywhite-300);
+    color: var(--c-darkgray-800);
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: var(--c-whywhite-300);
+    border: 1px solid var(--c-whywhite-300);
 }
 
 .button.small {
@@ -45,14 +51,6 @@
 .icon {
     display: grid;
     place-content: center;
-}
-
-.left-icon {
-    margin-left: 12px;
-}
-
-.right-icon {
-    margin-right: 12px;
 }
 
 @media screen and (min-width: 920px) {

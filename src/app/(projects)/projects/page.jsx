@@ -4,9 +4,6 @@ import { ScrollingBanner } from '@/components/molecules/ui/scrolling-banner/Scro
 import { Grain } from '@/components/atoms/ui/grain/Grain'
 import { ProjectsList } from '@/components/organisms/projects-list/ProjectsList'
 
-export const metadata = {
-  title: 'Projects',
-}
 
 export default function ProjectsPage() {
   return (

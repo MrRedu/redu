@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gyphi",
+    "title": "Gyphi",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
+    "url": "https://gyphi.vercel.app/",
+    "image": "/projects/gyphi.webp",
+    "toolsAndTechnologies": ["Vite", "React", "CSS3", "React Router", "Auth0"]
+  },
+  {
+    "id": "2",
+    "title": "Título 2",
+    "description": "Información"
+  }
+]
