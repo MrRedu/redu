@@ -1,12 +1,21 @@
+'use client'
 import propTypes from 'prop-types'
+import { useState } from 'react'
+
+import styles from './Nav.module.css'
 
 import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
 import { NAV } from '@/utils/constants'
 
 import { MenuButton } from '@/components/atoms/MenuButton'
-import styles from './Nav.module.css'
+import { NavFullScreen } from '../nav-full-screen/NavFullScreen'
 
-export const Nav = ({ handleClick, isOpened }) => {
+export const Nav = () => {
+  const [isOpened, setIsOpened] = useState()
+
+  const handleClick = () => {
+    setIsOpened(!isOpened)
+  }
   return (
     <nav className={styles.nav}>
       <div className={styles['nav-mobile']}>
@@ -27,6 +36,8 @@ export const Nav = ({ handleClick, isOpened }) => {
           ))}
         </ul>
       </div>
+
+      {isOpened && <NavFullScreen handleClick={handleClick} />}
     </nav>
   )
 }

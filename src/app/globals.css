@@ -27,7 +27,8 @@
   /* Colors */
   --c-whywhite-300: #F5FFFA;
 
-  --c-gray-300: #bdbdbd;
+  --c-gray-300: #b4b4b4;
+  --c-gray-400: #979797;
   --c-gray-500: #828282;
 
   --c-darkgray-50: #5e5e5e;
@@ -41,6 +42,9 @@
   --c-darkgray-800: #0e0e0e;
 
   --c-red: #FF0000;
+
+  --c-violet-400: #7835b8;
+  --c-violet-500: #6F24B5;
 
   /* BorderRadius */
   --main-border-radius: .875rem;

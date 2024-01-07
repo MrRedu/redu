@@ -47,15 +47,15 @@ export const SERVICES = [
     title: 'Web Development',
     description: 'Crafting responsive websites for flawless user experiences.',
   },
+  // {
+  //   id: '02',
+  //   title: 'Web Development',
+  //   description: 'Crafting responsive websites for flawless user experiences.',
+  // },
   {
     id: '02',
-    title: 'Web Development',
-    description: 'Crafting responsive websites for flawless user experiences.',
-  },
-  {
-    id: '03',
     title: 'Collaboration',
-    description: 'Crafting responsive websites.',
+    description: 'Willing to collaborate on open source projects.',
   },
 ]
 
@@ -122,29 +122,5 @@ export const SOFTWARE = [
   {
     title: 'Figma',
     icon: <FigmaIcon />,
-  },
-]
-
-export const PROJECTS = [
-  {
-    id: '1',
-    href: 'https://gyphi.vercel.app/',
-    title: 'Gyphi',
-    image: '/projects/gyphi-project-image.png',
-    tags: ['App Web', 'Design'],
-  },
-  {
-    id: '2',
-    href: 'https://gyphi.vercel.app/',
-    title: 'Title 2',
-    image: '/projects/gyphi-project-image.png',
-    tags: ['tag1', 'tag2', 'tag3'],
-  },
-  {
-    id: '3',
-    href: 'https://gyphi.vercel.app/',
-    title: 'Title 3',
-    image: '/projects/gyphi-project-image.png',
-    tags: ['Landing Page', 'Design', 'tag3'],
   },
 ]

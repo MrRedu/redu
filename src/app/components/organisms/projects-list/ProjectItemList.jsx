@@ -8,7 +8,7 @@ import Link from 'next/link'
 export const ProjectItemList = ({ href = '#', title, tags, image }) => {
   return (
     <li className={styles.item}>
-      <Link href={href} target="_blank" className={styles.link}>
+      <Link href={href} className={styles.link}>
         <div className={styles['image-container']}>
           <Image
             src={image}
@@ -19,14 +19,14 @@ export const ProjectItemList = ({ href = '#', title, tags, image }) => {
           />
         </div>
         <div className={styles.content}>
+          <span className={styles.title}>{title}</span>
           <ul className={styles.tags}>
-            {tags.map(tag => (
-              <li key={tag} className={styles.tag}>
+            {tags.map((tag, index) => (
+              <li key={index} className={styles.tag}>
                 {tag}
               </li>
             ))}
           </ul>
-          <span className={styles.title}>{title}</span>
         </div>
       </Link>
     </li>
