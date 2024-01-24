@@ -20,6 +20,10 @@
     min-width: 320px;
 }
 
+.image-container img {
+    transition: transform 0.2s ease-out;
+}
+
 .image {
     width: 100%;
     object-fit: cover;
@@ -94,7 +98,6 @@
     }
 
     .item:hover .link .image-container img {
-        transition: transform 0.2s;
         transform: scale(1.05);
     }
 

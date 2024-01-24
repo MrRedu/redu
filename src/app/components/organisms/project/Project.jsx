@@ -10,7 +10,7 @@ import { Section } from '@/components/atoms/ui/section/Section'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 import { Divider } from '@/components/atoms/ui/divider/Divider'
 import { DetailsProject } from './DetailsProject'
-import { ScrollingBanner } from '@/components/molecules/ui/scrolling-banner/ScrollingBanner'
+import { DoubleScrollBanner } from '@/components/molecules/ui/scroll-banners/DoubleScrollBanner'
 
 export function Project({ projectId }) {
   const project = projectsData.find(project => project.id === projectId)
@@ -71,7 +71,7 @@ export function Project({ projectId }) {
           {/* </div> */}
         </Section>
       )}
-      <ScrollingBanner />
+      <DoubleScrollBanner />
     </>
   )
 }
