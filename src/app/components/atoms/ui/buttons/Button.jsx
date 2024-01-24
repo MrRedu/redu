@@ -9,6 +9,7 @@ const LinkWrapper = ({ children, href, size, type, target }) => {
       className={`${styles.button} ${styles[size]} ${styles[type]}`}
       target={target}
     >
+      {type === 'primary' && <span className={styles.wave} />}
       {children}
     </Link>
   )
@@ -20,6 +21,7 @@ const ButtonWrapper = ({ children, onClick, size, type }) => {
       onClick={onClick}
       className={`${styles.button} ${styles[size]} ${styles[type]}`}
     >
+      {type === 'primary' && <span className={styles.wave} />}
       {children}
     </button>
   )

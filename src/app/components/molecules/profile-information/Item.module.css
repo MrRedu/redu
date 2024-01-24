@@ -20,7 +20,6 @@
 .title {
     font-size: var(--f-s-sm);
     text-align: center;
-    text-wrap: nowrap;
     user-select: none;
     pointer-events: none;
 }

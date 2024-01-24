@@ -23,5 +23,15 @@
     "url": "https://ti-di-list.vercel.app/",
     "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
     "toolsAndTechnologies": ["Vite", "React", "CSS3"]
+  },
+  {
+    "id": "fun-with-flags",
+    "title": "Fun with Flags",
+    "internUrl": "/projects/fun-with-flags",
+    "tags": ["WebApp"],
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
+    "url": "https://funwflags.vercel.app/",
+    "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
+    "toolsAndTechnologies": ["Next.js", "React", "CSS Modules", "PostCSS"]
   }
 ]

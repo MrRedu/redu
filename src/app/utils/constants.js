@@ -53,23 +53,25 @@ export const SERVICES = [
   //   description: 'Crafting responsive websites for flawless user experiences.',
   // },
   {
-    id: '02',
+    id: '05',
     title: 'Collaboration',
     description: 'Willing to collaborate on open source projects.',
   },
 ]
 
-export const SCROLL_ITEMS = [
+const scrollItems = [
   { id: '1', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
   { id: '2', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
-  { id: '3', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
-  { id: '4', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
-  { id: '5', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
-  { id: '6', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
-  { id: '7', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
-  { id: '8', title: 'Lets Connect!', dividerIcon: <Sparkle size={32} /> },
-  { id: '9', title: 'Web developer', dividerIcon: <Sparkle size={32} /> },
 ]
+
+const newItems = Array.from({ length: 6 }, (_, i) => ({
+  id: String(i + 3),
+  title: i % 2 === 0 ? 'Lets Connect!' : 'Web developer',
+  dividerIcon: <Sparkle size={32} />,
+  ariaHidden: true,
+}))
+
+export const SCROLL_ITEMS = scrollItems.slice(0, 2).concat(newItems)
 
 export const TOOLS_AND_TECHNOLOGIES = [
   {
