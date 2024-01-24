@@ -15,18 +15,20 @@ export function useForm(initialValue = {}) {
     setFormData({ ...formData, [name]: value })
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
 
     // TODO: implementar validación con un borde rojo
-    if (!validateEmailFormat(formData.email)) alert('Email inválido!')
+    if (!validateEmailFormat(formData.email)) return alert('Email inválido!')
 
-    console.table(formData)
+    const data = await fetch('/api/send', {
+      method: 'POST',
+    })
+    // const data = await result.json()
+    // console.log(data)
+
+    setFormData(initialValue)
   }
-
-  // useEffect(() => {
-  //   console.log(formData)
-  // }, [formData])
 
   return {
     formData,
