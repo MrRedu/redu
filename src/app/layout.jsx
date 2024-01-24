@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main>{children}</main>
+        <main style={{ maxWidth: '1440px', margin: '0 auto' }}>{children}</main>
         <Footer />
         <FollowMousePointer />
       </body>

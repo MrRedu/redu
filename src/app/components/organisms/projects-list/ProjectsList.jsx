@@ -8,7 +8,7 @@ import projectsData from '@/data/projects'
 export const ProjectsList = () => {
   return (
     <>
-      <CategoryTitle>Last projects</CategoryTitle>
+      <CategoryTitle>Projects</CategoryTitle>
       <ul id="projects" className={styles.list}>
         {projectsData.map(({ id, internUrl, title, tags, images }) => (
           <ProjectItemList

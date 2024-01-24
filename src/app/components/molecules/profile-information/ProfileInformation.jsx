@@ -22,7 +22,7 @@ export const ProfileInformation = () => {
         <ItemContact>
           <ItemContact.IsALink>me@redu.com</ItemContact.IsALink>
         </ItemContact>
-        <ItemContact>Maracay / Venezuela</ItemContact>
+        <ItemContact>Maracay / Venezuela 🇻🇪</ItemContact>
       </Sector>
     </div>
   )

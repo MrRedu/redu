@@ -43,12 +43,30 @@
 
   --c-red: #FF0000;
 
-  --c-violet-400: #7835b8;
-  --c-violet-500: #6F24B5;
-
   /* BorderRadius */
   --main-border-radius: .875rem;
   --border-radius-button: 6.25rem;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-red) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--c-red);
+  border-radius: 8px;
 }
 
 body {
