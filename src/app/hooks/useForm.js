@@ -21,11 +21,11 @@ export function useForm(initialValue = {}) {
     // TODO: implementar validación con un borde rojo
     if (!validateEmailFormat(formData.email)) return alert('Email inválido!')
 
-    const data = await fetch('/api/send', {
+    const result = await fetch('/api/send', {
       method: 'POST',
     })
-    // const data = await result.json()
-    // console.log(data)
+    const data = await result.json()
+    console.log(data)
 
     setFormData(initialValue)
   }
