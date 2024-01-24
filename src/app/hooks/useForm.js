@@ -24,10 +24,6 @@ export function useForm(initialValue = {}) {
     console.table(formData)
   }
 
-  // useEffect(() => {
-  //   console.log(formData)
-  // }, [formData])
-
   return {
     formData,
     handleChange,
