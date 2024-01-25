@@ -78,8 +78,8 @@ LinkWrapper.propTypes = {
 
 Icon.propTypes = {
   children: propTypes.node,
-  leftIcon: propTypes.node,
-  rightIcon: propTypes.node,
+  leftIcon: propTypes.bool,
+  rightIcon: propTypes.bool,
 }
 
 Text.propTypes = {

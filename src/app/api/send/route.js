@@ -21,7 +21,7 @@ export async function POST(req, res) {
         name,
         email,
         companyName,
-        services: ['pepe', 'juan'],
+        services: ['service-1', 'service-2'],
         message,
       }),
     })
