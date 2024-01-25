@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { toast } from 'sonner'
 
 const validateEmailFormat = email => {
   const EMAIL_REGEX = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/
@@ -30,6 +31,8 @@ export function useForm(initialValue = {}) {
       method: 'POST',
       body: formDataObj,
     })
+
+    toast.success('Email sent successfully!')
 
     setFormData(initialValue)
   }

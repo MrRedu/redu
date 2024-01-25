@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import '#/node_modules/minireset.css/minireset.min.css'
 
+import { Toaster } from 'sonner'
 import { Header, Footer } from './components/organisms/ui'
 import { FollowMousePointer } from '#/src/app/components/atoms/ui/follow-mouse-pointer/FollowMousePointer'
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main style={{ maxWidth: '1440px', margin: '0 auto' }}>{children}</main>
         <Footer />
+        <Toaster position="bottom-right" />
         <FollowMousePointer />
       </body>
     </html>
