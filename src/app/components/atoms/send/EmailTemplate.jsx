@@ -1,6 +1,5 @@
 // https://resend.com/docs/send-with-nextjs
 import propTypes from 'prop-types'
-import styles from './EmailTemplate.module.css'
 export const EmailTemplate = ({
   name,
   email,
@@ -8,22 +7,32 @@ export const EmailTemplate = ({
   services,
   message,
 }) => (
-  <div className={styles.container}>
-    <h1 className={styles.title}>Email from my portfolio web</h1>
-    <p className={`${styles.text} ${styles.name}`}>
-      {`I'm <strong>${name}</strong>`}
+  <div>
+    <h1>Email from my portfolio website 🚀</h1>
+    <p>
+      Name:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        ${name}
+      </span>
     </p>
-    <p className={`${styles.text} ${styles.email}`}>
-      E-mail: <strong>{email}</strong>
+    <p>
+      E-mail:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        {email}
+      </span>
     </p>
-    <p className={`${styles.text} ${styles.company}`}>
-      Company name: <strong>{companyName}</strong>
+    <p>
+      Company name:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        {companyName}
+      </span>
     </p>
-    <p className={`${styles.text} ${styles.services}`}>
-      {`Services requested: [${services.join(', ')}]`}
-    </p>
-    <p className={`${styles.text} ${styles.message}`}>
-      Project details: <strong>{message}</strong>
+    <p>{`Services requested: [${services.join(', ')}]`}</p>
+    <p>
+      Project details:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        {message}
+      </span>
     </p>
   </div>
 )
