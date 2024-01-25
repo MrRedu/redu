@@ -13,7 +13,9 @@ export const EmailTemplate = ({
     </h1>
     <p>My email is {email}</p>
     <p>My company name is {companyName}</p>
-    <p>{`I'm interested in`} {services.join(', ')}</p>
+    <p>
+      {`I'm interested in`} {services.join(', ')}
+    </p>
     <p>My message is {message}</p>
   </div>
 )
