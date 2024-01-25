@@ -1,20 +1,13 @@
 .container {
     display: flex;
     flex-direction: column;
-
-    background-color: var(--c-darkgray-800);
-    color: var(--c-whywhite-300);
 }
 
 .title {
     font-size: var(--f-s-xl);
     font-weight: var(--f-bold);
-
-    margin-bottom: 2rem;
 }
 
 .text {
     font-size: var(--f-s-base);
-
-    margin-bottom: 0.7rem;
 }

@@ -20,7 +20,7 @@ export const EmailTemplate = ({
       Company name: <strong>{companyName}</strong>
     </p>
     <p className={`${styles.text} ${styles.services}`}>
-      {`Services requested: <strong>${services.join(', ')}</strong>`}
+      {`Services requested: [${services.join(', ')}]`}
     </p>
     <p className={`${styles.text} ${styles.message}`}>
       Project details: <strong>{message}</strong>

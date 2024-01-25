@@ -9,8 +9,8 @@ const EXAMPLE_LIST = [
   },
   {
     id: '2',
-    value: 'branding',
-    name: 'Branding',
+    value: 'e-commerce',
+    name: 'E-commerce',
   },
   {
     id: '3',
