@@ -8,7 +8,9 @@ import {
 } from '@/components/molecules/ui/scroll-banners'
 
 export const metadata = {
-  title: 'Portfolio',
+  title: {
+    absolute: 'Redu',
+  },
 }
 
 export default function HomePage() {
