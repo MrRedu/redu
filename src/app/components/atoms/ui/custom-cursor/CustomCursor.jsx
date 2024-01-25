@@ -1,7 +1,7 @@
 'use client'
 import { useMousePosition } from '@/hooks/useMousePosition'
-import styles from './FollowMousePointer.module.css'
-export const FollowMousePointer = () => {
+import styles from './CustomCursor.module.css'
+export const CustomCursor = () => {
   const { mousePosition, opacity } = useMousePosition()
 
   return (
