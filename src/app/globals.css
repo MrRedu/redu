@@ -59,17 +59,17 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 2px;
 }
 
 *::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--c-red);
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 body {
