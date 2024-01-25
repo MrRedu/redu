@@ -15,13 +15,23 @@ export function useForm(initialValue = {}) {
     setFormData({ ...formData, [name]: value })
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
 
     // TODO: implementar validación con un borde rojo
-    if (!validateEmailFormat(formData.email)) alert('Email inválido!')
+    if (!validateEmailFormat(formData.email)) return alert('Email inválido!')
 
-    console.table(formData)
+    const formDataObj = new FormData()
+    for (const [key, value] of Object.entries(formData)) {
+      formDataObj.append(key, value)
+    }
+
+    await fetch('/api/send', {
+      method: 'POST',
+      body: formDataObj,
+    })
+
+    setFormData(initialValue)
   }
 
   return {

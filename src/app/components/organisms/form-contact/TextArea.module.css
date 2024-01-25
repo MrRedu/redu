@@ -13,6 +13,8 @@
     resize: none;
 
     transition: all 0.2s ease-out;
+
+    font-family: inherit;
 }
 
 .text-area:hover {

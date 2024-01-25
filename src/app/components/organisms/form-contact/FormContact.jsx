@@ -4,11 +4,15 @@ import styles from './FormContact.module.css'
 
 import { useForm } from '@/hooks/useForm'
 
+import { SendHorizontal } from 'lucide-react'
+
+import { MultipleSelect } from '@/components/molecules/multiple-select/MultipleSelect'
+import { Button } from '@/components/atoms/ui/buttons/Button'
+
 import { GroupForm } from './GroupForm'
 import { Label } from './Label'
 import { Input } from './Input'
 import { TextArea } from './TextArea'
-import { MultipleSelect } from '../../molecules/multiple-select/MultipleSelect'
 
 export const FormContact = () => {
   const formDataInitialState = {
@@ -84,18 +88,19 @@ export const FormContact = () => {
           isRequired
         ></TextArea>
       </GroupForm>
-      <GroupForm>
-        <button
-          type="submit"
-          onClick={handleSubmit}
-          style={{
-            minHeight: '44px',
-            borderRadius: 'var(--main-border-radius)',
-            cursor: 'pointer',
-          }}
-        >
-          Submit
-        </button>
+      <GroupForm style={{ display: 'flex', alignItems: 'end' }}>
+        <Button>
+          <Button.ButtonWrapper
+            onClick={handleSubmit}
+            size="large"
+            type="primary"
+          >
+            <Button.Text>Submit</Button.Text>
+            <Button.Icon rightIcon>
+              <SendHorizontal size={18} strokeWidth={2.4} />
+            </Button.Icon>
+          </Button.ButtonWrapper>
+        </Button>
       </GroupForm>
     </form>
   )
