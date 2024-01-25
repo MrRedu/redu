@@ -4,6 +4,10 @@ import { Grain } from '@/components/atoms/ui/grain/Grain'
 import { ProjectsList } from '@/components/organisms/projects-list/ProjectsList'
 import { SimpleScrollBanner } from '@/components/molecules/ui/scroll-banners/SimpleScrollBanner'
 
+export const metadata = {
+  title: 'Projects',
+}
+
 export default function ProjectsPage() {
   return (
     <>

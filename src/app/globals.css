@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* PAY ATTENTION, THIS FONT ISN'T  TO BE USED IN THIS PROJECT */
+
 :root {
   /* Font-size */
   --f-s-micro: clamp(0.64rem, 0.05vw + 0.63rem, 0.67rem);

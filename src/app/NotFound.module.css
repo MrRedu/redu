@@ -1,0 +1,79 @@
+@property --swing-x {
+    initial-value: 0;
+    inherits: false;
+    syntax: '<integer>';
+}
+
+@property --swing-y {
+    initial-value: 0;
+    inherits: false;
+    syntax: '<integer>';
+}
+
+.container {
+    --shadow: hsl(0, 0%, 0%);
+    --header: hsl(53, 0%, 48%);
+    --lit: -header hsl(53, 0%, 90%);
+    --speed: 2s;
+
+    min-height: 65dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    perspective: 1200px;
+
+    transform-style: preserve-3d;
+}
+
+.title {
+    animation: swing var(--speed) infinite alternate ease-in-out;
+    font-size: clamp(3rem, 32vmin, 16rem);
+    margin: 0;
+    /* margin-bottom: 1rem; */
+    /* letter-spacing: 1rem; */
+    transform: translate3d(0, 0, 0vmin) --x calc(50% + (var(--swing-x) * 0.5) * 1%);
+    background: radial-gradient(var(--lit-header), var(--header) 45%) var(--x) 100% / 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0.045);
+
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: difference;
+
+    transform-style: preserve-3d;
+}
+
+.title::before {
+    animation: swing var(--speed) infinite alternate ease-in-out;
+    content: "#404";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgba(0, 0, 0, 0.5);
+    filter: blur(1.5vmin);
+    transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%), calc((var(--swing-y) * 0.05) * 1%));
+}
+
+.description {
+    max-width: clamp(16rem, 90vmin, 25rem);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+@keyframes swing {
+    0% {
+        --swing-x: -100;
+        --swing-y: -100;
+    }
+
+    50% {
+        --swing-y: 0;
+    }
+
+    100% {
+        --swing-y: -100;
+        --swing-x: 100;
+    }
+}

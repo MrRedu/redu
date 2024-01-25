@@ -29,9 +29,17 @@
     "title": "Fun with Flags",
     "internUrl": "/projects/fun-with-flags",
     "tags": ["WebApp"],
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
+    "description": "Events timezone converter with flags. Easy to share on social networks.",
     "url": "https://funwflags.vercel.app/",
     "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
-    "toolsAndTechnologies": ["Next.js", "React", "CSS Modules", "PostCSS"]
+    "toolsAndTechnologies": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "NextAuth.js",
+      "next-intl",
+      "CSS Modules",
+      "PostCSS"
+    ]
   }
 ]
