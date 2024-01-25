@@ -71,7 +71,10 @@ export const FormContact = () => {
         />
       </GroupForm>
       <GroupForm>
-        <Label htmlFor="" isRequired>{`What services do you need?`}</Label>
+        <Label
+          // htmlFor="#"
+          isRequired
+        >{`What services do you need?`}</Label>
         <MultipleSelect />
       </GroupForm>
       <GroupForm>

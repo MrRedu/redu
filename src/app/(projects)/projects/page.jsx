@@ -2,7 +2,7 @@ import { PresentationProjects } from '@/components/organisms/presentation-projec
 import { Section } from '@/components/atoms/ui/section/Section'
 import { Grain } from '@/components/atoms/ui/grain/Grain'
 import { ProjectsList } from '@/components/organisms/projects-list/ProjectsList'
-import { DoubleScrollBanner } from '@/components/molecules/ui/scroll-banners/DoubleScrollBanner'
+import { SimpleScrollBanner } from '@/components/molecules/ui/scroll-banners/SimpleScrollBanner'
 
 export default function ProjectsPage() {
   return (
@@ -11,7 +11,7 @@ export default function ProjectsPage() {
       <Section>
         <PresentationProjects />
       </Section>
-      <DoubleScrollBanner />
+      <SimpleScrollBanner direction={'left'} speed={'slow'} />
       <Section>
         <ProjectsList />
       </Section>

@@ -75,6 +75,8 @@ body {
   font-family: var(--f-f-primary);
   line-height: 1.4;
   font-size: var(--f-s-base);
+
+  /* cursor: none; */
 }
 
 ::selection {

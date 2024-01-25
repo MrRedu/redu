@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 export function useMousePosition() {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null })
   const [bodyWidth, setBodyWidth] = useState(null)
-  const [bodyHeight, setBodyHeight] = useState(null)
+  const [opacity, setOpacity] = useState(1)
 
   useEffect(() => {
     const updateMousePosition = e => {
@@ -21,12 +21,22 @@ export function useMousePosition() {
     const screen = document.querySelector('body')
 
     setBodyWidth(screen.offsetWidth)
-    setBodyHeight(screen.offsetHeight)
   }, [])
+
+  useEffect(() => {
+    if (
+      mousePosition.x < 10 ||
+      mousePosition.y < 10 ||
+      mousePosition.x > bodyWidth - 40
+    ) {
+      setOpacity(0)
+    } else {
+      setOpacity(1)
+    }
+  }, [mousePosition, bodyWidth])
 
   return {
     mousePosition,
-    bodyWidth,
-    bodyHeight,
+    opacity,
   }
 }
