@@ -1,5 +1,6 @@
 // https://resend.com/docs/send-with-nextjs
 import propTypes from 'prop-types'
+import styles from './EmailTemplate.module.css'
 export const EmailTemplate = ({
   name,
   email,
@@ -7,16 +8,23 @@ export const EmailTemplate = ({
   services,
   message,
 }) => (
-  <div>
-    <h1>
-      {`I'm`} {name}
-    </h1>
-    <p>My email is {email}</p>
-    <p>My company name is {companyName}</p>
-    <p>
-      {`I'm interested in`} {services.join(', ')}
+  <div className={styles.container}>
+    <h1 className={styles.title}>Email from my portfolio web</h1>
+    <p className={`${styles.text} ${styles.name}`}>
+      {`I'm <strong>${name}</strong>`}
     </p>
-    <p>My message is {message}</p>
+    <p className={`${styles.text} ${styles.email}`}>
+      E-mail: <strong>{email}</strong>
+    </p>
+    <p className={`${styles.text} ${styles.company}`}>
+      Company name: <strong>{companyName}</strong>
+    </p>
+    <p className={`${styles.text} ${styles.services}`}>
+      {`Services requested: <strong>${services.join(', ')}</strong>`}
+    </p>
+    <p className={`${styles.text} ${styles.message}`}>
+      Project details: <strong>{message}</strong>
+    </p>
   </div>
 )
 EmailTemplate.propTypes = {

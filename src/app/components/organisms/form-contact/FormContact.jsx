@@ -87,7 +87,7 @@ export const FormContact = () => {
           name="message"
           handleChange={handleChange}
           value={formData.message}
-          placeholder="Share projects details"
+          placeholder="Share project details"
           isRequired
         ></TextArea>
       </GroupForm>
