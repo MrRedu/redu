@@ -14,10 +14,13 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: {
     template: '%s | Redu',
-    title: 'Redu',
+    default: 'Redu',
   },
-  description: 'Portfolio web',
-  keywords: ['portfolio', 'developer', 'frontend'],
+  authors: [{ name: 'Eduardo', url: 'https://github.com/MrRedu' }],
+  creator: 'Eduardo',
+  description:
+    'Explore my portfolio to see my web development projects. Discover my creativity and skills through my most recent and outstanding works.',
+  keywords: ['Portfolio', 'Developer', 'Front-End'],
 }
 
 export default function RootLayout({ children }) {
