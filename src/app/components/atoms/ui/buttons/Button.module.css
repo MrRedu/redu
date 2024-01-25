@@ -31,40 +31,8 @@
     border: 1px solid var(--c-whywhite-300);
 }
 
-.button.primary:hover .wave {
-    top: -150px;
-}
-
-.button.primary:hover {
-    color: var(--c-whywhite-300);
-    transition: color 0.3s ease-in-out;
-}
-
 .button.primary .wave {
-    position: absolute;
-    top: -60px;
-    left: 0;
-    width: 100%;
-    height: 220px;
-    background: #121212;
-    transition: 0.5s;
-}
-
-.button .wave::after,
-.button .wave::before {
-    content: "";
-    width: 250%;
-    height: 250%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: var(--c-whywhite-300);
-}
-
-.button .wave::before,
-.button .wave::after {
-    border-radius: 45%;
+    display: none;
 }
 
 .button.secondary {
@@ -107,5 +75,45 @@
 
     .button:hover .left-icon {
         transform: translateX(-6px);
+    }
+
+    /* _ */
+
+    .button.primary .wave {
+        display: block;
+        
+        position: absolute;
+        top: -60px;
+        left: 0;
+        width: 100%;
+        height: 220px;
+        background: #121212;
+        transition: 0.5s;
+    }
+
+    .button.primary:hover .wave {
+        top: -150px;
+    }
+
+    .button.primary:hover {
+        color: var(--c-whywhite-300);
+        transition: color 0.3s ease-in-out;
+    }
+
+    .button .wave::after,
+    .button .wave::before {
+        content: "";
+        width: 250%;
+        height: 250%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -75%);
+        background: var(--c-whywhite-300);
+    }
+
+    .button .wave::before,
+    .button .wave::after {
+        border-radius: 45%;
     }
 }
