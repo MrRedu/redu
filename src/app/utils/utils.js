@@ -7,3 +7,10 @@ export const smoothScroll = elementId => {
     })
   }
 }
+
+// Validations for forms
+export const validateEmailFormat = email => {
+  const EMAIL_REGEX = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/
+
+  return EMAIL_REGEX.test(email)
+}

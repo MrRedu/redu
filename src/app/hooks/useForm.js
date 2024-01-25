@@ -1,12 +1,6 @@
 import { useState } from 'react'
 import { toast } from 'sonner'
-
-const validateEmailFormat = email => {
-  const EMAIL_REGEX = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/
-
-  const urlValidation = EMAIL_REGEX.test(email)
-  return urlValidation
-}
+import { validateEmailFormat } from '@/utils/utils'
 
 export function useForm(initialValue = {}) {
   const [formData, setFormData] = useState(initialValue)
@@ -19,8 +13,13 @@ export function useForm(initialValue = {}) {
   const handleSubmit = async e => {
     e.preventDefault()
 
-    // TODO: implementar validación con un borde rojo
-    if (!validateEmailFormat(formData.email)) return alert('Email inválido!')
+    //  TODO: implementar validación con un borde rojo
+    //* TODO: implementar validación con un borde rojo
+    //! TODO: implementar validación con un borde rojo
+
+    if (!validateEmailFormat(formData.email)) {
+      return toast.error('Invalid email!')
+    }
 
     const formDataObj = new FormData()
     for (const [key, value] of Object.entries(formData)) {
