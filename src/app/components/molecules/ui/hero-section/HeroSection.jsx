@@ -16,8 +16,6 @@ export const HeroSection = () => {
           <li className={styles['social-item']}>
             <Briefcase size={36} />
           </li>
-          <li></li>
-          <li></li>
         </ul>
       </section>
     </>
