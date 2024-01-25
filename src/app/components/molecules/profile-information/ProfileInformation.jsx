@@ -18,7 +18,7 @@ export const ProfileInformation = () => {
         ))}
       </Sector>
       <Sector title="Contact" layout={'flex'}>
-        <ItemContact>Eduardo Rodríguez</ItemContact>
+        <ItemContact>Eduardo R.</ItemContact>
         <ItemContact>
           <ItemContact.IsALink>me@redu.com</ItemContact.IsALink>
         </ItemContact>
