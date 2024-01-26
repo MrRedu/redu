@@ -6,11 +6,15 @@ import { ScrollBanner } from '@/components/molecules/ui/infinite-scroll-banner/I
 
 import { SCROLL_ITEMS } from '@/utils/constants'
 
-export const SimpleScrollBanner = ({ direction, speed }) => {
+export const SimpleScrollBanner = ({
+  items = SCROLL_ITEMS,
+  direction,
+  speed,
+}) => {
   return (
     <ScrollBanner>
       <ScrollBanner.InfiniteScrollBanner
-        items={SCROLL_ITEMS}
+        items={items}
         direction={direction}
         speed={speed}
       />
@@ -19,6 +23,7 @@ export const SimpleScrollBanner = ({ direction, speed }) => {
 }
 
 SimpleScrollBanner.propTypes = {
+  items: propTypes.array,
   direction: propTypes.string,
   speed: propTypes.string,
 }

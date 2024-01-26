@@ -1,6 +1,5 @@
 import propTypes from 'prop-types'
 import { Project } from '@/components/organisms/project/Project'
-import { Grain } from '@/components/atoms/ui/grain/Grain'
 
 // export const metadata = {
 //   title: 'Redu',
@@ -11,7 +10,6 @@ import { Grain } from '@/components/atoms/ui/grain/Grain'
 export default function ProjectPage({ params: { projectId } }) {
   return (
     <>
-      <Grain />
       <Project projectId={projectId} />
     </>
   )
