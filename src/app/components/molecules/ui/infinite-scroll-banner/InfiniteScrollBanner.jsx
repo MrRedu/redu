@@ -7,7 +7,7 @@ import styles from './InfiniteScrollBanner.module.css'
 import { TagItem } from './tag-item/TagItem'
 
 const InfiniteScrollBanner = ({
-  items,
+  items = [],
   direction = 'right',
   speed = 'fast',
 }) => {

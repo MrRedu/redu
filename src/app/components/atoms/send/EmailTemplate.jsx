@@ -8,13 +8,32 @@ export const EmailTemplate = ({
   message,
 }) => (
   <div>
-    <h1>
-      {`I'm`} {name}
-    </h1>
-    <p>My email is {email}</p>
-    <p>My company name is {companyName}</p>
-    <p>{`I'm interested in`} {services.join(', ')}</p>
-    <p>My message is {message}</p>
+    <h1>Email from my portfolio website 🚀</h1>
+    <p>
+      Name:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        ${name}
+      </span>
+    </p>
+    <p>
+      E-mail:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        {email}
+      </span>
+    </p>
+    <p>
+      Company name:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        {companyName}
+      </span>
+    </p>
+    <p>{`Services requested: [${services.join(', ')}]`}</p>
+    <p>
+      Project details:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        {message}
+      </span>
+    </p>
   </div>
 )
 EmailTemplate.propTypes = {
