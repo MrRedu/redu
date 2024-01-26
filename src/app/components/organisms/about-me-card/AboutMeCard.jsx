@@ -10,7 +10,7 @@ export const AboutMeCard = () => {
   return (
     <Section>
       <CategoryTitle>About Me</CategoryTitle>
-      <div className={styles.container}>
+      <div className={styles.container} id={'about-me'}>
         <ProfileCard />
         <ProfileInformation />
       </div>

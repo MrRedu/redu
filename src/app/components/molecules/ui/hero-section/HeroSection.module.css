@@ -43,6 +43,24 @@
     font-weight: var(--f-bold)
 }
 
+.scroll-down-container {
+    cursor: pointer;
+    position: absolute;
+    bottom: 56px;
+    z-index: 10;
+
+    display: none;
+}
+
+.scroll-down-container .helper-text {
+    font-size: var(--f-s-sm);
+    color: var(--c-gray-300);
+
+    position: relative;
+    top: 14px;
+    left: 42px;
+}
+
 .image-container {
     position: absolute;
     top: -10%;
@@ -86,6 +104,10 @@
 
     .content-container .content .arrow {
         margin-bottom: 3rem;
+    }
+
+    .scroll-down-container {
+        display: block;
     }
 
 }
