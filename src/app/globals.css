@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-/* PAY ATTENTION, THIS FONT ISN'T  TO BE USED IN THIS PROJECT */
-
 :root {
   /* Font-size */
   --f-s-micro: clamp(0.64rem, 0.05vw + 0.63rem, 0.67rem);
@@ -44,7 +41,17 @@
   --c-darkgray-700: #111111;
   --c-darkgray-800: #0e0e0e;
 
-  --c-red: #FF0000;
+  --c-red-50: #fff0f0;
+  --c-red-100: #ffdddd;
+  --c-red-200: #ffc0c0;
+  --c-red-300: #ff9494;
+  --c-red-400: #ff5757;
+  --c-red-500: #ff2323;
+  --c-red-600: #ff0000;
+  --c-red-700: #d70000;
+  --c-red-800: #b10303;
+  --c-red-900: #920a0a;
+  --c-red-950: #500000;
 
   /* BorderRadius */
   --main-border-radius: .875rem;
@@ -54,7 +61,7 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--c-red) transparent;
+  scrollbar-color: var(--c-red-600) transparent;
 }
 
 /* Chrome, Edge, and Safari */
@@ -68,7 +75,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--c-red);
+  background-color: var(--c-red-600);
   border-radius: 2px;
 }
 
