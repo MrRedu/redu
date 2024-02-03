@@ -9,12 +9,7 @@
 
 .container .container-image {
     overflow: hidden;
-
     transition: border-radius 0.2s ease-out;
-}
-
-.container:hover .container-image {
-    border-radius: var(--main-border-radius);
 }
 
 .container .image {
@@ -22,10 +17,6 @@
     aspect-ratio: 1/1;
 
     transition: transform 0.2s ease-out;
-}
-
-.container:hover .container-image .image {
-    transform: scale(1.05);
 }
 
 .content {
@@ -61,8 +52,16 @@
     color: var(--c-darkgray-800);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .container {
         gap: 1rem;
+    }
+
+    .container:hover .container-image {
+        border-radius: var(--main-border-radius);
+    }
+
+    .container:hover .container-image .image {
+        transform: scale(1.05);
     }
 }
