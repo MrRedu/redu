@@ -1,0 +1,31 @@
+.highlight {
+    position: relative;
+    display: inline-flex;
+
+    --green: 42, 148, 70;
+    --iteration-count: infinite;
+}
+
+.highlight::after {
+    background: rgba(var(--green), 1);
+
+    content: '';
+    width: 4px;
+    height: 8px;
+    border-radius: 2px;
+
+    -webkit-animation: pulse 1s ease var(--iteration-count);
+    animation: pulse 1s ease var(--iteration-count);
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 0px RGBA(var(--green), 1);
+        box-shadow: 0px 0px 0px 0px RGBA(var(--green), 1);
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 0px 5px transparent;
+        box-shadow: 0px 0px 0px 5px transparent;
+    }
+}

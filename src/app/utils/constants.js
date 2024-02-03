@@ -53,7 +53,7 @@ export const SERVICES = [
   //   description: 'Crafting responsive websites for flawless user experiences.',
   // },
   {
-    id: '05',
+    id: '02',
     title: 'Collaboration',
     description: 'Willing to collaborate on open source projects.',
   },

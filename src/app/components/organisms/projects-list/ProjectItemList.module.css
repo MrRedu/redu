@@ -13,21 +13,22 @@
     flex-direction: column;
     margin-bottom: 1rem;
 
-    transition: all 0.4s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 .image-container {
     min-width: 320px;
+    overflow: hidden;
+    transition: border-radius 0.2s ease-out;
 }
 
-.image-container img {
+.image-container .image {
     transition: transform 0.2s ease-out;
 }
 
 .image {
     width: 100%;
     object-fit: cover;
-    border-radius: var(--main-border-radius);
 }
 
 .content {
@@ -63,7 +64,6 @@
         width: 320px;
         height: 180px;
         overflow: hidden;
-        border-radius: var(--main-border-radius);
     }
 
     .image {
@@ -97,7 +97,11 @@
         color: var(--c-gray-300);
     }
 
-    .item:hover .link .image-container img {
+    .item:hover .link .image-container {
+        border-radius: var(--main-border-radius);
+    }
+
+    .item:hover .link .image-container .image {
         transform: scale(1.05);
     }
 

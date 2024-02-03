@@ -1,5 +1,5 @@
 import { NAV } from '@/utils/constants'
-import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
+import { LinkItem } from '#/src/app/components/atoms/link-item/LinkItem'
 
 import styles from './NavFullScreen.module.css'
 
