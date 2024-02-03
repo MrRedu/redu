@@ -1,12 +1,11 @@
 import styles from './ScrollDown.module.css'
 export const ScrollDown = () => {
   return (
-    <div className={styles.indicator}>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div className={styles.scrolldown}>
+      <div className={styles.chevrons}>
+        <div className={styles.chevrondown}></div>
+        <div className={styles.chevrondown}></div>
+      </div>
     </div>
   )
 }

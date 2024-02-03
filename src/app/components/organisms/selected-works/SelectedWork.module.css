@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.container .container-image {
+    overflow: hidden;
+
+    transition: border-radius 0.2s ease-out;
+}
+
+.container:hover .container-image {
+    border-radius: var(--main-border-radius);
+}
+
+.container .image {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+
+    transition: transform 0.2s ease-out;
+}
+
+.container:hover .container-image .image {
+    transform: scale(1.05);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content .title {
+    font-size: var(--f-s-md);
+    font-weight: var(--f-bold);
+}
+
+.content .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.content .tags .tag {
+    font-size: var(--f-s-sm);
+    border: 1px solid var(--c-darkgray-500);
+    padding: 4px 8px;
+    border-radius: var(--main-border-radius);
+}
+
+.content .tags .tag.role {
+    color: var(--c-gray-300);
+}
+
+.content .tags .tag.year {
+    background-color: var(--c-whywhite-300);
+    color: var(--c-darkgray-800);
+}
+
+@media (min-width: 768px) {
+    .container {
+        gap: 1rem;
+    }
+}

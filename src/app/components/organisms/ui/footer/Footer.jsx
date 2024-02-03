@@ -1,4 +1,4 @@
-import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
+import { LinkItem } from '#/src/app/components/atoms/link-item/LinkItem'
 import styles from './Footer.module.css'
 import { CONTACT, SECTIONS } from '@/utils/constants'
 import Link from 'next/link'

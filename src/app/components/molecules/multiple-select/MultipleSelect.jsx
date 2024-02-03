@@ -1,6 +1,7 @@
 import propTypes from 'prop-types'
 import styles from './MultipleSelect.module.css'
 
+// TODO: add a REAL list
 const EXAMPLE_LIST = [
   {
     id: '1',
@@ -9,11 +10,16 @@ const EXAMPLE_LIST = [
   },
   {
     id: '2',
+    value: 'website-development',
+    name: 'Website development',
+  },
+  {
+    id: '3',
     value: 'e-commerce',
     name: 'E-commerce',
   },
   {
-    id: '3',
+    id: '4',
     value: 'consulting',
     name: 'Consulting',
   },

@@ -4,10 +4,10 @@ import { useState } from 'react'
 
 import styles from './Nav.module.css'
 
-import { LinkItem } from '@/components/atoms/LinkItem/LinkItem'
+import { LinkItem } from '#/src/app/components/atoms/link-item/LinkItem'
 import { NAV } from '@/utils/constants'
 
-import { MenuButton } from '@/components/atoms/MenuButton'
+import { MenuButton } from '@/components/atoms/menu-button/MenuButton'
 import { NavFullScreen } from '../nav-full-screen/NavFullScreen'
 
 export const Nav = () => {
