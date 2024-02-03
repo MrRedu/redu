@@ -4,6 +4,8 @@
     "title": "Gyphi",
     "internUrl": "/projects/gyphi",
     "tags": ["WebApp"],
+    "roles": ["Design", "Development"],
+    "year": 2023,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
     "url": "https://gyphi.vercel.app/",
     "images": [
@@ -19,6 +21,8 @@
     "title": "TiDi List",
     "internUrl": "/projects/gyphi",
     "tags": ["WebApp"],
+    "roles": ["Design", "Development"],
+    "year": 2023,
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
     "url": "https://ti-di-list.vercel.app/",
     "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
@@ -29,6 +33,8 @@
     "title": "Fun with Flags",
     "internUrl": "/projects/fun-with-flags",
     "tags": ["WebApp"],
+    "roles": ["Design", "Development"],
+    "year": 2023,
     "description": "Events timezone converter with flags. Easy to share on social networks.",
     "url": "https://funwflags.vercel.app/",
     "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
@@ -41,5 +47,17 @@
       "CSS Modules",
       "PostCSS"
     ]
+  },
+  {
+    "id": "another-project",
+    "title": "Another Project",
+    "internUrl": "/projects/another-project",
+    "tags": ["Landing page"],
+    "roles": ["Design", "Development"],
+    "year": 2023,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
+    "url": "#",
+    "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
+    "toolsAndTechnologies": ["HTML5", "CSS3", "JavaScript"]
   }
 ]
