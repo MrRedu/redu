@@ -1,7 +1,7 @@
 import { ServicesSection } from '@/components/organisms/services-section/ServicesSection'
 import { CardConnect } from '@/components/molecules/card-connect/CardConnect'
 import { AboutMeCard } from '@/components/organisms/about-me-card/AboutMeCard'
-import { HeroSection } from '@/components/molecules/ui/hero-section/HeroSection'
+import { HeroSection } from '#/src/app/components/organisms/ui/hero-section/HeroSection'
 import {
   SimpleScrollBanner,
   DoubleScrollBanner,

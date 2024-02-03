@@ -41,6 +41,7 @@
   --c-darkgray-500: #1e1e1e;
   --c-darkgray-600: #181818;
   --c-darkgray-700: #111111;
+  --c-darkgray-opacity-700: rgba(17, 17, 17, 0.7);
   --c-darkgray-800: #0e0e0e;
 
   --c-red-50: #fff0f0;
