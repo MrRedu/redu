@@ -6,7 +6,7 @@
     "tags": ["WebApp"],
     "roles": ["Design", "Development"],
     "year": 2023,
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
+    "description": "Gyphi is a gallery to find your favorite GIFs and save them!",
     "url": "https://gyphi.vercel.app/",
     "images": [
       "/projects/gyphi/gyphi-desktop-1.webp",
@@ -37,7 +37,13 @@
     "year": 2023,
     "description": "Events timezone converter with flags. Easy to share on social networks.",
     "url": "https://funwflags.vercel.app/",
-    "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
+    "images": [
+      "/projects/fun-with-flags/fun-w-flags-desktop-1.webp",
+      "/projects/fun-with-flags/fun-w-flags-mobile-1.webp",
+      "/projects/fun-with-flags/fun-w-flags-mobile-2.webp",
+      "/projects/fun-with-flags/fun-w-flags-screenshot-1.webp",
+      "/projects/fun-with-flags/fun-w-flags-screenshot-2.webp"
+    ],
     "toolsAndTechnologies": [
       "React",
       "TypeScript",
