@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    padding: 8px;
     position: relative;
 
     color: inherit;
@@ -26,7 +25,6 @@
     outline: none;
 
     border-radius: var(--border-radius-button);
-    padding: 1rem 2rem;
 }
 
 .link span {
@@ -34,6 +32,7 @@
 }
 
 .link.primary {
+    padding: 1rem 2rem;
     color: var(--c-darkgray-800);
     font-weight: var(--f-bold);
     text-transform: uppercase;
@@ -79,3 +78,5 @@
 .link .wave::after {
     border-radius: 45%;
 }
+
+/* @media screen and (min-width: 768px) {} */
