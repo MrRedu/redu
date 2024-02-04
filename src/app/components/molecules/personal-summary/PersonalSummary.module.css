@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph {
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    text-wrap: pretty;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--c-whywhite-700);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}

@@ -1,6 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 40% 60%;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
