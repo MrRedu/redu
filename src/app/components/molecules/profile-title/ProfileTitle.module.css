@@ -30,8 +30,7 @@
 
 .image {
     margin: 0 1rem;
-    width: 24px;
-    height: 24px;
+    width: var(--f-s-lg);
 }
 
 @media screen and (min-width: 768px) {

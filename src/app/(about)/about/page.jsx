@@ -10,10 +10,12 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <ProfileTitle />
+      <Section>
+        <ProfileTitle />
+      </Section>
       <Section>
         <AboutMeCard />
-      <PersonalSummary />
+        <PersonalSummary />
       </Section>
     </>
   )
