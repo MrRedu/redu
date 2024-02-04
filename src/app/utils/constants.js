@@ -44,16 +44,23 @@ export const CONTACT = [
 export const SERVICES = [
   {
     id: '01',
-    title: 'Web Development',
+    title: 'Web development',
     description: 'Crafting responsive websites for flawless user experiences.',
   },
-  // {
-  //   id: '02',
-  //   title: 'Web Development',
-  //   description: 'Crafting responsive websites for flawless user experiences.',
-  // },
   {
     id: '02',
+    title: 'Interaction design / animation',
+    description:
+      'I collaborate with designers to plan and execute interactions / animations on web applications and design systems.',
+  },
+  {
+    id: '03',
+    title: 'Creative implementation',
+    description:
+      'I build layouts and interactions optimizing for performance and usability.',
+  },
+  {
+    id: '04',
     title: 'Collaboration',
     description: 'Willing to collaborate on open source projects.',
   },
