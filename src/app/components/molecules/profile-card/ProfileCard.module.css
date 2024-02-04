@@ -62,7 +62,6 @@
 .content .subtitle {
     font-size: var(--f-s-base);
     font-weight: var(--f-bold);
-    margin-bottom: 0.5rem;
 }
 
 .content .description {
