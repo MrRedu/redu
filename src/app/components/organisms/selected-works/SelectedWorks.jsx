@@ -1,13 +1,12 @@
 import styles from './SelectedWorks.module.css'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
-import { Section } from '@/components/atoms/ui/section/Section'
 
 import projectsData from '@/data/projects'
 import { SelectedWork } from './SelectedWork'
 
 export const SelectedWorks = () => {
   return (
-    <Section>
+    <>
       <CategoryTitle>Selected works</CategoryTitle>
       <div className={styles.container}>
         {projectsData.map(({ id, title, internUrl, images, roles, year }) => (
@@ -21,6 +20,6 @@ export const SelectedWorks = () => {
           />
         ))}
       </div>
-    </Section>
+    </>
   )
 }

@@ -1,6 +1,5 @@
 import styles from './ProfileCard.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -30,9 +29,7 @@ export const ProfileCard = () => {
         </figcaption>
       </figure>
       <div className={styles.content}>
-        <Link href="/about">
-          <h3 className={styles.subtitle}>{`Here's how I came here...`}</h3>
-        </Link>
+        <h3 className={styles.subtitle}>{`Here's how I came here...`}</h3>
         <p className={styles.description}>
           {`I've always been interested in doing things that I don't understand,
           so... I'm still here...`}

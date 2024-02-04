@@ -18,7 +18,9 @@ export default function ProjectsPage() {
       <Section>
         <ProjectsList />
       </Section>
-      <CardConnect />
+      <Section>
+        <CardConnect />
+      </Section>
     </>
   )
 }
