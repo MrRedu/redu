@@ -8,7 +8,7 @@ import { ProfileInformation } from '@/components/molecules/profile-information/P
 export const AboutMeCard = () => {
   return (
     <>
-      <CategoryTitle>About Me</CategoryTitle>
+      <CategoryTitle>About me</CategoryTitle>
       <div className={styles.container} id={'about-me'}>
         <ProfileCard />
         <ProfileInformation />

@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
-    margin-bottom: 24px;
 }
 
 @media screen and (min-width: 1120px) {
