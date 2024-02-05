@@ -25,7 +25,8 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--c-darkgray-opacity-700);
+    background-color: color-mix(in srgb, var(--c-darkgray-700), transparent 30%);
+
     border: 1px solid var(--c-darkgray-500);
     box-shadow: 0 0.5rem 1rem -0.25rem rgba(0, 0, 0, 0.4);
     border-radius: 0 60px 60px 0;
