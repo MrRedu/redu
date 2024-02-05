@@ -20,8 +20,9 @@ export const LinkItem = ({
         onClick={handleClick}
         className={`${styles.link} ${type && styles[type]}`}
       >
-        {children}
-        {icon && icon}
+        {type === 'primary' && <span className={styles.wave} />}
+        <span>{children}</span>
+        {icon && <span>icon</span>}
       </Link>
     </li>
   )

@@ -14,7 +14,7 @@
 
 .container .image {
     object-fit: cover;
-    aspect-ratio: 1/1;
+    aspect-ratio: 16/9;
 
     transition: transform 0.2s ease-out;
 }
