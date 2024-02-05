@@ -10,6 +10,8 @@
     "lint": "eslint . --ext .js,.jsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
+    "@splinetool/react-spline": "2.2.6",
+    "@splinetool/runtime": "1.0.47",
     "cobe": "0.6.3",
     "lucide-react": "0.302.0",
     "minireset.css": "0.0.7",
