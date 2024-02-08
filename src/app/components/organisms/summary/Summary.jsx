@@ -11,7 +11,7 @@ export const Summary = () => {
           style={{
             cursor: 'pointer',
             // outline: '2px solid lime',
-            minWidth: '250px',
+            minWidth: '350px',
             height: '450px',
           }}
           onStart={() => {
