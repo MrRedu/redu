@@ -10,7 +10,7 @@ export async function POST(req, res) {
     const name = formData.get('name')
     const email = formData.get('email')
     const companyName = formData.get('companyName')
-    // const services = formData.getAll('services')
+    const services = formData.getAll('services')
     const message = formData.get('message')
 
     await resend.emails.send({
@@ -21,7 +21,7 @@ export async function POST(req, res) {
         name,
         email,
         companyName,
-        services: ['service-1', 'service-2'],
+        services,
         message,
       }),
     })

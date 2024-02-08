@@ -14,9 +14,6 @@ export const Summary = () => {
             minWidth: '350px',
             height: '450px',
           }}
-          onStart={() => {
-            console.log('onStart')
-          }}
         />
       </div>
       <div className={styles['container-personal-summary']}>
