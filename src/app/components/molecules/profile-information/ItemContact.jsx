@@ -1,9 +1,9 @@
 import propTypes from 'prop-types'
 import styles from './ItemContact.module.css'
 import Link from 'next/link'
-const IsALink = ({ children }) => {
+const IsALink = ({ children, href }) => {
   return (
-    <Link href="mailto:x" className={styles.link}>
+    <Link href={href} target="_blank" rel="noreferrer" className={styles.link}>
       {children}
     </Link>
   )
@@ -19,4 +19,5 @@ ItemContact.propTypes = {
 
 IsALink.propTypes = {
   children: propTypes.node,
+  href: propTypes.string,
 }
