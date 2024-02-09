@@ -19,7 +19,6 @@ export const Footer = () => {
 
           <div className={styles.description}>
             <span>Have a great idea in mind?</span>
-            {/* <span>Let’s Connect</span> */}
             <LetsConnect fontSize="--f-s-lg" />
           </div>
         </div>

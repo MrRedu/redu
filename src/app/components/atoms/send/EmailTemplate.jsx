@@ -12,7 +12,7 @@ export const EmailTemplate = ({
     <p>
       Name:{' '}
       <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
-        ${name}
+        {name}
       </span>
     </p>
     <p>
@@ -27,7 +27,12 @@ export const EmailTemplate = ({
         {companyName}
       </span>
     </p>
-    <p>{`Services requested: [${services.join(', ')}]`}</p>
+    <p>
+      Services requested:{' '}
+      <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>
+        {services}
+      </span>
+    </p>
     <p>
       Project details:{' '}
       <span style={{ fontWeight: 'bold', color: 'red', lineHeight: '1' }}>

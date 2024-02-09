@@ -22,7 +22,7 @@ export const LinkItem = ({
       >
         {type === 'primary' && <span className={styles.wave} />}
         <span>{children}</span>
-        {icon && <span>icon</span>}
+        {icon && <span>{icon}</span>}
       </Link>
     </li>
   )

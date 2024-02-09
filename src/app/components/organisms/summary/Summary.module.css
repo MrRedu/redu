@@ -3,7 +3,9 @@
     flex-direction: column;
 }
 
-.personal-summary-container {
+/* .container-access-card {} */
+
+.container-spline-component {
     position: relative;
     top: -2rem;
 }
