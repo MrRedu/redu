@@ -4,21 +4,18 @@ export const PersonalSummary = () => {
     <div className={styles.container}>
       <div>
         <p className={styles.paragraph}>
-          {`I’m an self-taught web developer based in Venezuela and specialized in Front-End development. I mainly develop websites and web-apps. My 1+ year of experience in the field helped XXXXX XXXX XXXXX XXXXX.`}
+          {`I’m an self-taught web developer based in Venezuela and specialized in Front-End development. I mainly develop websites and web-apps. I'm passionate about crafting experiences that are engaging, accessible, and user-centric.`}
         </p>
         <p className={styles.paragraph}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nemo
-          consequuntur pariatur vitae quasi enim deserunt cum. Sequi vel,
-          temporibus alias fugiat iure, omnis voluptas architecto repellendus
-          nemo, accusantium mollitia.
+          {`The projects where I have generated more knowledge have been open-source, so I will always be open to collaborate in them.`}
         </p>
       </div>
       <div>
+        <p
+          className={styles.paragraph}
+        >{`I'm open to evolving and experimenting with everything. It's okay if not all of it succeeds; the value lies in the attempt and the lessons from the process.`}</p>
         <p className={styles.paragraph}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nobis
-          vel iusto laudantium temporibus illum voluptatum minus veritatis quas
-          tempora alias exercitationem recusandae, maxime, dignissimos, esse ut
-          nulla pariatur quisquam?
+          {`I'm interested to job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.`}
         </p>
       </div>
     </div>

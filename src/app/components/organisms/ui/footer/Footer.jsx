@@ -1,10 +1,10 @@
-import { LinkItem } from '#/src/app/components/atoms/link-item/LinkItem'
+import Link from 'next/link'
 import styles from './Footer.module.css'
 import { CONTACT, SECTIONS } from '@/utils/constants'
-import Link from 'next/link'
-import { DevInfo } from './DevInfo'
+import { LinkItem } from '@/components/atoms/link-item/LinkItem'
 import { Divider } from '@/components/atoms/ui/divider/Divider'
 import { LetsConnect } from '@/components/atoms/lets-connect/LetsConnect'
+import { DevInfo } from './DevInfo'
 
 export const Footer = () => {
   return (
