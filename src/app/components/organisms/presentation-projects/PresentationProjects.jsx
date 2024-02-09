@@ -1,7 +1,7 @@
 'use client'
+import styles from './PresentationProjects.module.css'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
-import styles from './PresentationProjects.module.css'
 import Image from 'next/image'
 import { smoothScroll } from '@/utils/utils'
 export const PresentationProjects = () => {

@@ -1,39 +1,17 @@
 import propTypes from 'prop-types'
 import styles from './MultipleSelect.module.css'
 
-// TODO: add a REAL list
-const EXAMPLE_LIST = [
-  {
-    id: '1',
-    value: 'landing-page',
-    name: 'Landing page',
-  },
-  {
-    id: '2',
-    value: 'website-development',
-    name: 'Website development',
-  },
-  {
-    id: '3',
-    value: 'e-commerce',
-    name: 'E-commerce',
-  },
-  {
-    id: '4',
-    value: 'consulting',
-    name: 'Consulting',
-  },
-]
-
-export const MultipleSelect = ({ list = EXAMPLE_LIST }) => {
+export const MultipleSelect = ({ services, handleServiceChange }) => {
   return (
     <div className={styles.container}>
-      {list.map(({ id, name }) => (
+      {services.map(({ id, name, value, checked }) => (
         <label key={id} htmlFor={name} className={styles.item}>
           <input
             type="checkbox"
             name={name}
             id={name}
+            checked={checked}
+            onChange={() => handleServiceChange(id)}
             className={styles.input}
           />
           <div className={styles.div} />
@@ -45,5 +23,6 @@ export const MultipleSelect = ({ list = EXAMPLE_LIST }) => {
 }
 
 MultipleSelect.propTypes = {
-  list: propTypes.array,
+  services: propTypes.array,
+  handleServiceChange: propTypes.func,
 }
