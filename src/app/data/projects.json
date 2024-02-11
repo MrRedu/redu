@@ -6,7 +6,7 @@
     "tags": ["WebApp"],
     "roles": ["Design", "Development"],
     "year": "2023",
-    "description": "Gyphi is a gallery to find your favorite GIFs and save them!",
+    "description": "Gyphi - GIFs app that allows you to not only browse and save your favorite GIFs but also create an account to save and organize your favorites. With Gyphi, you can easily copy the link to any GIF and share it with your friends. Whether you want to share an adorable animal GIF, Gyphi has you covered!",
     "url": "https://gyphi.vercel.app/",
     "images": [
       "/projects/gyphi/gyphi-desktop-1.webp",
@@ -19,14 +19,14 @@
   {
     "id": "tidi-list",
     "title": "TiDi List",
-    "internUrl": "/projects/gyphi",
+    "internUrl": "/projects/tidi-list",
     "tags": ["WebApp"],
     "roles": ["Design", "Development"],
-    "year": "2023",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
+    "year": "2024",
+    "description": "TiDi List, the ultimate note-taking app that goes beyond just notes. With TiDi List, you can create, edit, and delete notes with ease. But that's not all - we've also integrated a sleek weather widget that allows you to check the weather for any city in the world. Plan your day, stay organized, and stay informed about the weather, all in one place!",
     "url": "https://ti-di-list.vercel.app/",
-    "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
-    "toolsAndTechnologies": ["Vite", "React", "CSS3"]
+    "images": ["/projects/tidi-list/tidi-list-desktop-test.webp"],
+    "toolsAndTechnologies": ["Vite", "React", "TailwindCSS"]
   },
   {
     "id": "fun-with-flags",
@@ -35,7 +35,7 @@
     "tags": ["WebApp"],
     "roles": ["Design", "Development"],
     "year": "2023",
-    "description": "Events timezone converter with flags. Easy to share on social networks.",
+    "description": "Introducing event-planning app - FunWithFlags! With FunWithFlags, you can create events and easily add the time of the event. But that's not all - we've also integrated a feature that allows you to add other countries and automatically displays the corresponding time in that country. Share your events with friends and family, and even post them on social networks. Events timezone converter with flags.",
     "url": "https://funwflags.vercel.app/",
     "images": [
       "/projects/fun-with-flags/fun-w-flags-desktop-1.webp",
