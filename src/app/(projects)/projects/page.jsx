@@ -11,7 +11,7 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <>
-      <Section>
+      <Section isTheFirstSection>
         <PresentationProjects />
       </Section>
       <SimpleScrollBanner direction={'left'} speed={'slow'} />

@@ -23,7 +23,7 @@ export function Project({ projectId }) {
 
   return (
     <>
-      <Section>
+      <Section isTheFirstSection>
         <article className={styles.container}>
           <header className={styles.header}>
             <h2 className={styles.title}>{title}</h2>
