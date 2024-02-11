@@ -2,8 +2,56 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    position: relative;
 }
 
+.container>div:nth-child(1),
+.container>div:nth-child(2),
+.container>div:nth-child(3),
+.container>div:nth-child(4) {
+    position: relative;
+}
+
+.container>div:nth-child(1)::after,
+.container>div:nth-child(2)::after,
+.container>div:nth-child(3)::after,
+.container>div:nth-child(4)::after {
+    position: absolute;
+    content: '';
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container>div:nth-child(1)::after {
+    top: 0px;
+    right: -33px;
+
+    width: 9rem;
+    height: 6.5rem;
+    transform: rotate(22deg);
+    background-image: url('/stickers/wonderfulteam.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.container>div:nth-child(2)::after {
+    bottom: 80px;
+    right: -33px;
+
+    width: 11.2rem;
+    height: 7.2rem;
+    transform: rotate(-12deg);
+    background-image: url('/stickers/wthisthis.webp');
+
+    background-position: center;
+    background-size: cover;
+}
+
+/* This is the button to view all projects */
 .container>a:last-child {
     margin-top: 2rem;
     align-self: center;
@@ -20,12 +68,6 @@
     .container>div:nth-child(1) {
         grid-column: 1/8;
         grid-row: 1/2;
-    }
-
-    .container>div:nth-child(1) a>div {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .container>div:nth-child(2) {
@@ -45,6 +87,8 @@
         grid-row: 2/3;
     }
 
+    /* First and fourth project has flex-row */
+    .container>div:nth-child(1) a>div,
     .container>div:nth-child(4) a>div {
         flex-direction: row;
         justify-content: space-between;
