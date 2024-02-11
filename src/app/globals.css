@@ -81,6 +81,10 @@
   border-radius: 2px;
 }
 
+html, body {
+  overflow-x:hidden 
+} 
+
 body {
   background-color: var(--c-darkgray-800);
   color: var(--c-whywhite-300);
@@ -89,7 +93,6 @@ body {
   font-size: var(--f-s-base);
 
   /* cursor: none; */
-  overflow-x: hidden;
 }
 
 ::selection {
