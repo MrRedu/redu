@@ -1,7 +1,7 @@
 import propTypes from 'prop-types'
-import styles from './SelectedWork.module.css'
+import styles from './SelectedProject.module.css'
 import Image from 'next/image'
-export const SelectedWork = ({ title, internUrl, image, roles, year }) => {
+export const SelectedProject = ({ title, internUrl, image, roles, year }) => {
   return (
     <div>
       <a href={internUrl} className={styles.container}>
@@ -30,7 +30,7 @@ export const SelectedWork = ({ title, internUrl, image, roles, year }) => {
   )
 }
 
-SelectedWork.propTypes = {
+SelectedProject.propTypes = {
   title: propTypes.string,
   internUrl: propTypes.string,
   image: propTypes.string,

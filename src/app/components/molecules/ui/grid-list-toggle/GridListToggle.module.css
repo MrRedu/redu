@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    gap: 0.2rem;
+    background-color: var(--c-darkgray-600);
+    box-shadow: 0 0.5rem 0.4rem -0.25rem rgba(0, 0, 0, 0.4);
+
+
+    font-size: var(--f-s-sm);
+
+    border-radius: 16px;
+    padding: 2px;
+    margin-bottom: 24px;
+}
+
+.button-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.2rem 0.9rem;
+    border-radius: 16px;
+
+    border: 0;
+    cursor: pointer;
+    color: var(--c-gray-400);
+
+    background-color: transparent;
+
+    font-weight: var(--f-bold);
+}
+
+/* .grid-button {} */
+
+/* .list-button {} */
+
+.grid-button.is-active,
+.list-button.is-active {
+    color: var(--c-whywhite-700);
+    background-color: var(--c-darkgray-700);
+}
+
+.text {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .text {
+        display: block;
+    }
+}

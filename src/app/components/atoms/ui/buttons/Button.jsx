@@ -2,7 +2,7 @@ import propTypes from 'prop-types'
 import styles from './Button.module.css'
 import Link from 'next/link'
 
-const LinkWrapper = ({ children, href, size, type, target }) => {
+const LinkWrapper = ({ children, href, size, type = 'secondary', target }) => {
   return (
     <Link
       href={href}
