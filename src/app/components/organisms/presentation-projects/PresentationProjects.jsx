@@ -1,9 +1,10 @@
 'use client'
 import styles from './PresentationProjects.module.css'
+import Image from 'next/image'
+import { ArrowDown } from 'lucide-react'
+import { smoothScroll } from '@/utils/utils'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
-import Image from 'next/image'
-import { smoothScroll } from '@/utils/utils'
 export const PresentationProjects = () => {
   return (
     <>
@@ -21,6 +22,9 @@ export const PresentationProjects = () => {
               type="primary"
             >
               <Button.Text>Projects</Button.Text>
+              <Button.Icon rightIcon>
+                <ArrowDown size={18} strokeWidth={2.4} />
+              </Button.Icon>
             </Button.ButtonWrapper>
           </Button>
         </div>

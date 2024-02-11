@@ -1,15 +1,33 @@
+'use client'
 import styles from './ProjectList.module.css'
-
-import { ProjectItemList } from './ProjectItemList'
-import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
+import { useState } from 'react'
 
 import projectsData from '@/data/projects'
 
+import { ProjectItemList } from './ProjectItemList'
+import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
+import { GridListToggle } from '@/components/molecules/ui/grid-list-toggle/GridListToggle'
+
 export const ProjectsList = () => {
+  const [isGrid, setIsGrid] = useState(false)
+  const handleIsGrid = () => {
+    setIsGrid(true)
+  }
+  const handleIsList = () => {
+    setIsGrid(false)
+  }
+
   return (
     <>
-      <CategoryTitle>Projects</CategoryTitle>
-      <ul id="projects" className={styles.list}>
+      <div className={styles.header}>
+        <CategoryTitle>All projects</CategoryTitle>
+        <GridListToggle
+          isGrid={isGrid}
+          handleIsGrid={handleIsGrid}
+          handleIsList={handleIsList}
+        />
+      </div>
+      <ul id="projects" className={`${isGrid ? styles.grid : styles.list}`}>
         {projectsData.map(({ id, internUrl, title, tags, images }) => (
           <ProjectItemList
             key={id}

@@ -18,6 +18,7 @@ export default function ProjectsPage() {
       <Section>
         <ProjectsList />
       </Section>
+      <SimpleScrollBanner direction={'right'} speed={'slow'} />
       <Section>
         <CardConnect />
       </Section>
