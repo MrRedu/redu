@@ -4,6 +4,11 @@
     gap: 2rem;
 }
 
+.container>a:last-child {
+    margin-top: 2rem;
+    align-self: center;
+}
+
 @media (min-width: 768px) {
     .container {
         display: grid;
@@ -44,5 +49,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .container>a:last-child {
+        margin-top: 0;
+        grid-column: 10/13;
+        place-self: flex-end;
     }
 }

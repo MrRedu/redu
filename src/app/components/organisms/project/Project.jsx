@@ -11,6 +11,7 @@ import { Button } from '@/components/atoms/ui/buttons/Button'
 import { Divider } from '@/components/atoms/ui/divider/Divider'
 import { DetailsProject } from './DetailsProject'
 import { DoubleScrollBanner } from '@/components/molecules/ui/scroll-banners/DoubleScrollBanner'
+import { CardConnect } from '@/components/molecules/card-connect/CardConnect'
 
 export function Project({ projectId }) {
   const project = projectsData.find(project => project.id === projectId)
@@ -51,27 +52,24 @@ export function Project({ projectId }) {
       </Section>
       {images && (
         <Section>
-          {/* <div> */}
-          {images.map((image, index) => (
-            <Image
-              key={index}
-              src={image}
-              alt={`${title} image`}
-              width={1920}
-              height={1080}
-              style={{
-                width: '100%',
-                aspectRatio: '16 / 9',
-                objectFit: 'cover',
-                borderRadius: 'var(--main-border-radius)',
-              }}
-              //   className={styles.image}
-            />
-          ))}
-          {/* </div> */}
+          <div className={styles.images}>
+            {images.map((image, index) => (
+              <Image
+                key={index}
+                src={image}
+                alt={`${title} image`}
+                width={1920}
+                height={1080}
+                className={styles.image}
+              />
+            ))}
+          </div>
         </Section>
       )}
       <DoubleScrollBanner />
+      <Section>
+        <CardConnect />
+      </Section>
     </>
   )
 }

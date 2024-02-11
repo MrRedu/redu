@@ -3,7 +3,7 @@ import { ServicesSection } from '@/components/organisms/services-section/Service
 import { CardConnect } from '@/components/molecules/card-connect/CardConnect'
 import { AboutMeCard } from '@/components/organisms/about-me-card/AboutMeCard'
 import { HeroSection } from '@/components/organisms/ui/hero-section/HeroSection'
-import { SelectedWorks } from '#/src/app/components/organisms/selected-works/SelectedWorks'
+import { SelectedProjects } from '@/components/organisms/selected-projects/SelectedProjects'
 import {
   SimpleScrollBanner,
   DoubleScrollBanner,
@@ -22,7 +22,7 @@ export default function HomePage() {
         <AboutMeCard />
       </Section>
       <Section>
-        <SelectedWorks />
+        <SelectedProjects />
       </Section>
       <Section>
         <ServicesSection />
