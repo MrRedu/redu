@@ -8,10 +8,10 @@ import { CategoryTitle } from '@/components/molecules/category-title/CategoryTit
 import { Button } from '@/components/atoms/ui/buttons/Button'
 
 const ID_SELECTED_PROJECTS = [
-  'fun-with-flags',
-  'gyphi',
-  'tidi-list',
-  'another-project',
+  'fun-with-flags', // Wonderful team
+  'gyphi', // WTF is this!?
+  'tidi-list', //
+  'another-project', //
 ]
 
 const SELECTED_PROJECTS = projectsData.sort((a, b) => {
