@@ -8,7 +8,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
-      <Section>
+      <Section isTheFirstSection>
         <FormContact />
       </Section>
     </>

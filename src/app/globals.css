@@ -81,9 +81,10 @@
   border-radius: 2px;
 }
 
-html, body {
-  overflow-x:hidden 
-} 
+html,
+body {
+  overflow-x: hidden
+}
 
 body {
   background-color: var(--c-darkgray-800);
