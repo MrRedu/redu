@@ -10,7 +10,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Section>
+      <Section isTheFirstSection>
         <ProfileTitle />
       </Section>
       <Section>
