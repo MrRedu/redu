@@ -11,7 +11,7 @@ const ID_SELECTED_PROJECTS = [
   'fun-with-flags', // Wonderful team
   'gyphi', // WTF is this!?
   'tidi-list', //
-  'another-project', //
+  'repo', //
 ]
 
 const SELECTED_PROJECTS = projectsData.sort((a, b) => {
