@@ -55,15 +55,15 @@
     ]
   },
   {
-    "id": "another-project",
-    "title": "Another Project",
-    "internUrl": "/projects/another-project",
+    "id": "repo",
+    "title": "Repo",
+    "internUrl": "/projects/repo",
     "tags": ["Landing page"],
-    "roles": ["Design", "Development"],
-    "year": "2023",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cum nesciunt et mollitia facere aspernatur perspiciatis recusandae magni asperiores quaerat blanditiis nisi at sed illum animi quidem, iste soluta quibusdam!",
-    "url": "#",
-    "images": ["/projects/gyphi/gyphi-desktop-1.webp"],
-    "toolsAndTechnologies": ["HTML5", "CSS3", "JavaScript"]
+    "roles": ["Development"],
+    "year": "2024",
+    "description": "Compilation and organization of a wide variety of tools and resources for web developers and designers.",
+    "url": "https://repo-meldiu.vercel.app/",
+    "images": ["/projects/repo/repo.webp"],
+    "toolsAndTechnologies": ["CSS3", "React", "Next.js"]
   }
 ]
