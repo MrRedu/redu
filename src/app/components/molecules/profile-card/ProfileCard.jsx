@@ -18,7 +18,7 @@ export const ProfileCard = () => {
       <Header />
       <figure className={styles['image-container']}>
         <Image
-          src={'/avatar.webp'}
+          src={'/asset-5.png'}
           width={500}
           height={700}
           alt="Developer Eduardo R."
