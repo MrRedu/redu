@@ -21,13 +21,13 @@
 }
 
 .title .hi {
-    font-size: var(--f-s-xxl);
+    font-size: var(--f-s-xl);
     font-weight: var(--f-bold);
 }
 
 .title .name {
-    font-size: var(--f-s-xxl);
-    font-weight: var(--f-bold);
+    font-size: var(--f-s-xl);
+    font-weight: 1000;
 }
 
 .image-container {
@@ -38,14 +38,30 @@
 
 .image {
     width: 100%;
-    max-width: 320px;
-    aspect-ratio: 1 / 1;
+    max-width: 240px;
+    height: 360px;
+    /* aspect-ratio: 1 / 1; */
     align-self: center;
 }
 
 .image-caption {
     text-align: end;
     font-size: var(--f-s-sm);
+}
+
+.image-caption a {
+    color: var(--c-darkgray-800);
+    text-decoration: none;
+}
+
+.image-caption a:hover {
+    text-decoration: underline;
+}
+
+.image-caption::selection,
+.image-caption strong a::selection {
+    background-color: rgb(191, 97, 214);
+    color: var(--c-whywhite-300);
 }
 
 /* .content {} */
