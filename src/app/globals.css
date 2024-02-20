@@ -68,17 +68,17 @@
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 2px;
+  width: 4px;
 }
 
 *::-webkit-scrollbar-track {
   background: transparent;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--c-red-600);
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 html,

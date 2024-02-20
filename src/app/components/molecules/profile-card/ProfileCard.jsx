@@ -18,14 +18,17 @@ export const ProfileCard = () => {
       <Header />
       <figure className={styles['image-container']}>
         <Image
-          src={'https://avatars.githubusercontent.com/u/73679190?v=4'}
-          width={160}
-          height={160}
-          alt=""
+          src={'/asset-5.png'}
+          width={500}
+          height={700}
+          alt="Developer Eduardo R."
           className={styles.image}
         />
         <figcaption className={styles['image-caption']}>
-          Image: Name L.
+          Image:{' '}
+          <strong>
+            <a href="behance.net/melicolors">@melicolors</a>
+          </strong>
         </figcaption>
       </figure>
       <div className={styles.content}>
