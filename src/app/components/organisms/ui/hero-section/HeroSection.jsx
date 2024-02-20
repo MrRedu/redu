@@ -55,7 +55,7 @@ export const HeroSection = () => {
       {/* Image */}
       <div className={styles['image-container']}>
         <Image
-          src={'/avatar.png'}
+          src={'/avatar.webp'}
           width={1200}
           height={800}
           alt="Redu"
