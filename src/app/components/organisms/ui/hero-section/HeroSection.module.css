@@ -1,6 +1,6 @@
 .container {
     height: calc(100dvh);
-    background-image: url('/wave.svg');
+    /* background-image: url('/wave.svg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
