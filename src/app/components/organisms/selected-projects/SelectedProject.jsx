@@ -9,7 +9,7 @@ export const SelectedProject = ({ title, internUrl, image, roles, year }) => {
           <Image
             src={image}
             alt={`${title} image`}
-            width={800}
+            width={700}
             height={400}
             className={styles.image}
           />
