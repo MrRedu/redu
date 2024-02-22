@@ -27,7 +27,7 @@ export const ProfileCard = () => {
         <figcaption className={styles['image-caption']}>
           Image:{' '}
           <strong>
-            <a href="behance.net/melicolors">@melicolors</a>
+            <a href="https://www.behance.net/melicolors">@melicolors</a>
           </strong>
         </figcaption>
       </figure>

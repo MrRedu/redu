@@ -14,7 +14,7 @@ export const SelectedProject = ({ title, internUrl, image, roles, year }) => {
             className={styles.image}
           />
         </div>
-        <div className={styles.content}>
+        <div className={styles.content} style={{ backgroundColor: 'red' }}>
           <span className={styles.title}>{title}</span>
           <ul className={styles.tags}>
             {roles.map((role, index) => (
@@ -22,7 +22,9 @@ export const SelectedProject = ({ title, internUrl, image, roles, year }) => {
                 {role}
               </li>
             ))}
-            <span className={`${styles.tag} ${styles.year}`}>{year}</span>
+            <span role="listitem" className={`${styles.tag} ${styles.year}`}>
+              {year}
+            </span>
           </ul>
         </div>
       </a>

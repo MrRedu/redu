@@ -9,7 +9,7 @@ const IsALink = ({ children, href }) => {
   )
 }
 export const ItemContact = ({ children }) => {
-  return <span className={styles.item}>{children}</span>
+  return <li className={styles.item}>{children}</li>
 }
 ItemContact.IsALink = IsALink
 
