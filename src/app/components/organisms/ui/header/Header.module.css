@@ -5,12 +5,16 @@
 
     position: fixed;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 50;
 
     width: 100%;
     padding: 0 1rem;
 
     min-height: 86px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .logo {
