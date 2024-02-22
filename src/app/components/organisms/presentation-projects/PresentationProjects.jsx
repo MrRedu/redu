@@ -10,8 +10,10 @@ export const PresentationProjects = () => {
     <>
       <div className={styles.container}>
         <div className={styles.content}>
-          <CategoryTitle>Projects</CategoryTitle>
-          <h2 className={styles.title}>Where Vision Meets Digital Reality</h2>
+          <CategoryTitle role="heading" aria-level="2">
+            Projects
+          </CategoryTitle>
+          <h3 className={styles.title}>Where Vision Meets Digital Reality</h3>
           <p className={styles.description}>
             Creating innovative and customized solutions.
           </p>
@@ -34,6 +36,8 @@ export const PresentationProjects = () => {
             alt="Gyphi"
             width={1200}
             height={768}
+            loading="eager"
+            priority={true}
           />
         </div>
       </div>

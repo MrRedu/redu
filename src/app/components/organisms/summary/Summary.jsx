@@ -10,7 +10,6 @@ export const Summary = () => {
           scene="https://prod.spline.design/1X2EOkB9MivSjz23/scene.splinecode"
           style={{
             cursor: 'pointer',
-            // outline: '2px solid lime',
             minWidth: '350px',
             height: '450px',
           }}

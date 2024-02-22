@@ -58,9 +58,11 @@ export function Project({ projectId }) {
                 key={index}
                 src={image}
                 alt={`${title} image`}
-                width={1920}
-                height={1080}
+                width={1200}
+                height={800}
                 className={styles.image}
+                loading={index < 1 ? 'eager' : undefined}
+                priority={index < 1}
               />
             ))}
           </div>

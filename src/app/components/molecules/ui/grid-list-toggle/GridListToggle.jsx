@@ -6,6 +6,8 @@ export const GridListToggle = ({ isGrid, handleIsGrid, handleIsList }) => {
   return (
     <div className={styles.container}>
       <button
+        aria-label="Toggle between grid and list view"
+        type="button"
         onClick={handleIsGrid}
         className={`${styles['button-option']} ${styles['grid-button']} ${
           isGrid ? styles['is-active'] : ''
@@ -19,6 +21,8 @@ export const GridListToggle = ({ isGrid, handleIsGrid, handleIsList }) => {
         <span className={styles.text}>Grid</span>
       </button>
       <button
+        aria-label="Toggle between grid and list view"
+        type="button"
         onClick={handleIsList}
         className={`${styles['button-option']} ${styles['list-button']} ${
           !isGrid ? styles['is-active'] : ''

@@ -13,8 +13,8 @@ export const ProjectItemList = ({ href = '#', title, tags, image }) => {
           <Image
             src={image}
             alt={`${title} image`}
-            width={1200}
-            height={736}
+            width={400}
+            height={200}
             className={styles.image}
           />
         </div>

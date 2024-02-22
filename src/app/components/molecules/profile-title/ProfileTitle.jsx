@@ -16,7 +16,7 @@ export const ProfileTitle = () => {
           src={'/rj.svg'}
           width={72}
           height={72}
-          alt=""
+          alt="Redu Logo"
           className={styles.image}
         />
         <span className={`${styles.text} `}>Specialized</span>
