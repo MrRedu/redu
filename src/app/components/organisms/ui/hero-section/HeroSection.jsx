@@ -58,7 +58,8 @@ export const HeroSection = () => {
           src={'/avatar.webp'}
           width={1200}
           height={800}
-          alt="Redu"
+          alt="Developer Eduardo R."
+          loading="eager"
           className={styles.image}
         />
       </div>
