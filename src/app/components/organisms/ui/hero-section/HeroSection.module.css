@@ -115,6 +115,8 @@
     position: absolute;
     object-fit: cover;
 
+    filter: drop-shadow(2px 4px 6px #080808);
+
     width: auto;
     height: 85%;
 
