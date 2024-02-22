@@ -11,6 +11,7 @@ export const SelectedProject = ({ title, internUrl, image, roles, year }) => {
             alt={`${title} image`}
             width={700}
             height={400}
+            quality={100}
             className={styles.image}
           />
         </div>

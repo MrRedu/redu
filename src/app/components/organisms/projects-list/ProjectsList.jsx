@@ -27,7 +27,10 @@ export const ProjectsList = () => {
           handleIsList={handleIsList}
         />
       </div>
-      <ul id="projects" className={`${isGrid ? styles.grid : styles.list}`}>
+      <ul
+        id="projects"
+        // className={`${isGrid ? styles.grid : styles.list}`}
+      >
         {projectsData.map(({ id, internUrl, title, tags, images }) => (
           <ProjectItemList
             key={id}

@@ -1,17 +1,21 @@
+import styles from './Loading.module.css'
 export default function Loading() {
-  // You can add any UI inside Loading, including a Skeleton.
   return (
     <div
       style={{
         display: 'grid',
         placeContent: 'center',
-        backgroundColor: 'red',
+        backgroundColor: 'var(--c-darkgray-800)',
         position: 'absolute',
         zIndex: '5000',
         inset: 0,
       }}
     >
-      <h1>Cargando</h1>
+      <div className={styles.loader}>
+        <div className={styles.box1}></div>
+        <div className={styles.box2}></div>
+        <div className={styles.box3}></div>
+      </div>
     </div>
   )
 }
