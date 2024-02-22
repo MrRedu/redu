@@ -60,6 +60,7 @@ export function Project({ projectId }) {
                 alt={`${title} image`}
                 width={1200}
                 height={800}
+                quality={100}
                 className={styles.image}
                 loading={index < 1 ? 'eager' : undefined}
                 priority={index < 1}

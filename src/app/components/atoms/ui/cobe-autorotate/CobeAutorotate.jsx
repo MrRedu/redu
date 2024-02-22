@@ -33,7 +33,6 @@ export function CobeAutorotate() {
         state.height = width * 2
       },
     })
-    setTimeout(() => (canvasRef.current.style.opacity = '1'))
     return () => {
       globe.destroy()
       window.removeEventListener('resize', onResize)
@@ -55,8 +54,6 @@ export function CobeAutorotate() {
           width: '100%',
           height: '100%',
           contain: 'layout paint size',
-          opacity: 0,
-          transition: 'opacity 1s ease',
         }}
       />
     </div>
