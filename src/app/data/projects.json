@@ -63,7 +63,11 @@
     "year": "2024",
     "description": "Compilation and organization of a wide variety of tools and resources for web developers and designers.",
     "url": "https://repo-meldiu.vercel.app/",
-    "images": ["/projects/repo/repo.webp"],
+    "images": [
+      "/projects/repo/repo-desktop-1.webp",
+      "/projects/repo/repo-ipad-1.webp",
+      "/projects/repo/repo-mobile-1.webp"
+    ],
     "toolsAndTechnologies": ["CSS3", "React", "Next.js"]
   }
 ]
