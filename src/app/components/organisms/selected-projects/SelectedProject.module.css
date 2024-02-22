@@ -1,10 +1,48 @@
 .container {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 
     text-decoration: none;
     color: inherit;
+}
+
+.container::after {
+    position: absolute;
+    content: '';
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container.index-0::after {
+    top: 0px;
+    right: -33px;
+
+    width: 9rem;
+    height: 6.5rem;
+    transform: rotate(22deg);
+    background-image: url('/stickers/wonderfulteam.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.container.index-1::after {
+    bottom: 80px;
+    right: -33px;
+
+    width: 11.2rem;
+    height: 7.2rem;
+    transform: rotate(-12deg);
+    background-image: url('/stickers/wthisthis.webp');
+
+    background-position: center;
+    background-size: cover;
 }
 
 .container .container-image {
