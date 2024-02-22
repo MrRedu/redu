@@ -24,9 +24,10 @@ export const SelectedProjects = () => {
       <CategoryTitle>Selected projects</CategoryTitle>
       <div className={styles.container}>
         {SELECTED_PROJECTS.map(
-          ({ id, title, internUrl, images, roles, year }) => (
+          ({ id, title, internUrl, images, roles, year }, index) => (
             <SelectedProject
               key={id}
+              index={index}
               title={title}
               internUrl={internUrl}
               roles={roles}
