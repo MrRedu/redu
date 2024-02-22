@@ -13,7 +13,7 @@ export const CardConnect = () => {
       />
       <Button>
         <Button.LinkWrapper href="/contact" size="large" type="primary">
-          <Button.Text>Learn More</Button.Text>
+          <Button.Text>Contact me</Button.Text>
           <Button.Icon rightIcon>
             <ArrowRight size={18} strokeWidth={2.4} />
           </Button.Icon>

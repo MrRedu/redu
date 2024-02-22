@@ -33,9 +33,7 @@ export const HeroSection = () => {
           <span className={styles.arrow}>
             <ArrowDownRight size={32} />
           </span>
-          <span className={`${styles.text} ${styles.title}`}>
-            Web developer
-          </span>
+          <h2 className={`${styles.text} ${styles.title}`}>Web developer</h2>
           <StatusTag />
         </div>
       </div>

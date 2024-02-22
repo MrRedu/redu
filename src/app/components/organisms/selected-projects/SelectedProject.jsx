@@ -9,12 +9,12 @@ export const SelectedProject = ({ title, internUrl, image, roles, year }) => {
           <Image
             src={image}
             alt={`${title} image`}
-            width={1200}
-            height={736}
+            width={800}
+            height={400}
             className={styles.image}
           />
         </div>
-        <div className={styles.content} style={{ backgroundColor: 'red' }}>
+        <div className={styles.content}>
           <span className={styles.title}>{title}</span>
           <ul className={styles.tags}>
             {roles.map((role, index) => (
