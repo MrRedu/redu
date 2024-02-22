@@ -54,10 +54,11 @@ export const HeroSection = () => {
       <div className={styles['image-container']}>
         <Image
           src={'/avatar.webp'}
-          width={1200}
-          height={800}
+          width={600}
+          height={600}
           alt="Developer Eduardo R."
           loading="eager"
+          priority={true}
           className={styles.image}
         />
       </div>

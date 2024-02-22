@@ -5,12 +5,12 @@ import { Button } from './components/atoms/ui/buttons/Button'
 export default function NotFound() {
   return (
     <>
-      <Section>
+      <Section isTheFirstSection>
         <div className={styles.container}>
           <h2 className={styles.title}>#404</h2>
           <p className={styles.description}>
             {`We're fairly sure that page used to be here, but seems to have gone
-          missing. We do apologise on it's behalf.`}
+          missing. We do apologize on it's behalf.`}
           </p>
           <Button>
             <Button.LinkWrapper href="/" size="large" type="primary">

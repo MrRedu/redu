@@ -48,7 +48,7 @@
 }
 
 .content .tags .tag.year {
-    background-color: color-mix(in srgb, var(--c-whywhite-300), transparent 80%);
+    background-color: color-mix(in srgb, var(--c-whywhite-300), transparent 30%);
 
     color: var(--c-darkgray-800);
 }
