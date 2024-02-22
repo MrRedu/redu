@@ -32,10 +32,11 @@ export const PresentationProjects = () => {
         </div>
         <div className={styles['image-container']}>
           <Image
-            src="/projects/gyphi.webp"
-            alt="Gyphi"
-            width={1200}
-            height={768}
+            src="/projects-presentation.webp"
+            alt="Projects presentation"
+            width={800}
+            height={800}
+            quality={100}
             loading="eager"
             priority={true}
           />
