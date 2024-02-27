@@ -45,7 +45,7 @@ export const HeroSection = () => {
           opacity: isScrolled ? 1 : 0,
           transition: 'opacity 0.6s ease',
         }}
-        onClick={() => smoothScroll('about-me')}
+        onClick={() => smoothScroll('about-me', 20)}
       >
         <ScrollDown />
       </div>

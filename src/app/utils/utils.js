@@ -1,8 +1,8 @@
-export const smoothScroll = elementId => {
+export const smoothScroll = (elementId, yOffset = 110) => {
   const element = document.getElementById(`${elementId}`)
   if (element) {
     window.scrollTo({
-      top: element.offsetTop - 110,
+      top: element.offsetTop - yOffset,
       behavior: 'smooth',
     })
   }
