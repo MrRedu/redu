@@ -39,7 +39,7 @@
 .image {
     width: 100%;
     align-self: center;
-    filter: drop-shadow(-0.5rem 0 0.75rem var(--c-darkgray-100));
+    filter: drop-shadow(0 0 0.50rem var(--c-darkgray-100));
 }
 
 .image-caption {
