@@ -3,13 +3,13 @@ import styles from './ProjectList.module.css'
 import { useState } from 'react'
 
 import projectsData from '@/data/projects'
-
-import { ProjectItemList } from './ProjectItemList'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
 import { GridListToggle } from '@/components/molecules/ui/grid-list-toggle/GridListToggle'
+import { ProjectItem } from './ProjectItem'
 
 export const ProjectsList = () => {
-  const [isGrid, setIsGrid] = useState(false)
+  const [isGrid, setIsGrid] = useState(true)
+
   const handleIsGrid = () => {
     setIsGrid(true)
   }
@@ -29,16 +29,18 @@ export const ProjectsList = () => {
       </div>
       <ul
         id="projects"
-        // className={`${isGrid ? styles.grid : styles.list}`}
+        className={`${styles['container-projects']} ${
+          isGrid ? styles['is-grid'] : styles['is-list']
+        }`}
       >
         {projectsData.map(({ id, internUrl, title, tags, images }) => (
-          <ProjectItemList
+          <ProjectItem
             key={id}
-            id={id}
             href={internUrl}
             title={title}
-            tags={tags}
             image={images[0]}
+            isGrid={isGrid}
+            // tags={tags}
           />
         ))}
       </ul>
