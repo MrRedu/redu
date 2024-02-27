@@ -13,12 +13,18 @@
 
     text-decoration: none;
     color: inherit;
-    padding: 2rem;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
 
+.container.is-grid .link {
+    padding: 2rem;
+}
+
+.container.is-list .link {
+    padding: 1rem;
 }
 
 .container.is-grid .image-container {
