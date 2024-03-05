@@ -21,7 +21,7 @@ export const ProfileInformation = () => {
         <ItemContact>Eduardo R.</ItemContact>
         <ItemContact>
           <ItemContact.IsALink href="mailto:ejrb1234@gmail.com?subject=Hi there, from your portfolio.&body=I’m interested in…">
-            me@redu.com
+            Send email
           </ItemContact.IsALink>
         </ItemContact>
         <ItemContact>Maracay / Venezuela 🇻🇪</ItemContact>

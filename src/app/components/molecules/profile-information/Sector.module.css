@@ -12,7 +12,7 @@
 
 .list.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     grid-template-rows: auto;
     gap: 8px;
 }
@@ -20,4 +20,10 @@
 .list.flex {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .list.grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
 }
