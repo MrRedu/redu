@@ -4,6 +4,7 @@ import { CategoryTitle } from '@/components/molecules/category-title/CategoryTit
 
 import { ProfileCard } from '@/components/molecules/profile-card/ProfileCard'
 import { ProfileInformation } from '@/components/molecules/profile-information/ProfileInformation'
+import { SocialMedia } from '@/components/molecules/social-media/SocialMedia'
 
 export const AboutMeCard = () => {
   return (
@@ -12,6 +13,7 @@ export const AboutMeCard = () => {
       <div className={styles.container} id={'about-me'}>
         <ProfileCard />
         <ProfileInformation />
+        <SocialMedia />
       </div>
     </>
   )

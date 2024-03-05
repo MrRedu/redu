@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 40% 60%;
     margin-bottom: 2rem;
+
+    position: relative;
 }
 
 @media (max-width: 768px) {

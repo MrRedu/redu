@@ -3,20 +3,19 @@
     flex-direction: column;
 }
 
-.container-spline-component {
-    position: relative;
-    top: -2rem;
+.image {
+    aspect-ratio: 558 / 842;
+    width: 320px;
+    height: auto;
 }
+
 
 /* .container-personal-summary {} */
 
 @media screen and (min-width: 768px) {
     .container {
         flex-direction: row;
+        align-items: center;
         gap: 2rem;
-    }
-
-    .container-personal-summary {
-        margin-top: 3rem;
     }
 }
