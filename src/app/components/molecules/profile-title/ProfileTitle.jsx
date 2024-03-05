@@ -17,6 +17,9 @@ export const ProfileTitle = () => {
           width={72}
           height={72}
           alt="Redu Logo"
+          priority
+          quality={100}
+          loading="eager"
           className={styles.image}
         />
         <span className={`${styles.text} `}>Specialized</span>
