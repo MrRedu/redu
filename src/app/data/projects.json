@@ -25,7 +25,13 @@
     "year": "2024",
     "description": "TiDi List, the ultimate note-taking app that goes beyond just notes. With TiDi List, you can create, edit, and delete notes with ease. But that's not all - we've also integrated a sleek weather widget that allows you to check the weather for any city in the world. Plan your day, stay organized, and stay informed about the weather, all in one place!",
     "url": "https://ti-di-list.vercel.app/",
-    "images": ["/projects/tidi-list/tidi-list-desktop-test.webp"],
+    "images": [
+      "/projects/tidi-list/tidi-list-desktop-1.webp",
+      "/projects/tidi-list/tidi-list-desktop-2.webp",
+      "/projects/tidi-list/tidi-list-mobile-1.webp",
+      "/projects/tidi-list/tidi-list-mobile-2.webp",
+      "/projects/tidi-list/tidi-list-mobile-3.webp"
+    ],
     "toolsAndTechnologies": ["Vite", "React", "TailwindCSS"]
   },
   {
