@@ -8,6 +8,7 @@ export const SocialMedia = () => {
           rel="noreferrer"
           className={styles.twitter}
           href="https://twitter.com/MrReduDev"
+          aria-label="Twitter"
         >
           <svg
             className={styles.svgIcon}
@@ -24,6 +25,7 @@ export const SocialMedia = () => {
           rel="noreferrer"
           className={styles.github}
           href="https://github.com/MrRedu"
+          aria-label="GitHub"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +44,7 @@ export const SocialMedia = () => {
           rel="noreferrer"
           className={styles.linkedin}
           href="https://www.linkedin.com/in/mrredu/"
+          aria-label="LinkedIn"
         >
           <svg
             viewBox="0 0 448 512"
@@ -56,6 +59,7 @@ export const SocialMedia = () => {
           rel="noreferrer"
           className={styles.discord}
           href="https://discord.com/users/217725428633305089"
+          aria-label="Discord"
         >
           <svg
             height="25px"
