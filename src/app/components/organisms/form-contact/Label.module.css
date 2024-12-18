@@ -1,13 +1,13 @@
 .label {
-    display: flex;
-    gap: 4px;
+  display: flex;
+  gap: 4px;
 
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    color: var(--c-whywhite-300);
-    font-size: var(--f-s-sm);
+  color: var(--c-whywhite-300);
+  font-size: var(--f-s-sm);
 }
 
 .label-required {
-    color: var(--c-red-600);
+  color: var(--c-red-600);
 }

@@ -1,131 +1,145 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 
-    padding: 100px;
+  padding: 100px;
 
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    border: 1px solid var(--c-darkgray-100);
-    border-radius: var(--main-border-radius);
+  border: 1px solid var(--c-darkgray-100);
+  border-radius: var(--main-border-radius);
 }
 
 .helper-text,
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .helper-text {
-    font-size: var(--f-s-base);
-    color: var(--c-gray-300);
+  font-size: var(--f-s-base);
+  color: var(--c-gray-300);
 }
 
 .title {
-    font-size: var(--f-s-xxl);
-    margin-top: 10px;
-    margin-bottom: 24px;
-    line-height: 1.2;
+  font-size: var(--f-s-xxl);
+  margin-top: 10px;
+  margin-bottom: 24px;
+  line-height: 1.2;
 }
 
 .cta-deco-wrapper {
-    z-index: 0;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 
-    pointer-events: none;
-    mix-blend-mode: difference;
+  pointer-events: none;
+  mix-blend-mode: difference;
 }
 
 .background-circle {
-    width: 951px;
-    height: 951px;
-    background-image: radial-gradient(circle closest-side at 50% 50%, rgba(255, 255, 255, 0), rgba(255, 255, 255, .08));
-    border-radius: 50%;
-    position: absolute;
-    top: -37.5em;
-    bottom: auto;
-    left: auto;
-    right: -34em;
+  width: 951px;
+  height: 951px;
+  background-image: radial-gradient(
+    circle closest-side at 50% 50%,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.08)
+  );
+  border-radius: 50%;
+  position: absolute;
+  top: -37.5em;
+  bottom: auto;
+  left: auto;
+  right: -34em;
 }
 
-
 .circle-echo-wrapper {
-    width: 900px;
-    height: 900px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: absolute;
-    top: auto;
-    bottom: -33rem;
-    left: -30rem;
-    right: auto;
+  width: 900px;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: auto;
+  bottom: -33rem;
+  left: -30rem;
+  right: auto;
 }
 
 .background-circle.is-outer {
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle closest-side at 50% 50%, rgba(255, 255, 255, 0) 88%, rgba(255, 255, 255, .08));
-    position: static;
-    top: auto;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle closest-side at 50% 50%,
+    rgba(255, 255, 255, 0) 88%,
+    rgba(255, 255, 255, 0.08)
+  );
+  position: static;
+  top: auto;
 }
 
 .background-circle.is-inner-2 {
-    width: 50%;
-    height: 50%;
-    background-image: radial-gradient(circle closest-side at 50% 50%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, .08));
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    circle closest-side at 50% 50%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0.08)
+  );
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
 }
 
 .background-circle.is-inner1 {
-    width: 75%;
-    height: 75%;
-    background-image: radial-gradient(circle closest-side at 50% 50%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, .08));
-    position: absolute;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
+  width: 75%;
+  height: 75%;
+  background-image: radial-gradient(
+    circle closest-side at 50% 50%,
+    rgba(255, 255, 255, 0) 80%,
+    rgba(255, 255, 255, 0.08)
+  );
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
 }
 
 @media screen and (max-width: 991px) {
-    .background-circle {
-        width: 500px;
-        height: 500px;
-        top: -18rem;
-        right: -18rem;
-    }
+  .background-circle {
+    width: 500px;
+    height: 500px;
+    top: -18rem;
+    right: -18rem;
+  }
 
-    .circle-echo-wrapper {
-        width: 700px;
-        height: 700px;
-        bottom: -28rem;
-        left: -28rem;
-    }
+  .circle-echo-wrapper {
+    width: 700px;
+    height: 700px;
+    bottom: -28rem;
+    left: -28rem;
+  }
 
-    .background-circle.is-outer {
-        width: 100%;
-        height: 100%;
-    }
+  .background-circle.is-outer {
+    width: 100%;
+    height: 100%;
+  }
 
-    .background-circle.is-inner-2 {
-        width: 50%;
-        height: 50%;
-    }
+  .background-circle.is-inner-2 {
+    width: 50%;
+    height: 50%;
+  }
 
-    .background-circle.is-inner1 {
-        width: 75%;
-        height: 75%;
-    }
-
+  .background-circle.is-inner1 {
+    width: 75%;
+    height: 75%;
+  }
 }

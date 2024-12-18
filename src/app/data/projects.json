@@ -102,5 +102,31 @@
       "Material Tailwind",
       "React Hook Form"
     ]
+  },
+  {
+    "id": "salus",
+    "title": "SALUS",
+    "internUrl": "/projects/salus",
+    "tags": ["Management system"],
+    "roles": ["Development"],
+    "year": "2024",
+    "description": "Salus is a comprehensive platform that simplifies the management of medical consultations and patients for healthcare professionals and medical entities. With Salus, we seek to optimize professionals' time, improve the patient experience and ensure more efficient medical care. With an accessible and easy-to-use design, the platform is perfect for hospitals, clinics and practices looking to modernize their administrative management.",
+    "url": "https://github.com/No-Country-simulation/c22-25-ft-webapp",
+    "images": [
+      "/projects/salus/salus-desktop-1.webp",
+      "/projects/salus/salus-desktop-2.webp",
+      "/projects/salus/salus-desktop-3.webp",
+      "/projects/salus/salus-desktop-4.webp",
+      "/projects/salus/salus-mobile-1.webp",
+      "/projects/salus/salus-desktop-5.webp"
+    ],
+    "toolsAndTechnologies": [
+      "Next.js",
+      "React.js",
+      "NextAuth.js",
+      "Tailwind CSS",
+      "Next.UI",
+      "React Hook Form"
+    ]
   }
 ]

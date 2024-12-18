@@ -1,12 +1,9 @@
 'use client'
 import Image from 'next/image'
 import styles from './HeroSection.module.css'
-
 import { ArrowDownRight } from 'lucide-react'
-
 import { smoothScroll } from '@/utils/utils'
 import { useScrolled } from '@/hooks/useScrolled'
-
 import { ScrollDown } from '@/components/atoms/ui/scroll-down/ScrollDown'
 import { CobeAutorotate } from '@/components/atoms/ui/cobe-autorotate/CobeAutorotate'
 import { StatusTag } from './StatusTag'

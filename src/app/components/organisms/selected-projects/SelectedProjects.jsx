@@ -1,22 +1,15 @@
 import styles from './SelectedProjects.module.css'
-
 import projectsData from '@/data/projects'
-
 import { ArrowRight } from 'lucide-react'
 import { SelectedProject } from './SelectedProject'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 
-const ID_SELECTED_PROJECTS = [
-  'fun-with-flags', // Wonderful team
-  'gyphi', // WTF is this!?
-  'tidi-list', //
-  'repo', //
-]
+const ID_SELECTED_PROJECTS = ['h-isena', 'salus', 'tidi-list', 'repo']
 
-const SELECTED_PROJECTS = projectsData.sort((a, b) => {
-  return ID_SELECTED_PROJECTS.indexOf(a.id) - ID_SELECTED_PROJECTS.indexOf(b.id)
-})
+const SELECTED_PROJECTS = projectsData.filter(project =>
+  ID_SELECTED_PROJECTS.includes(project.id)
+)
 
 export const SelectedProjects = () => {
   return (
@@ -38,7 +31,9 @@ export const SelectedProjects = () => {
         )}
         <Button>
           <Button.LinkWrapper href="/projects">
-            <Button.Text>View all projects</Button.Text>
+            <Button.Text>
+              View all projects {`(${projectsData.length})`}
+            </Button.Text>
             <Button.Icon rightIcon>
               <ArrowRight size={18} strokeWidth={2.4} />
             </Button.Icon>
