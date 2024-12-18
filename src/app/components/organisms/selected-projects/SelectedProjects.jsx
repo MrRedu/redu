@@ -1,18 +1,11 @@
 import styles from './SelectedProjects.module.css'
-
 import projectsData from '@/data/projects'
-
 import { ArrowRight } from 'lucide-react'
 import { SelectedProject } from './SelectedProject'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 
-const ID_SELECTED_PROJECTS = [
-  'fun-with-flags', // Wonderful team
-  'gyphi', // WTF is this!?
-  'tidi-list', //
-  'repo', //
-]
+const ID_SELECTED_PROJECTS = ['h-isena', 'salus', 'tidi-list', 'repo']
 
 const SELECTED_PROJECTS = projectsData.filter(project =>
   ID_SELECTED_PROJECTS.includes(project.id)
