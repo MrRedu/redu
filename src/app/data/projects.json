@@ -75,5 +75,32 @@
       "/projects/repo/repo-mobile-1.webp"
     ],
     "toolsAndTechnologies": ["CSS3", "React", "Next.js"]
+  },
+  {
+    "id": "h-isena",
+    "title": "H-ISENA",
+    "internUrl": "/projects/h-isena",
+    "tags": ["Management system"],
+    "roles": ["Development"],
+    "year": "2024",
+    "description": "Medical records management system for the Institute of Senology Aragua; integral platform that allows the efficient registration and administration of patients and their medical records. This system has three user levels, guarantees secure authentication, generates detailed reports and prints medical records. Its implementation optimizes patient care, improves internal management and facilitates appointment scheduling, contributing significantly to the quality of healthcare services.",
+    "url": "https://github.com/MrRedu/isena",
+    "images": [
+      "/projects/h-isena/h-isena-desktop-1.webp",
+      "/projects/h-isena/h-isena-desktop-2.webp",
+      "/projects/h-isena/h-isena-desktop-3.webp",
+      "/projects/h-isena/h-isena-desktop-4.webp",
+      "/projects/h-isena/h-isena-mobile-1.webp",
+      "/projects/h-isena/h-isena-desktop-5.webp"
+    ],
+    "toolsAndTechnologies": [
+      "Next.js",
+      "React.js",
+      "NextAuth.js",
+      "MySQL",
+      "Tailwind CSS",
+      "Material Tailwind",
+      "React Hook Form"
+    ]
   }
 ]
