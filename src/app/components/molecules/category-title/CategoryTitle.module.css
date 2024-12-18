@@ -1,6 +1,6 @@
 .title {
-    font-size: var(--f-s-sm);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-bottom: 24px;
+  font-size: var(--f-s-sm);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 24px;
 }

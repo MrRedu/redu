@@ -7,7 +7,7 @@
       "@/hooks/*": ["./src/app/hooks/*"],
       "@/libs/*": ["./src/app/libs/*"],
       "@/utils/*": ["./src/app/utils/*"],
-      "@/data/*": ["./src/app/data/*"],
+      "@/data/*": ["./src/app/data/*"]
     }
   }
 }

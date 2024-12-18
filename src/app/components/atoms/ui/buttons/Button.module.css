@@ -1,119 +1,119 @@
 .button {
-    min-height: 32px;
-    height: auto;
-    width: fit-content;
-    font-size: var(--f-s-sm);
-    text-decoration: none;
+  min-height: 32px;
+  height: auto;
+  width: fit-content;
+  font-size: var(--f-s-sm);
+  text-decoration: none;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 8px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  position: relative;
 
-    border: none;
-    outline: none;
-    cursor: pointer;
-    overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
 
-    border-radius: var(--border-radius-button);
-    padding: 1rem 2rem;
+  border-radius: var(--border-radius-button);
+  padding: 1rem 2rem;
 }
 
 .button span {
-    position: relative;
+  position: relative;
 }
 
 .button.primary {
-    background-color: var(--c-whywhite-300);
-    color: var(--c-darkgray-800);
-    border: 1px solid var(--c-whywhite-300);
+  background-color: var(--c-whywhite-300);
+  color: var(--c-darkgray-800);
+  border: 1px solid var(--c-whywhite-300);
 }
 
 .button.primary .wave {
-    display: none;
+  display: none;
 }
 
 .button.secondary {
-    background-color: transparent;
-    color: var(--c-whywhite-300);
-    border: 1px solid var(--c-whywhite-300);
+  background-color: transparent;
+  color: var(--c-whywhite-300);
+  border: 1px solid var(--c-whywhite-300);
 }
 
 .button.small {
-    height: 24px;
+  height: 24px;
 }
 
 .button.medium {
-    height: 44px;
+  height: 44px;
 }
 
 .button.large {
-    height: 52px;
+  height: 52px;
 }
 
 .text {
-    font-weight: var(--f-bold);
-    text-transform: uppercase;
-    text-wrap: nowrap;
+  font-weight: var(--f-bold);
+  text-transform: uppercase;
+  text-wrap: nowrap;
 }
 
 .icon {
-    display: grid;
-    place-content: center;
+  display: grid;
+  place-content: center;
 }
 
 @media screen and (min-width: 920px) {
-    .button:hover .icon {
-        transition: transform 0.2s ease;
-    }
+  .button:hover .icon {
+    transition: transform 0.2s ease;
+  }
 
-    .button:hover .right-icon {
-        transform: translateX(6px);
-    }
+  .button:hover .right-icon {
+    transform: translateX(6px);
+  }
 
-    .button:hover .left-icon {
-        transform: translateX(-6px);
-    }
+  .button:hover .left-icon {
+    transform: translateX(-6px);
+  }
 
-    /* _ */
+  /* _ */
 
-    .button.primary .wave {
-        display: block;
-        
-        position: absolute;
-        top: -60px;
-        left: 0;
-        width: 100%;
-        height: 220px;
-        background: #121212;
-        transition: 0.5s;
-    }
+  .button.primary .wave {
+    display: block;
 
-    .button.primary:hover .wave {
-        top: -150px;
-    }
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    background: #121212;
+    transition: 0.5s;
+  }
 
-    .button.primary:hover {
-        color: var(--c-whywhite-300);
-        transition: color 0.3s ease-in-out;
-    }
+  .button.primary:hover .wave {
+    top: -150px;
+  }
 
-    .button .wave::after,
-    .button .wave::before {
-        content: "";
-        width: 250%;
-        height: 250%;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -75%);
-        background: var(--c-whywhite-300);
-    }
+  .button.primary:hover {
+    color: var(--c-whywhite-300);
+    transition: color 0.3s ease-in-out;
+  }
 
-    .button .wave::before,
-    .button .wave::after {
-        border-radius: 45%;
-    }
+  .button .wave::after,
+  .button .wave::before {
+    content: '';
+    width: 250%;
+    height: 250%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: var(--c-whywhite-300);
+  }
+
+  .button .wave::before,
+  .button .wave::after {
+    border-radius: 45%;
+  }
 }

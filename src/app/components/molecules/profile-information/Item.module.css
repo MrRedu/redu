@@ -1,37 +1,36 @@
 .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
 
-    padding: 1rem 2rem;
-    border-radius: var(--main-border-radius);
+  padding: 1rem 2rem;
+  border-radius: var(--main-border-radius);
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 32px;
-    min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
 }
 
 .title {
-    font-size: var(--f-s-sm);
-    text-align: center;
-    user-select: none;
-    pointer-events: none;
+  font-size: var(--f-s-sm);
+  text-align: center;
+  user-select: none;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
-    .item {
-        flex-direction: row;
-        gap: 1rem;
-    }
+  .item {
+    flex-direction: row;
+    gap: 1rem;
+  }
 
-
-    .item:hover .icon [fill] {
-        fill: currentColor;
-    }
+  .item:hover .icon [fill] {
+    fill: currentColor;
+  }
 }

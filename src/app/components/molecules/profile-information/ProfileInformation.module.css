@@ -1,19 +1,18 @@
 .container {
-    background-color: var(--c-darkgray-700);
-    color: var(--c-whywhite-300);
+  background-color: var(--c-darkgray-700);
+  color: var(--c-whywhite-300);
 
-    min-height: 60vh;
-    height: 100%;
-    padding: 40px;
+  height: 100%;
+  padding: 40px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
 }
 
 @media screen and (min-width: 1120px) {
-    .container {
-        padding: 40px 120px;
-    }
+  .container {
+    padding: 40px 120px;
+  }
 }

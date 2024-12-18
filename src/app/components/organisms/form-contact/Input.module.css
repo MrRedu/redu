@@ -1,28 +1,28 @@
 .input {
-    border-radius: 8px;
-    padding: 16px;
-    min-height: 48px;
-    margin-bottom: 16px;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 48px;
+  margin-bottom: 16px;
 
-    background-color: var(--c-darkgray-800);
-    border: 1px solid var(--c-darkgray-300);
-    color: var(--c-whywhite-300);
+  background-color: var(--c-darkgray-800);
+  border: 1px solid var(--c-darkgray-300);
+  color: var(--c-whywhite-300);
 
-    outline: none;
+  outline: none;
 
-    transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .input:hover {
-    background-color: var(--c-darkgray-700);
+  background-color: var(--c-darkgray-700);
 }
 
 .input:focus {
-    border: 1px solid var(--c-darkgray-100);
+  border: 1px solid var(--c-darkgray-100);
 }
 
 @media screen and (min-width: 768px) {
-    .input {
-        margin-bottom: 24px;
-    }
+  .input {
+    margin-bottom: 24px;
+  }
 }

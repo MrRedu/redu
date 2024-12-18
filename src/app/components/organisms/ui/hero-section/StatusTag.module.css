@@ -1,10 +1,10 @@
 .container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .text {
-    color: var(--c-gray-300);
-    font-size: var(--f-s-sm);
+  color: var(--c-gray-300);
+  font-size: var(--f-s-sm);
 }
