@@ -1,19 +1,9 @@
 import propTypes from 'prop-types'
 import styles from './SelectedProject.module.css'
 import Image from 'next/image'
-export const SelectedProject = ({
-  title,
-  internUrl,
-  image,
-  roles,
-  year,
-  index,
-}) => {
+export const SelectedProject = ({ title, internUrl, image, roles, year }) => {
   return (
-    <a
-      href={internUrl}
-      className={`${styles.container} ${styles[`index-${index}`]}`}
-    >
+    <a href={internUrl} className={`${styles.container}`}>
       <div className={styles['container-image']}>
         <Image
           src={image}

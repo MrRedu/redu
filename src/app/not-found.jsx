@@ -1,7 +1,7 @@
 import styles from './NotFound.module.css'
 import { ArrowRight } from 'lucide-react'
 import { Section } from '@/components/atoms/ui/section/Section'
-import { Button } from './components/atoms/ui/buttons/Button'
+import { Button } from '@/components/atoms/ui/buttons/Button'
 export default function NotFound() {
   return (
     <>

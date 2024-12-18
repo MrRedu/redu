@@ -1,107 +1,82 @@
 .container {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container::after {
-    position: absolute;
-    content: '';
+  position: absolute;
+  content: '';
 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.container.index-0::after {
-    top: 0px;
-    right: -33px;
-
-    width: 9rem;
-    height: 6.5rem;
-    transform: rotate(22deg);
-    background-image: url('/stickers/wonderfulteam.webp');
-    background-position: center;
-    background-size: cover;
-}
-
-.container.index-1::after {
-    bottom: 80px;
-    right: -33px;
-
-    width: 11.2rem;
-    height: 7.2rem;
-    transform: rotate(-12deg);
-    background-image: url('/stickers/wthisthis.webp');
-
-    background-position: center;
-    background-size: cover;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .container .container-image {
-    overflow: hidden;
-    transition: border-radius 0.2s ease-out;
+  overflow: hidden;
+  transition: border-radius 0.2s ease-out;
 }
 
 .container .image {
-    object-fit: cover;
-    aspect-ratio: 16/9;
+  object-fit: cover;
+  aspect-ratio: 16/9;
 
-    transition: transform 0.2s ease-out;
-    width: 100%;
+  transition: transform 0.2s ease-out;
+  width: 100%;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .content .title {
-    font-size: var(--f-s-md);
-    font-weight: var(--f-bold);
+  font-size: var(--f-s-md);
+  font-weight: var(--f-bold);
 }
 
 .content .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .content .tags .tag {
-    font-size: var(--f-s-sm);
-    border: 1px solid var(--c-darkgray-500);
-    padding: 4px 8px;
-    border-radius: var(--main-border-radius);
+  font-size: var(--f-s-sm);
+  border: 1px solid var(--c-darkgray-500);
+  padding: 4px 8px;
+  border-radius: var(--main-border-radius);
 }
 
 .content .tags .tag.role {
-    color: var(--c-gray-300);
+  color: var(--c-gray-300);
 }
 
 .content .tags .tag.year {
-    background-color: color-mix(in srgb, var(--c-whywhite-300), transparent 30%);
+  background-color: color-mix(in srgb, var(--c-whywhite-300), transparent 30%);
 
-    color: var(--c-darkgray-800);
+  color: var(--c-darkgray-800);
 }
 
 @media (min-width: 992px) {
-    .container {
-        gap: 1rem;
-    }
+  .container {
+    gap: 1rem;
+  }
 
-    .container:hover .container-image {
-        border-radius: var(--main-border-radius);
-    }
+  .container:hover .container-image {
+    border-radius: var(--main-border-radius);
+  }
 
-    .container:hover .container-image .image {
-        transform: scale(1.05);
-    }
+  .container:hover .container-image .image {
+    transform: scale(1.05);
+  }
 }

@@ -14,9 +14,9 @@ const ID_SELECTED_PROJECTS = [
   'repo', //
 ]
 
-const SELECTED_PROJECTS = projectsData.sort((a, b) => {
-  return ID_SELECTED_PROJECTS.indexOf(a.id) - ID_SELECTED_PROJECTS.indexOf(b.id)
-})
+const SELECTED_PROJECTS = projectsData.filter(project =>
+  ID_SELECTED_PROJECTS.includes(project.id)
+)
 
 export const SelectedProjects = () => {
   return (
@@ -38,7 +38,9 @@ export const SelectedProjects = () => {
         )}
         <Button>
           <Button.LinkWrapper href="/projects">
-            <Button.Text>View all projects</Button.Text>
+            <Button.Text>
+              View all projects {`(${projectsData.length})`}
+            </Button.Text>
             <Button.Icon rightIcon>
               <ArrowRight size={18} strokeWidth={2.4} />
             </Button.Icon>
