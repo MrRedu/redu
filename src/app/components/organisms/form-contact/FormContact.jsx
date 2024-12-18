@@ -15,15 +15,11 @@ import { Input } from './Input'
 import { TextArea } from './TextArea'
 
 export const FormContact = () => {
-  const { formData, handleChange, handleServiceChange, handleSubmit } = useForm()
+  const { formData, handleChange, handleServiceChange, handleSubmit } =
+    useForm()
 
   return (
-    <form
-      action=""
-      className={styles.form}
-      onSubmit={handleSubmit}
-      autoComplete="off"
-    >
+    <form className={styles.form} onSubmit={handleSubmit} autoComplete="off">
       <GroupForm>
         <Label htmlFor="name" isRequired>{`What's your name?`}</Label>
         <Input
@@ -68,7 +64,10 @@ export const FormContact = () => {
           // htmlFor="#"
           isRequired
         >{`What services do you need?`}</Label>
-        <MultipleSelect handleServiceChange={handleServiceChange} services={formData.services}  />
+        <MultipleSelect
+          handleServiceChange={handleServiceChange}
+          services={formData.services}
+        />
       </GroupForm>
       <GroupForm>
         <Label
