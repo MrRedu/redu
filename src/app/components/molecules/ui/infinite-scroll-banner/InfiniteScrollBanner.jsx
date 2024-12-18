@@ -1,7 +1,5 @@
 'use client'
-
 import propTypes from 'prop-types'
-
 import { usePrefersReducedMotion } from '@/hooks/usePrefersReducedMotion'
 import styles from './InfiniteScrollBanner.module.css'
 import { TagItem } from './tag-item/TagItem'
@@ -57,7 +55,3 @@ InfiniteScrollBanner.propTypes = {
   direction: propTypes.string,
   speed: propTypes.string,
 }
-
-// Wrapper.propTypes = {
-//   children: propTypes.node,
-// }

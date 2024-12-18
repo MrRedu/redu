@@ -1,82 +1,82 @@
 .nav-item-mobile a {
-    margin-bottom: 2rem;
-    font-size: var(--f-s-xxxl);
-    font-weight: var(--f-bold);
+  margin-bottom: 2rem;
+  font-size: var(--f-s-xxxl);
+  font-weight: var(--f-bold);
 }
 
 /* .nav-item-desktop a {} */
 
 .link {
-    min-height: 32px;
-    height: auto;
-    width: fit-content;
-    font-size: var(--f-s-sm);
-    text-decoration: none;
+  min-height: 32px;
+  height: auto;
+  width: fit-content;
+  font-size: var(--f-s-sm);
+  text-decoration: none;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
 
-    color: inherit;
+  color: inherit;
 
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 
-    border-radius: var(--border-radius-button);
+  border-radius: var(--border-radius-button);
 }
 
 .link span {
-    position: relative;
+  position: relative;
 }
 
 .link.primary {
-    padding: 1rem 2rem;
-    color: var(--c-darkgray-800);
-    font-weight: var(--f-bold);
-    text-transform: uppercase;
+  padding: 1rem 2rem;
+  color: var(--c-darkgray-800);
+  font-weight: var(--f-bold);
+  text-transform: uppercase;
 
-    position: relative;
+  position: relative;
 
-    border: 1px solid var(--c-whywhite-300);
-    overflow: hidden;
+  border: 1px solid var(--c-whywhite-300);
+  overflow: hidden;
 }
 
 .link.primary .wave {
-    position: absolute;
-    top: -60px;
-    left: 0;
-    width: 100%;
-    height: 220px;
-    background: #12121299;
-    transition: 0.5s;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: #12121299;
+  transition: 0.5s;
 }
 
 .link.primary:hover .wave {
-    top: -150px;
+  top: -150px;
 }
 
 .link.primary:hover {
-    color: var(--c-whywhite-300);
-    transition: color 0.3s ease-in-out;
+  color: var(--c-whywhite-300);
+  transition: color 0.3s ease-in-out;
 }
 
 .link .wave::after,
 .link .wave::before {
-    content: "";
-    width: 250%;
-    height: 250%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: var(--c-whywhite-300);
+  content: '';
+  width: 250%;
+  height: 250%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: var(--c-whywhite-300);
 }
 
 .link .wave::before,
 .link .wave::after {
-    border-radius: 45%;
+  border-radius: 45%;
 }
 
 /* @media screen and (min-width: 768px) {} */

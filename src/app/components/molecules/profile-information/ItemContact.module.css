@@ -1,7 +1,7 @@
 .item {
-    font-size: var(--f-s-sm);
+  font-size: var(--f-s-sm);
 }
 
 .link {
-    color: currentColor;
+  color: currentColor;
 }

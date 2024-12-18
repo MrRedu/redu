@@ -1,57 +1,57 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
 }
 
 /* This is the button to view all projects */
-.container>a:last-child {
-    margin-top: 2rem;
-    align-self: center;
+.container > a:last-child {
+  margin-top: 2rem;
+  align-self: center;
 }
 
 @media (min-width: 768px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        column-gap: 3.5rem;
-        row-gap: 5rem;
-    }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 3.5rem;
+    row-gap: 5rem;
+  }
 
-    .container>a:nth-child(1) {
-        grid-column: 1/8;
-        grid-row: 1/2;
-    }
+  .container > a:nth-child(1) {
+    grid-column: 1/8;
+    grid-row: 1/2;
+  }
 
-    .container>a:nth-child(2) {
-        grid-column: 8/13;
-        grid-row: 0/1;
-        padding-top: 5rem;
-    }
+  .container > a:nth-child(2) {
+    grid-column: 8/13;
+    grid-row: 0/1;
+    padding-top: 5rem;
+  }
 
-    .container>a:nth-child(3) {
-        grid-column: 1/6;
-        grid-row: 2/3;
-        padding-top: 5rem;
-    }
+  .container > a:nth-child(3) {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    padding-top: 5rem;
+  }
 
-    .container>a:nth-child(4) {
-        grid-column: 6/13;
-        grid-row: 2/3;
-    }
+  .container > a:nth-child(4) {
+    grid-column: 6/13;
+    grid-row: 2/3;
+  }
 
-    /* First and fourth project has flex-row */
-    .container>a:nth-child(1)>div:nth-of-type(2),
-    .container>a:nth-child(4)>div:nth-of-type(2) {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  /* First and fourth project has flex-row */
+  .container > a:nth-child(1) > div:nth-of-type(2),
+  .container > a:nth-child(4) > div:nth-of-type(2) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .container>a:last-child {
-        margin-top: 0;
-        grid-column: 10/13;
-        place-self: flex-end;
-    }
+  .container > a:last-child {
+    margin-top: 0;
+    grid-column: 10/13;
+    place-self: flex-end;
+  }
 }

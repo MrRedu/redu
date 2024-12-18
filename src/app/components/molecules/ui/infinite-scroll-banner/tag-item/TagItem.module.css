@@ -1,17 +1,17 @@
 .tag-item {
-    display: flex;
-    margin-right: 1rem;
-    gap: 1rem;
-    align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  gap: 1rem;
+  align-items: center;
 }
 
 .title {
-    text-align: center;
-    white-space: nowrap;
-    padding: 0 1vw;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 1vw;
 
-    font-size: var(--f-s-lg);
-    font-weight: var(--f-bold);
-    line-height: 1.15;
-    font-style: italic;
+  font-size: var(--f-s-lg);
+  font-weight: var(--f-bold);
+  line-height: 1.15;
+  font-style: italic;
 }

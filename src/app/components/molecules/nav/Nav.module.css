@@ -1,31 +1,30 @@
 /* .nav {} */
 
 .nav-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-mobile {
-    display: block;
+  display: block;
 }
 
 .nav-desktop {
-    display: none;
+  display: none;
 }
 
-
 @media screen and (min-width: 768px) {
-    .nav-mobile {
-        display: none;
-    }
+  .nav-mobile {
+    display: none;
+  }
 
-    .nav-desktop {
-        display: block;
-    }
+  .nav-desktop {
+    display: block;
+  }
 
-    .nav-desktop .nav-list {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-    }
+  .nav-desktop .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
 }

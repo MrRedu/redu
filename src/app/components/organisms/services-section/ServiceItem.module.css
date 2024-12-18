@@ -1,80 +1,80 @@
 .item-list {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
 
-    border-bottom: 1px solid var(--c-darkgray-400);
+  border-bottom: 1px solid var(--c-darkgray-400);
 }
 
 .count-desktop {
-    display: none;
+  display: none;
 }
 
 .count-mobile {
-    display: block;
+  display: block;
 }
 
 .title {
-    font-size: var(--f-s-lg);
+  font-size: var(--f-s-lg);
 }
 
 @media screen and (min-width: 992px) {
-    .item-list {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 2rem 0;
-    }
+  .item-list {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
 
-    .title,
-    .description {
-        color: var(--c-gray-300);
-    }
+  .title,
+  .description {
+    color: var(--c-gray-300);
+  }
 
-    .title,
-    .content,
-    .description {
-        transition:
-            transform 0.2s ease-out,
-            color 0.4s ease-out,
-            opacity 0.3s ease-out,
-    }
+  .title,
+  .content,
+  .description {
+    transition:
+      transform 0.2s ease-out,
+      color 0.4s ease-out,
+      opacity 0.3s ease-out;
+  }
 
-    .description {
-        opacity: 0;
-        justify-self: start;
-        max-width: 40ch;
-    }
+  .description {
+    opacity: 0;
+    justify-self: start;
+    max-width: 40ch;
+  }
 
-    .item-list:hover {
-        border-bottom-color: var(--c-darkgray-100);
-    }
+  .item-list:hover {
+    border-bottom-color: var(--c-darkgray-100);
+  }
 
-    .item-list:hover .title {
-        transform: translateX(60px);
-        color: var(--c-whywhite-300);
-    }
+  .item-list:hover .title {
+    transform: translateX(60px);
+    color: var(--c-whywhite-300);
+  }
 
-    .item-list:hover .content {
-        transform: translateX(-60px);
-    }
+  .item-list:hover .content {
+    transform: translateX(-60px);
+  }
 
-    .item-list:hover .description {
-        color: var(--c-whywhite-300);
-        opacity: 1;
-    }
+  .item-list:hover .description {
+    color: var(--c-whywhite-300);
+    opacity: 1;
+  }
 
-    .content {
-        display: flex;
-        gap: 5rem;
-        align-items: center;
-    }
+  .content {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
 
-    .count-desktop {
-        display: block;
-    }
+  .count-desktop {
+    display: block;
+  }
 
-    .count-mobile {
-        display: none;
-    }
+  .count-mobile {
+    display: none;
+  }
 }

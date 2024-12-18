@@ -16,7 +16,7 @@ export const Nav = () => {
   const handleClick = () => {
     setIsOpened(!isOpened)
   }
-  
+
   return (
     <nav className={styles.nav}>
       <div className={styles['nav-mobile']}>
