@@ -12,6 +12,9 @@ import {
   BashIcon,
   GitIcon,
   FigmaIcon,
+  TypeScriptIcon,
+  PostmanIcon,
+  ZustandIcon,
 } from '@/components/atoms/icons'
 
 export const NAV = [
@@ -98,12 +101,20 @@ export const TOOLS_AND_TECHNOLOGIES = [
     title: 'JavaScript',
   },
   {
+    icon: <TypeScriptIcon />,
+    title: 'TypeScript',
+  },
+  {
     icon: <ReactIcon />,
     title: 'React',
   },
   {
     icon: <NextjsIcon />,
     title: 'Next.js',
+  },
+  {
+    icon: <ZustandIcon />,
+    title: 'Zustand',
   },
 ]
 
@@ -131,5 +142,9 @@ export const SOFTWARE = [
   {
     title: 'Figma',
     icon: <FigmaIcon />,
+  },
+  {
+    title: 'Postman',
+    icon: <PostmanIcon />,
   },
 ]

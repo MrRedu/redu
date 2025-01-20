@@ -81,7 +81,7 @@
     "title": "H-ISENA",
     "internUrl": "/projects/h-isena",
     "tags": ["Management system"],
-    "roles": ["Development"],
+    "roles": ["Development", "Design"],
     "year": "2024",
     "description": "Medical records management system for the Institute of Senology Aragua; integral platform that allows the efficient registration and administration of patients and their medical records. This system has three user levels, guarantees secure authentication, generates detailed reports and prints medical records. Its implementation optimizes patient care, improves internal management and facilitates appointment scheduling, contributing significantly to the quality of healthcare services.",
     "url": "https://github.com/MrRedu/isena",
@@ -127,6 +127,33 @@
       "Tailwind CSS",
       "Next.UI",
       "React Hook Form"
+    ]
+  },
+  {
+    "id": "sphere",
+    "title": "Sphere",
+    "internUrl": "/projects/sphere",
+    "tags": ["WebApp"],
+    "roles": ["Development", "Design"],
+    "year": "2025",
+    "description": "Sphere is your ultimate gateway to the captivating world of anime, offering a web application that allows users to explore a vast collection ranging from timeless classics to the latest releases. With an intuitive and responsive interface, you can easily search for your favorite series by name, rating, or category, making it simple to discover new titles tailored to your preferences. Users can save their favorite animes in a dedicated list for easy access anytime, ensuring a smooth and enjoyable browsing experience as you dive into the anime universe.",
+    "url": "https://sphere-mrredu.vercel.app/",
+    "images": [
+      "/projects/sphere/sphere-desktop-1.webp",
+      "/projects/sphere/sphere-desktop-2.webp",
+      "/projects/sphere/sphere-mobile-1.webp",
+      "/projects/sphere/sphere-desktop-3.webp",
+      "/projects/sphere/sphere-desktop-4.webp"
+    ],
+    "toolsAndTechnologies": [
+      "Next.js",
+      "React.js",
+      "NextAuth.js",
+      "Tailwind CSS",
+      "GraphQL",
+      "Apollo Client",
+      "Motion",
+      "Zustand"
     ]
   }
 ]

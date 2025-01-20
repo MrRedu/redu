@@ -5,18 +5,14 @@ import { SelectedProject } from './SelectedProject'
 import { CategoryTitle } from '@/components/molecules/category-title/CategoryTitle'
 import { Button } from '@/components/atoms/ui/buttons/Button'
 
-const ID_SELECTED_PROJECTS = ['h-isena', 'salus', 'tidi-list', 'repo']
-
-const SELECTED_PROJECTS = projectsData.filter(project =>
-  ID_SELECTED_PROJECTS.includes(project.id)
-)
+const LAST_FOUR_PROJECTS = projectsData.slice(-4).reverse()
 
 export const SelectedProjects = () => {
   return (
     <>
       <CategoryTitle>Selected projects</CategoryTitle>
       <div className={styles.container}>
-        {SELECTED_PROJECTS.map(
+        {LAST_FOUR_PROJECTS.map(
           ({ id, title, internUrl, images, roles, year }, index) => (
             <SelectedProject
               key={id}
