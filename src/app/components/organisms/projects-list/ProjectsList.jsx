@@ -7,6 +7,8 @@ import { CategoryTitle } from '@/components/molecules/category-title/CategoryTit
 import { GridListToggle } from '@/components/molecules/ui/grid-list-toggle/GridListToggle'
 import { ProjectItem } from './ProjectItem'
 
+const FROM_NEWEST_TO_OLDEST = projectsData.reverse()
+
 export const ProjectsList = () => {
   const [isGrid, setIsGrid] = useState(true)
 
@@ -33,7 +35,7 @@ export const ProjectsList = () => {
           isGrid ? styles['is-grid'] : styles['is-list']
         }`}
       >
-        {projectsData.map(({ id, internUrl, title, tags, images }) => (
+        {FROM_NEWEST_TO_OLDEST.map(({ id, internUrl, title, tags, images }) => (
           <ProjectItem
             key={id}
             href={internUrl}
